@@ -17,7 +17,6 @@ I have a great application idea that when implemented could be great for employe
 slow and lacking hardware that hinders my progress and frustrates me.
 
 
-
 ### Week 2
 
 09/15/2018
@@ -42,3 +41,12 @@ Tasks Completed:
  * Wrote in journal to track application progress.
  * Constructed screen layout design.
  * Constructed application flow.
+ * Looked at APIs to use for project.
+ 
+ Create README.md, timelog.md, journal.md, screen.md, applicationFlow.md, and databaseDesign.md for application design 
+ and to track application production progress. Got timelog.md and journal.md up to date with current progress. Designed 
+ screen layout and application flow for project. Also started looking into which API will be used in conjunction with project.
+ 
+ 
+* Home page for the google maps web services: https://developers.google.com/maps/web-services/overview?hl=en This can be used to display a map of current location to better track weather.
+* A service for current weather conditions. http://openweathermap.org looks promising and they have a free tier. There's also some integration with google maps, so I think I may be able to project weather data over the google map?
