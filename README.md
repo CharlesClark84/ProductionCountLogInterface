@@ -40,7 +40,7 @@ should be done before the start of the shift.
  * Independent Research Topic/s
    * Google Maps API
    * Weather API
-   *Javascript action buttons
+   * Javascript action buttons
  * Unit Testing
    * JUnit tests to achieve 80%+ code coverage 
  * IDE: IntelliJ IDEA
