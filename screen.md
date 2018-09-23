@@ -1,3 +1,3 @@
-(indie projectform.png)
-(weather.png)
-(receipt.png)
+* [Form](indie projectform.png)
+* [Weather](weather.png)
+* [Receipt](receipt.png)
