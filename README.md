@@ -45,7 +45,11 @@ should be done before the start of the shift.
    * JUnit tests to achieve 80%+ code coverage 
  * IDE: IntelliJ IDEA
  
+ ###Posible APIs
  
+ * Home page for the google maps web services: https://developers.google.com/maps/web-services/overview?hl=en This can be used to display a map of current location to better track weather.
+ * A service for current weather conditions. http://openweathermap.org looks promising and they have a free tier. There's also some integration with google maps, so I think I may be able to project weather data over the google map?
+
  ### Design
 
 * [Screen Design](screen.md)
@@ -55,3 +59,5 @@ should be done before the start of the shift.
 ### Production Time
 * [Journal](journal.md)
 * [Time Log](timelog.md)
+
+### [Project Plan](plan.md)
