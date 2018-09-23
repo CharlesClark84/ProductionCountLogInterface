@@ -6,7 +6,7 @@ Document project progress, the development process, accomplishments, snags, and 
 
 ### Week 1
 
-09/08/2018
+09/08/2018 - end of week date
 
 Tasks Completed:
  * Chose a project application
@@ -17,7 +17,7 @@ I have a great application idea that when implemented could be great for employe
 slow and lacking hardware that hinders my progress and frustrates me.
 
 
-### Week 2
+### Week 2 - end of week date
 
 09/15/2018
 
@@ -29,7 +29,7 @@ Tasks Completed:
  Watched the videos in week two to create indie project repository and link in to git to be able to track version control.
  Also added link in indie project repository for easy access to application for student/teacher code reviews.
  
- ### Week 3
+ ### Week 3 - end of week date
  
  09/22/2018
  
@@ -50,3 +50,9 @@ Tasks Completed:
  
 * Home page for the google maps web services: https://developers.google.com/maps/web-services/overview?hl=en This can be used to display a map of current location to better track weather.
 * A service for current weather conditions. http://openweathermap.org looks promising and they have a free tier. There's also some integration with google maps, so I think I may be able to project weather data over the google map?
+
+ ### Week 4 - end of week date
+ 
+ 09/29/2018
+ 
+ Tasks Completed:

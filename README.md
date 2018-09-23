@@ -1,7 +1,5 @@
 # Charles Clark Individual Project
-
-This repository will serve as an example for Madison College's Enterprise Java Class. 
-
+ 
 ### Problem Statement
 
 Most manufacturing and production based factory jobs have end off the shift paperwork that needs to be filled out. This 
