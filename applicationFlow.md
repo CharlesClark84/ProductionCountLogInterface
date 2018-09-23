@@ -39,6 +39,7 @@ recommended.
 ### User Submits Form and Gets a Reciept/Results
 
 1. User submits the form.
+1. Form data is sent to and stored in database.
 1. A detail receipt is outputted to the page containing:
  * Name/Employee Number
  * Date/Shift
