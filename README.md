@@ -38,8 +38,8 @@ should be done before the start of the shift.
  * Hosting
    * AWS
  * Independent Research Topic/s
-   * CI tools in AWS
    * Google Maps API
+   * Weather API
    *Javascript action buttons
  * Unit Testing
    * JUnit tests to achieve 80%+ code coverage 
