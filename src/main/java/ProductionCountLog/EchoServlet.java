@@ -30,14 +30,16 @@ public class EchoServlet extends HttpServlet {
             out.println("<body><h2>You have entered</h2>");
 
             // Retrieve the value of the query parameter "username" (from text field)
-            String username = request.getParameter("username");
+            String firstName = request.getParameter("firstName");
+            String lastName = request.getParameter("lastName");
             // Get null if the parameter is missing from query string.
             // Get empty string or string of white spaces if user did not fill in
-            if (username == null
-                    || (username = htmlFilter(username.trim())).length() == 0) {
+            if ((firstName == null
+                    || (firstName = htmlFilter(firstName.trim())).length() == 0) || (lastName == null
+                    || (lastName = htmlFilter(lastName.trim())).length() == 0)) {
                 out.println("<p>Name: MISSING</p>");
             } else {
-                out.println("<p>Name: " + username + "</p>");
+                out.println("<p>Name: " + firstName + " " + lastName + "</p>");
             }
 
             // Retrieve the value of the query parameter "productName" (from pull-down menu)

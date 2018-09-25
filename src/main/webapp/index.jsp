@@ -15,7 +15,8 @@
 <form method="get" action="echo">
     <fieldset>
         <legend>Personal Particular</legend>
-        Name: <input type="text" name="username" /><br /><br />
+        First Name: <input type="text" name="firstName" /><br /><br />
+        Last Name: <input type="text" name="lastName" /><br /><br />
 
         Product Name <select name = "productName">
         <option value="1">213 Air filter</option>
