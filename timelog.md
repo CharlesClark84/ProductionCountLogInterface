@@ -2,7 +2,16 @@
 
 | Date | Task | Hours | Notes|
 |------|------|-------|------|
-| 09/08/18| Come up with project application, start listing technologies that will be used in project| 1 | So many projects to decide from?|
-| 09/15/18| Set up project repository, link project to git, add link in indie project repository| 1 | Went smooth without any issues. |
-| 09/22/18| Set up README.md, problem statement, timelog.md, journal.md, screen.md, applicationFlow.md, plan.md| 4.5 | made homemade bacon egg biscuits and put cheese curds on top! |
-| 09/24/18|Added basic form and servlet to project|1|Good start to application|
+|09/05/18|Set up, videos|2|first set up attempt failed|
+|09/07/18|Week one videos|3|lots of screen time|
+|09/08/18|Come up with project application, start listing technologies that will be used in project| 1 | So many projects to decide from?|
+|09/08/18|Week one activities and exercises, readings, finish various set up|5|wheww|
+|09/14/18|Week two videos, readings, exercises junit log4j|8.5|unit testing was rough|
+|09/15/18|Set up project repository, link project to git, add link in indie project repository| 1 | Went smooth without any issues.|
+|09/20/18|Watch week three videos|2.00|great detail|
+|09/21/18|Week three custom tags activity|1.5|did not win this one|
+|09/22/18|Week three custom tags activity second attempt, week three readings|2.5|META.INF-misspelled directory was the problem|
+|09/22/18|Set up README.md, problem statement, timelog.md, journal.md, screen.md, applicationFlow.md, plan.md| 4.5 | made homemade bacon egg biscuits and put cheese curds on top! |
+|09/23/18|Week three Cutom Tag exercise|1.25|Starting to hit my groove |
+|09/24/18|Added basic form and servlet to project|1|Good start to application|
+|09/24/18|Worked on time log, project plan, and journal|1.5|Making it pretty|

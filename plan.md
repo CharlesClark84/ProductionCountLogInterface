@@ -11,54 +11,53 @@
 - [ ] Write project plan
 - [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq? 
 - [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
+- [ ] Implement custom tag from personal tag library.
+- [ ] Create base form on index.jsp and echo servlet for response.
 
 ### Week 4
 - [ ] Complete database design
-- [ ] Create the database and user table
-- [ ] Create the user entity class and annotate for hibernate
-- [ ] Create user dao
+- [ ] Create the User database
+- [ ] Create the User entity class and annotate for hibernate
+- [ ] Create User dao
 - [ ] Create the test database
-- [ ] Create user dao unit tests
+- [ ] Create User dao unit tests
 - [ ] Weekly journal entry
 - [ ] Set up logging
-- [ ] Create class uml diagram
 - [ ] Prepare for Week 5 peer design/code review
+- [ ] Work on form page layout
+- [ ] Create javaBean class for all info
 
 
 ### Week 5
 
 - [ ] Create the template for all jsps using bootstrap or materialize
 - [ ] Weekly journal entry
-- [ ] Add the role table
-- [ ] Add the role entity
-- [ ] Create the role dao
-- [ ] Create the role dao unit tests
-- [ ] Add a jsp to display user and role
-- [ ] Add jsp to add a user
+- [ ] Add the User database
+- [ ] Add the User entity
+- [ ] Create the User dao
+- [ ] Create the User dao unit tests
+- [ ] Work on javaBean class for all User variable data
+- [ ] create database connection class
+- [ ] Work on Receipt page layout
+
 
 ### Week 6
 
 - [ ] Create db on AWS
 - [ ] Deploy to AWS for first time
 - [ ] Weekly journal entry
-- [ ] Create trail table
-- [ ] Add the trail entity (test, dev and prod dbs)
 - [ ] Realize that these daos are repetitive. Refactor into a generic dao!
-- [ ] Add update and delete functionality in jsp for user and role
-- [ ] Build the trail search jsp
-- [ ] Build the trail add/update/delete jsp
+- [ ] Implement all functions in database connection class(connect, write to database).
 - [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
 ### Week 7
 
 - [ ] Weekly journal entry
+- [ ] Work on calculations for algorithms and functions they will be inside of.  
+- [ ] Connect to database and be able to store User variables.
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
-- [ ] Add the Trail Type and Grooming Tables, populate with data, (test, dev and prod dbs)
-- [ ] Create the Trail Type and Grooming entities
-- [ ] Update Trail and Trail report to use trail type and grooming
-- [ ] Update Trail and Trail report tests to be sure they work with the new relationships
 - [ ] Review and incorporate any feedback from Checkpoint 2.
 
 
@@ -66,12 +65,6 @@
 
 - [ ] Weekly journal entry
 - [ ] Integration with google maps api
-- [ ] Create trail report table (test, dev and prod dbs)
-- [ ] Add the trail report entity
-- [ ] Create the trail report dao
-- [ ] Create the trail report dao unit tests
-- [ ] Build the trail report search jsp
-- [ ] Build the trail report crud jsps
 - [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
 
 ### Week 9
@@ -82,7 +75,6 @@
 
 ### Week 8
 - [ ] Weekly journal entry
-- [ ] Implement paging of search results
 - [ ] Code review
 
 ### Week 9
