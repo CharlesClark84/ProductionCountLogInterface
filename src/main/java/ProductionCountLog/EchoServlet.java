@@ -65,9 +65,9 @@ public class EchoServlet extends HttpServlet {
             if (instruction == null
                     || (instruction = htmlFilter(instruction.trim())).length() == 0
                     || instruction.equals("Enter your instruction here...")) {
-                out.println("<p>Instruction: NONE</p>");
+                out.println("<p>Comments: NONE</p>");
             } else {
-                out.println("<p>Instruction: " + instruction + "</p>");
+                out.println("<p>Comments: " + instruction + "</p>");
             }
 
             // Hyperlink "BACK" to input page

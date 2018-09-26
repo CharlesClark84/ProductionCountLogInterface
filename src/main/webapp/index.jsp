@@ -7,6 +7,7 @@
 </html>
 
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <link rel="stylesheet" href="style.css">
     <title>User Input Form</title>
 </head>
 
@@ -14,7 +15,7 @@
 <h2>Mach Production Form</h2>
 <form method="get" action="echo">
     <fieldset>
-        <legend>Personal Particular</legend>
+        <legend>Personal Information</legend>
         First Name: <input type="text" name="firstName" /><br /><br />
         Last Name: <input type="text" name="lastName" /><br /><br />
 
@@ -29,8 +30,8 @@
 
 
     <fieldset>
-        <legend>Instruction</legend>
-        <textarea rows="5" cols="30" name="instruction">Enter your instruction here...</textarea>
+        <legend>Shift Comments</legend>
+        <textarea rows="5" cols="30" name="instruction" placeholder="Enter shift comments"></textarea>
     </fieldset>
     <br />
 
