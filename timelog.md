@@ -15,3 +15,6 @@
 |09/23/18|Week three Cutom Tag exercise|1.25|Starting to hit my groove |
 |09/24/18|Added basic form and servlet to project|1|Good start to application|
 |09/24/18|Worked on time log, project plan, and journal|1.5|Making it pretty|
+|09/25/18|Week four videos|1|nothing here to see|
+|09/26/18|Worked on data variables needed and created javaBean with basic getters and setters|1|Starting to look like a Java app now|
+|09/27/18|Week four videos and activities|2||
