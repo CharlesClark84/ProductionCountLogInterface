@@ -1,6 +1,9 @@
 package ProductionCountLog;
 
 import java.util.Date;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 
 /**
  * User javaBean class that will hold all variable data to be used in form, calculations, and database.
@@ -8,24 +11,57 @@ import java.util.Date;
  * @author Charles Clark
  *
  */
-
+@Entity(name = "User")
+@Table(name ="user")
 public class User {
 
+    /**
+     *
+     */
     public User() {
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native",strategy = "native")
+    private int id;
+
+    @Column(name = "date")
     private Date date;
+
+    @Column(name = "shift")
     private int shift;
+
+    @Column(name = "employee_id")
     private int employeeId;
+
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "order_number")
     private int orderNumber;
+
+    @Column(name = "product_name")
     private String productName;
+
+    @Column(name = "machine_number")
     private int machineNumber;
+
+    @Column(name = "hours_worked")
     private double hoursWorked;
+
+    @Column(name = "total_parts")
     private double totalParts;
+
+    @Column(name = "credits")
     private double credits;
+
+    @Column(name = "downtime")
     private double downtime;
+
     private double productRate;
     private double percentage;
     private double baseRate;
@@ -64,7 +100,6 @@ public class User {
     public void setEmployeeId(int employeeId) {
         this.employeeId = employeeId;
     }
-
 
     public String getFirstName() {
         return firstName;
