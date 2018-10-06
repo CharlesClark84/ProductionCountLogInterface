@@ -17,4 +17,10 @@
 |09/24/18|Worked on time log, project plan, and journal|1.5|Making it pretty|
 |09/25/18|Week four videos|1|nothing here to see|
 |09/26/18|Worked on data variables needed and created javaBean with basic getters and setters|1|Starting to look like a Java app now|
-|09/27/18|Week four videos and activities|2||
+|09/27/18|Week four videos and activities|2|-|
+|09/29/18|Create database for indie project, implement hibernate and add annotations|1.5|-|
+|10/1/18|Set up new latop, week four readings and exercise|5|-|
+|10/4/18|Fixing error in week four exercise test cases|5|that was a tough one!|
+|10/5/18|Week five videos|1.5|-|
+|10/5/18|Week five videos|-------|-|
+|10/6/18|Professional Dev Project, Launching on consoles|3|great atmosphere, learned a lot, great networking|

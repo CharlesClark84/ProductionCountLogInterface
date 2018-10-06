@@ -67,5 +67,9 @@ Tasks Completed:
  
  Tasks Completed:
  * Week four videos, activities and exercise.
+ * Built database for indieProject
+ * Created javabean for indieProject
+ * Added hibernate to indieProject
  
- Starting to get in my rhythm. 
+ Starting to get in my rhythm. Got a tooth pulled so that threw me off a little. This is one tough class with
+ a lot of information coming my way every week.

@@ -2,7 +2,7 @@
 
 <html>
 <body>
-<h2><cc:Time/></h2>
+<h2><cc:Greeting/></h2>
 </body>
 </html>
 
