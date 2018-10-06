@@ -22,5 +22,5 @@
 |10/1/18|Set up new latop, week four readings and exercise|5|-|
 |10/4/18|Fixing error in week four exercise test cases|5|that was a tough one!|
 |10/5/18|Week five videos|1.5|-|
-|10/5/18|Week five videos|-------|-|
+|10/5/18|Week five videos cont|2|almost there now|
 |10/6/18|Professional Dev Project, Launching on consoles|3|great atmosphere, learned a lot, great networking|

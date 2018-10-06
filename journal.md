@@ -4,9 +4,9 @@ Document project progress, the development process, accomplishments, snags, and 
 
 [Time Log](timelog.md)
 
-### Week 1
+### Week 1 - end of week date
 
-09/08/2018 - end of week date
+09/08/2018 
 
 Tasks Completed:
  * Chose a project application
@@ -72,4 +72,9 @@ Tasks Completed:
  * Added hibernate to indieProject
  
  Starting to get in my rhythm. Got a tooth pulled so that threw me off a little. This is one tough class with
- a lot of information coming my way every week.
+ a lot of information coming my way every week. Hibernate seems like a good framework to learn that will
+ be very valuable for me in the future. Looking forward to using it in future projects!
+ 
+ ### Week 5 - end of week date
+ 
+ 10/06/18
