@@ -25,3 +25,4 @@
 |10/6/18|Week five videos cont|2|almost there now|
 |10/6/18|Professional Dev Project, Launching on consoles|3|great atmosphere, learned a lot, great networking|
 |10/7/18|Finish week five videos|1|-|
+|10/7/18|Week five reading|1.5|-|
