@@ -5,6 +5,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.util.*;
+import ProductionCountLog.User;
 
 @WebServlet(
         name = "EchoServlet",
@@ -12,6 +13,8 @@ import java.util.*;
 )
 
 public class EchoServlet extends HttpServlet {
+
+    User user = new User();
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -69,6 +72,8 @@ public class EchoServlet extends HttpServlet {
             } else {
                 out.println("<p>Comments: " + instruction + "</p>");
             }
+
+            out.println("<p>Percentage: " + user.getPercentage() + "</p>");
 
             // Hyperlink "BACK" to input page
             out.println("<a href='index.jsp'>BACK</a>");

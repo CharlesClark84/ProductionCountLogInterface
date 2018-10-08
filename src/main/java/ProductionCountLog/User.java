@@ -41,9 +41,6 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "order_number")
-    private int orderNumber;
-
     @Column(name = "product_name")
     private String productName;
 
@@ -117,14 +114,6 @@ public class User {
         this.lastName = lastName;
     }
 
-    public int getOrderNumber() {
-        return orderNumber;
-    }
-
-    public void setOrderNumber(int orderNumber) {
-        this.orderNumber = orderNumber;
-    }
-
     public String getProductName() {
         return productName;
     }
@@ -148,7 +137,6 @@ public class User {
     public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
-
 
     public double getTotalParts() {
         return totalParts;
@@ -187,7 +175,7 @@ public class User {
     }
 
     public void setPercentage(double percentage) {
-        this.percentage = percentage;
+        this.percentage = getTotalParts() / getBasePay();
     }
 
     public double getBaseRate() {

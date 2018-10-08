@@ -16,7 +16,15 @@
 <form method="get" action="echo">
     <fieldset>
         <legend>Personal Information</legend>
+
+        Date: <input type="text" name="date" value="" /><br /><br />
+
+        Shift: <input type="text" name="shift" /><br /><br />
+
+        Employee Id: <input type="text" name="employeeId" /><br /><br />
+
         First Name: <input type="text" name="firstName" /><br /><br />
+
         Last Name: <input type="text" name="lastName" /><br /><br />
 
         Product Name <select name = "productName">
@@ -25,7 +33,31 @@
         <option value="3">413 Air filter</option>
         <option value="4">501 Air filter</option>
         <option value="5">513 Air filter</option>
-    </select>
+        </select><br/><br/>
+
+        Machine Number: <input type="text" name="machineNumber" /><br /><br />
+
+        Hours Worked: <input type="text" name="hoursWorked" /><br /><br />
+
+        Total Parts: <input type="text" name="totalParts" /><br /><br />
+
+        Downtime: <input type="text" name="downtime" /><br /><br />
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Credits</legend>
+
+        Bad Parts: <input type="text" name="badParts" /><br /><br />
+
+        Ribbon Change: <input type="text" name="ribbonChange" /><br /><br />
+
+        Glue Test: <input type="text" name="glueTest" /><br /><br />
+
+        Full Skid: <input type="text" name="fullSkid" /><br /><br />
+
+        Trash: <input type="text" name="trash" /><br /><br />
+
     </fieldset>
 
 
