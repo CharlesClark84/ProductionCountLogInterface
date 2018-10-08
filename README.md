@@ -54,7 +54,7 @@ know if any PM/TPM (preventative maintenance) should be done before the start of
 
 * [Screen Design](screen.md)
 * [Application Flow](applicationFlow.md)
-* [Datbase Design](databaseDesign.md)
+* [Database Design](databaseDesign.md)
 
 ### Production Time
 * [Journal](journal.md)
