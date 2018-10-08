@@ -1,4 +1,8 @@
 form {
-    border: 1px solid grey;
     max-width: 50%;
+    border-radius: 5px;
+}
+
+div#credits {
+    float:right;
 }

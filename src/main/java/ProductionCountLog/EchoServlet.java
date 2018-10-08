@@ -28,7 +28,14 @@ public class EchoServlet extends HttpServlet {
         try {
             out.println("<!DOCTYPE html>");
             out.println("<html><head>");
-            out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
+            out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><!-- Latest compiled and minified CSS -->\n" +
+                    "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" integrity=\"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u\" crossorigin=\"anonymous\">\n" +
+                    "\n" +
+                    "<!-- Optional theme -->\n" +
+                    "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css\" integrity=\"sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp\" crossorigin=\"anonymous\">\n" +
+                    "\n" +
+                    "<!-- Latest compiled and minified JavaScript -->\n" +
+                    "<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\" integrity=\"sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\" crossorigin=\"anonymous\"></script>");
             out.println("<title>Echo Servlet</title></head>");
             out.println("<body><h2>You have entered</h2>");
 
