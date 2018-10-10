@@ -27,3 +27,4 @@
 |10/7/18|Finish week five videos|1|-|
 |10/7/18|Week five reading|1.5|-|
 |10/8/18|Added bootstrap and columns to indie project|1|-|
+|10/9/18|Week five exercise|1.5|test need work still|

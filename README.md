@@ -6,10 +6,10 @@ Most manufacturing and production based factory jobs have end off the shift pape
 is done for various reasons. A few being that companies want to keep track of what each shift/individual is doing. By 
 tracking the number of parts produced and logging downtime companies can use the data to fix problems and estimate the 
 required run time amount to meet daily, weekly, monthly, and yearly production. Employees that are on a production rate
-per hour based pay can also know how much money they made that each day, right away. The problem is with paperwork you 
+per hour based pay can also know how much money they made each day, right away. The problem with paperwork is you 
 cant get these type of results right away. Paperwork can also be lost and errors can happen so implementing a simple web 
 form application allows employers and employees to track and see shift data right away! Users will also be able to check
-weather before each shit (as it can play a role in how a machine functions) and based on certain conditions let the user 
+weather before each shift (as it can play a role in how a machine functions) and based on certain conditions let the user 
 know if any PM/TPM (preventative maintenance) should be done before the start of the shift.
 
  ### Project Technologies/Techniques 
@@ -54,7 +54,7 @@ know if any PM/TPM (preventative maintenance) should be done before the start of
 
 * [Screen Design](screen.md)
 * [Application Flow](applicationFlow.md)
-* [Datbase Design](databaseDesign.md)
+* [Database Design](databaseDesign.md)
 
 ### Production Time
 * [Journal](journal.md)

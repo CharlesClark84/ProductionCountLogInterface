@@ -13,7 +13,6 @@ recommended.
 1. User enters the shift in which the machine is being ran on in the form.
 1. User enters their employee number in the form.
 1. User enters their first and last name in the form.
-1. User enters the order number in the form.
 1. User enter the product name(Maybe a dropdown with options to select) in the form.
 1. User enters which machine number which they are working on.
 
