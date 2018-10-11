@@ -27,10 +27,10 @@ public class User {
     private int id;
 
     @Column(name = "date")
-    private Date date;
+    private String date;
 
     @Column(name = "shift")
-    private int shift;
+    private String shift;
 
     @Column(name = "employee_id")
     private int employeeId;
@@ -67,6 +67,7 @@ public class User {
     private double basePay = 12.75;
     private double day$;
     private double hourly$;
+
     private double badParts;
     private double ribbonChange;
     private double glueTest;
@@ -74,19 +75,19 @@ public class User {
     private double trash;
 
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public int getShift() {
+    public String getShift() {
         return shift;
     }
 
-    public void setShift(int shift) {
+    public void setShift(String shift) {
         this.shift = shift;
     }
 

@@ -39,9 +39,37 @@ public class EchoServlet extends HttpServlet {
             out.println("<title>Echo Servlet</title></head>");
             out.println("<body><h2>You have entered</h2>");
 
+
+            String date = request.getParameter("date");
+            user.setDate(date);
+            if (date == null) {
+                out.println("<p>Date: MISSING</p>");
+            } else {
+                out.println("<p>Date: " + date + "</p>");
+            }
+
+            String shift = request.getParameter("shift");
+            user.setShift(shift);
+            if (shift == null) {
+                out.println("<p>Shift: MISSING</p>");
+            } else {
+                out.println("<p>Shift: " + shift + "</p>");
+            }
+
+
+            String employeeId = request.getParameter("employeeId");
+            if (employeeId == null) {
+                out.println("<p>EmployeeId: MISSING</p>");
+            } else {
+                out.println("<p>EmployeeId: " + employeeId + "</p>");
+            }
+
+
             // Retrieve the value of the query parameter "username" (from text field)
             String firstName = request.getParameter("firstName");
+            user.setFirstName(firstName);
             String lastName = request.getParameter("lastName");
+            user.setLastName(lastName);
             // Get null if the parameter is missing from query string.
             // Get empty string or string of white spaces if user did not fill in
             if ((firstName == null
@@ -54,6 +82,7 @@ public class EchoServlet extends HttpServlet {
 
             // Retrieve the value of the query parameter "productName" (from pull-down menu)
             String productName = request.getParameter("productName");
+            user.setProductName(productName);
             if (productName == null) {
                 out.println("<p>Product Name: MISSING</p>");
             } else if (productName.equals("1")) {
@@ -69,13 +98,46 @@ public class EchoServlet extends HttpServlet {
             }
 
 
+            String machineNumber = request.getParameter("machineNumber");
+            if (machineNumber == null) {
+                out.println("<p>Machine Number: MISSING</p>");
+            } else {
+                out.println("<p>Machine Number: " + machineNumber + "</p>");
+            }
+
+            String hoursWorked = request.getParameter("hoursWorked");
+            if (hoursWorked == null) {
+                out.println("<p>Hours Worked: MISSING</p>");
+            } else {
+                out.println("<p>Hours Worked: " + hoursWorked + "</p>");
+            }
+
+            String totalParts = request.getParameter("totalParts");
+            if (totalParts == null) {
+                out.println("<p>Total Parts: MISSING</p>");
+            } else {
+                out.println("<p>Total Parts: " + totalParts + "</p>");
+            }
+
+            String downtime = request.getParameter("downtime");
+            if (downtime == null) {
+                out.println("<p>Downtime: MISSING</p>");
+            } else {
+                out.println("<p>Downtime: " + downtime + "</p>");
+            }
+
+
+
+
+
             // Retrieve the value of the query parameter "instruction" (from text area)
             String instruction = request.getParameter("instruction");
+
             // Get null if the parameter is missing from query string.
             if (instruction == null
                     || (instruction = htmlFilter(instruction.trim())).length() == 0
                     || instruction.equals("Enter your instruction here...")) {
-                out.println("<p>Comments: NONE</p>");
+                out.println("<p>Comments: MISSING</p>");
             } else {
                 out.println("<p>Comments: " + instruction + "</p>");
             }

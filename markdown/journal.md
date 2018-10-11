@@ -78,3 +78,15 @@ Tasks Completed:
  ### Week 5 - end of week date
  
  10/06/18
+ 
+ 
+  ### Week 6 - end of week date
+  
+  10/13/18
+  
+   Tasks Completed:
+   * Week six videos, activities and exercise
+   * Code Reviews
+   * Worked on indie project
+   * Prepare for indie project ckeckpoint two
+   * Deploy to AWS
