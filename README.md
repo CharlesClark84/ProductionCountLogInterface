@@ -52,12 +52,12 @@ know if any PM/TPM (preventative maintenance) should be done before the start of
 
  ### Design
 
-* [Screen Design](screen.md)
-* [Application Flow](applicationFlow.md)
-* [Database Design](databaseDesign.md)
+* [Screen Design](markdown/screen.md)
+* [Application Flow](markdown/applicationFlow.md)
+* [Database Design](markdown/databaseDesign.md)
 
 ### Production Time
-* [Journal](journal.md)
-* [Time Log](timelog.md)
+* [Journal](markdown/journal.md)
+* [Time Log](markdown/timelog.md)
 
-### [Project Plan](plan.md)
+### [Project Plan](markdown/plan.md)
