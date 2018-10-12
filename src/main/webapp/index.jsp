@@ -16,6 +16,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+<script src="validateForm.js"charset="utf-8"></script>
     <title>User Input Form</title>
 </head>
 
@@ -24,23 +25,23 @@
 <div class="container">
     <div class="row">
         <h2>Mach Production Form</h2>
-<form method="get" action="echo" style="border: 2px solid grey">
+<form name="form"  action="echo" onsubmit="return validateForm()" method="post">
     <div class="col-md-6">
 
     <fieldset>
         <label>Shift Information</label><br/><br/>
 
-        Date: <input type="text" name="date" value="" /><br /><br />
+        Date: <input type="text" name="date" id="date" required /><br /><br />
 
-        Shift: <input type="text" name="shift" /><br /><br />
+        Shift: <input type="text" name="shift" id="shift" required/><br /><br />
 
-        Employee Id: <input type="text" name="employeeId" /><br /><br />
+        Employee Id: <input type="text" name="employeeId"required /><br /><br />
 
-        First Name: <input type="text" name="firstName" /><br /><br />
+        First Name: <input type="text" name="firstName" required /><br /><br />
 
-        Last Name: <input type="text" name="lastName" /><br /><br />
+        Last Name: <input type="text" name="lastName" required /><br /><br />
 
-        Product Name <select name = "productName">
+        Product Name <select name= "productName">
         <option value="1">213 Air filter</option>
         <option value="2">410 Air filter</option>
         <option value="3">413 Air filter</option>
@@ -48,13 +49,13 @@
         <option value="5">513 Air filter</option>
         </select><br/><br/>
 
-        Machine Number: <input type="text" name="machineNumber" /><br /><br />
+        Machine Number: <input type="text" name="machineNumber" required /><br /><br />
 
-        Hours Worked: <input type="text" name="hoursWorked" /><br /><br />
+        Hours Worked: <input type="text" name="hoursWorked" required /><br /><br />
 
-        Total Parts: <input type="text" name="totalParts" /><br /><br />
+        Total Parts: <input type="text" name="totalParts" required /><br /><br />
 
-        Downtime: <input type="text" name="downtime" /><br /><br />
+        Downtime: <input type="text" name="downtime" required /><br /><br />
 
     </fieldset>
     </div>
@@ -63,15 +64,15 @@
     <fieldset>
         <label>Credits</label><br/><br/>
 
-        Bad Parts: <input type="text" name="badParts" /><br /><br />
+        Bad Parts: <input type="text" name="badParts" required /><br /><br />
 
-        Ribbon Change: <input type="text" name="ribbonChange" /><br /><br />
+        Ribbon Change: <input type="text" name="ribbonChange" required /><br /><br />
 
-        Glue Test: <input type="text" name="glueTest" /><br /><br />
+        Glue Test: <input type="text" name="glueTest" required /><br /><br />
 
-        Full Skid: <input type="text" name="fullSkid" /><br /><br />
+        Full Skid: <input type="text" name="fullSkid" required /><br /><br />
 
-        Trash: <input type="text" name="trash" /><br /><br />
+        Trash: <input type="text" name="trash" required /><br /><br />
 
     </fieldset>
 
@@ -89,4 +90,5 @@
 </div></div>
 
 </body>
+
 </html>

@@ -30,3 +30,4 @@
 |10/9/18|Week five exercise|1.5|test need work still|
 |10/11/18|Week six videos, deploy indie project to AWS|2.75|its alive|
 |10/11/18|Week six peer code reviews|1.25|good work everyone|
+|10/12/18|Added Front end validation to form on indie project|2|numbers are numbers|
