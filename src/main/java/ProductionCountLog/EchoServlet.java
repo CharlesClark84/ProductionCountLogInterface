@@ -15,6 +15,7 @@ import ProductionCountLog.User;
 public class EchoServlet extends HttpServlet {
 
     User user = new User();
+    UserDao userDao = new UserDao();
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -127,9 +128,6 @@ public class EchoServlet extends HttpServlet {
             }
 
 
-
-
-
             // Retrieve the value of the query parameter "instruction" (from text area)
             String instruction = request.getParameter("instruction");
 
@@ -151,6 +149,9 @@ public class EchoServlet extends HttpServlet {
         } finally {
             out.close();  // Always close the output writer
         }
+
+
+        userDao.insert(user);
     }
 
     // Redirect POST request to GET request.

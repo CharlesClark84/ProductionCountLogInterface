@@ -78,6 +78,13 @@ Tasks Completed:
  ### Week 5 - end of week date
  
  10/06/18
+   
+   Tasks Completed:
+   * Week five videos, activities and exercise
+   * Work on indie project
+   * Hibernate
+   * DAO
+   * test methods
  
  
   ### Week 6 - end of week date
