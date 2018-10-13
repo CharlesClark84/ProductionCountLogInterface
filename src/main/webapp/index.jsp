@@ -31,7 +31,7 @@
     <fieldset>
         <label>Shift Information</label><br/><br/>
 
-        Date: <input type="text" name="date" id="date" required /><br /><br />
+        Date: <input type="date" name="date" id="date" required /><br /><br />
 
         Shift: <input type="text" name="shift" id="shift" required/><br /><br />
 

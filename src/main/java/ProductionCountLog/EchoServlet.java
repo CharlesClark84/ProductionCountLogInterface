@@ -14,7 +14,6 @@ import ProductionCountLog.User;
 
 public class EchoServlet extends HttpServlet {
 
-    private static final long serialVersionUID = 1L;
 
     User user = new User();
     UserDao userDao = new UserDao();
