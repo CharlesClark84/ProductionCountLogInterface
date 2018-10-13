@@ -31,3 +31,6 @@
 |10/11/18|Week six videos, deploy indie project to AWS|2.75|its alive|
 |10/11/18|Week six peer code reviews|1.25|good work everyone|
 |10/12/18|Added Front end validation to form on indie project|2|numbers are numbers|
+|10/13/18|Redo AWS|1.25|dont terminate|
+|10/13/18|week six exercise|1.50|-|
+|10/13/18|indieProject work|2|lots to do|

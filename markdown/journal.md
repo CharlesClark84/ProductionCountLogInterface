@@ -85,6 +85,10 @@ Tasks Completed:
    * Hibernate
    * DAO
    * test methods
+   
+   Week five was rough. Hibernate continues to challenge me, but with patience I will get it down. Unit tests seem like a good
+   thing to know as it will let you know if your application is functioning correctly. Slack and the teacher have been
+   very helpful!
  
  
   ### Week 6 - end of week date
@@ -95,5 +99,9 @@ Tasks Completed:
    * Week six videos, activities and exercise
    * Code Reviews
    * Worked on indie project
-   * Prepare for indie project ckeckpoint two
+   * Prepare for indie project checkpoint two
    * Deploy to AWS
+   
+   Signed up for an AWS(Amazon Web Services) account! Its official I'm live! There was lots of configuration to do
+   but it was great to learn and will be played with lots in the upcoming weeks. Still trying to get week five exercise 
+   figured out.

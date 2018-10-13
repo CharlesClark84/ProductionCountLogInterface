@@ -8,8 +8,7 @@ import java.util.*;
 import ProductionCountLog.User;
 
 @WebServlet(
-        name = "EchoServlet",
-        urlPatterns = { "/echo"}
+        urlPatterns = {"/echo"}
 )
 
 public class EchoServlet extends HttpServlet {
@@ -152,14 +151,12 @@ public class EchoServlet extends HttpServlet {
         }
 
 
-        userDao.insert(user);
-    }
 
-    // Redirect POST request to GET request.
-    @Override
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws IOException, ServletException {
-        doGet(request, response);
+        request.setAttribute("users", userDao.insert(user));
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/results.jsp");
+        dispatcher.forward(request, response);
+
     }
 
     // Filter the string for special HTML characters to prevent
