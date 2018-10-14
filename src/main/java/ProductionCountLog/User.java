@@ -76,6 +76,7 @@ public class User {
     /**
      * The constant basePay.
      */
+    @Transient
     public static final double basePay = 12.75;
 
     @Id
@@ -116,20 +117,32 @@ public class User {
     @Column(name = "downtime")
     private double downtime;
 
+    @Transient
     private double productRate;
+    @Transient
     private double percentage;
+    @Transient
     private double baseRate;
+    @Transient
     private double hoursEarned;
+    @Transient
     private double totalHours;
-
+    @Transient
     private double day$;
+    @Transient
     private double hourly$;
-
+    @Transient
     private double badParts;
+    @Transient
     private double ribbonChange;
+    @Transient
     private double glueTest;
+    @Transient
     private double fullSkid;
+    @Transient
     private double trash;
+    @Transient
+    private String comment;
 
 
     /**
@@ -534,6 +547,24 @@ public class User {
      * @param trash the trash
      */
     public void setTrash(double trash) {this.trash = trash; }
+
+    /**
+     * Gets comment.
+     *
+     * @return the comment
+     */
+    public String getComment() {
+        return comment;
+    }
+
+    /**
+     * Sets comment.
+     *
+     * @param comment the comment
+     */
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 
     @Override
     public String toString() {

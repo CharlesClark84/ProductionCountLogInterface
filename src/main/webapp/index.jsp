@@ -70,7 +70,7 @@
 
     <fieldset>
         <label>Shift Comments</label><br/><br/>
-        <textarea rows="5" cols="30" name="instruction" placeholder="Enter shift comments"></textarea><br/><br/>
+        <textarea rows="5" cols="30" name="comment" placeholder="Enter shift comments"></textarea><br/><br/>
     </fieldset>
         <input type="submit" class="btn btn-success btn-send" value="Submit">
         <input type="reset" value="Clear" />

@@ -34,4 +34,4 @@
 |10/13/18|Redo AWS|1.25|dont terminate|
 |10/13/18|week six exercise|1.50|-|
 |10/13/18|indieProject work,implemented hibernate and log4j, worked on servlet|3|lots to do|
-|10/14/18|indieProject work, POJO, servlet|-------|-|
+|10/14/18|indieProject work, POJO, servlet, results.jsp|2|getting there|
