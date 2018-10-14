@@ -4,6 +4,9 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import ProductionCountLog.User;
 
@@ -25,19 +28,12 @@ public class EchoServlet extends HttpServlet {
         // Allocate a output writer to write the response message into the network socket
         PrintWriter out = response.getWriter();
 
+        /**
         // Write the response message, in an HTML page
         try {
             out.println("<!DOCTYPE html>");
             out.println("<html><head>");
-            out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><!-- Latest compiled and minified CSS -->\n" +
-                    "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" integrity=\"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u\" crossorigin=\"anonymous\">\n" +
-                    "\n" +
-                    "<!-- Optional theme -->\n" +
-                    "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css\" integrity=\"sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp\" crossorigin=\"anonymous\">\n" +
-                    "\n" +
-                    "<!-- Latest compiled and minified JavaScript -->\n" +
-                    "<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\" integrity=\"sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\" crossorigin=\"anonymous\"></script>");
-            out.println("<title>Echo Servlet</title></head>");
+
             out.println("<body><h2>You have entered</h2>");
 
 
@@ -149,6 +145,71 @@ public class EchoServlet extends HttpServlet {
         } finally {
             out.close();  // Always close the output writer
         }
+
+*/
+
+        String date = request.getParameter("date");
+
+        DateFormat df = new SimpleDateFormat("mm/dd/yyyy");
+        if (date != null) {
+            try {
+                Date startDate = df.parse(date);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+        user.setDate(date);
+
+
+        int shift = Integer.parseInt(request.getParameter("shift"));
+        user.setShift(shift);
+
+        int employeeId = Integer.parseInt(request.getParameter("employeeId"));
+        user.setEmployeeId(employeeId);
+
+        String firstName = request.getParameter("firstName");
+        user.setFirstName(firstName);
+
+        String lastName = request.getParameter("lastName");
+        user.setLastName(lastName);
+
+        String productName = request.getParameter("productName");
+        user.setProductName(productName);
+
+        int machineNumber = Integer.parseInt(request.getParameter("machineNumber"));
+        user.setMachineNumber(machineNumber);
+
+        double hoursWorked = Double.parseDouble(request.getParameter("hoursWorked"));
+        user.setHoursWorked(hoursWorked);
+
+        double totalParts = Double.parseDouble(request.getParameter("totalParts"));
+        user.setTotalParts(totalParts);
+
+        double downtime = Double.parseDouble(request.getParameter("downtime"));
+        user.setDowntime(downtime);
+
+        double badParts = Double.parseDouble(request.getParameter("badParts"));
+        user.setBadParts(badParts);
+
+        double ribbonChange = Double.parseDouble(request.getParameter("ribbonChange"));
+        user.setRibbonChange(ribbonChange);
+
+        double glueTest = Double.parseDouble(request.getParameter("glueTest"));
+        user.setGlueTest(glueTest);
+
+        double fullSkid = Double.parseDouble(request.getParameter("fullSkid"));
+        user.setFullSkid(fullSkid);
+
+        double trash = Double.parseDouble(request.getParameter("trash"));
+        user.setTrash(trash);
+
+
+
+
+        double credits = ((badParts * 0.002) + (ribbonChange * 0.2) + (glueTest * 0.1) + (fullSkid * 0.15) + (trash * 0.01));
+        user.setCredits(credits);
 
 
 

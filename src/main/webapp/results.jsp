@@ -4,7 +4,7 @@
 <html><body>
 
 <div class="container-fluid">
-    <h2>Search Results: </h2>
+    <h2>Receipt</h2>
     <table>
         <thead>
         <th>Name</th>
@@ -13,7 +13,7 @@
         <tbody>
         <c:forEach var="user" items="${users}">
             <tr>
-                <td>${user.firstName} ${user.lastName} </td>
+                <td>${user.firstName}  </td>
                 <td>
 
                 </td>

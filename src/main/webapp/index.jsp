@@ -15,8 +15,8 @@
 <div class="container">
     <div class="row">
         <h2>Mach Production Form</h2>
-<form name="form"  action="echo" onsubmit="return validateForm()" method="post">
-    <div class="col-md-6">
+<form name="form"  action="echo" onsubmit="return validateForm()" method="get">
+    <div class="col-lg-6">
 
     <fieldset>
         <label>Shift Information</label><br/><br/>
@@ -25,7 +25,7 @@
 
         Shift: <input type="text" name="shift" id="shift" required/><br /><br />
 
-        Employee Id: <input type="text" name="employeeId"required /><br /><br />
+        Employee Id: <input type="text" name="employeeId" required /><br /><br />
 
         First Name: <input type="text" name="firstName" required /><br /><br />
 
@@ -50,19 +50,19 @@
     </fieldset>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-lg-6">
     <fieldset>
         <label>Credits</label><br/><br/>
 
-        Bad Parts: <input type="text" name="badParts" required /><br /><br />
+        Bad Parts: <input type="text" name="badParts" required /> x 0.002<br /><br />
 
-        Ribbon Change: <input type="text" name="ribbonChange" required /><br /><br />
+        Ribbon Change: <input type="text" name="ribbonChange" required /> x 0.200<br /><br />
 
-        Glue Test: <input type="text" name="glueTest" required /><br /><br />
+        Glue Test: <input type="text" name="glueTest" required /> x 0.100<br /><br />
 
-        Full Skid: <input type="text" name="fullSkid" required /><br /><br />
+        Full Skid: <input type="text" name="fullSkid" required /> x 0.150<br /><br />
 
-        Trash: <input type="text" name="trash" required /><br /><br />
+        Trash: <input type="text" name="trash" required /> x 0.005<br /><br />
 
     </fieldset>
 
