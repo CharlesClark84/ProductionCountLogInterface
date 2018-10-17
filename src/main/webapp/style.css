@@ -1,6 +1,9 @@
 form {
     max-width: 50%;
     border-radius: 5px;
+    border: 2px solid grey;
+    background-color: tan;
+
 }
 
 div#credits {
@@ -8,5 +11,10 @@ div#credits {
 }
 
 body {
+    background-image: url("gradient-background.jpg");
+}
 
+div#nav {
+    text-align: center;
+    font-size: 20px;
 }

@@ -88,17 +88,11 @@
             <td>Percentage</td>
             <td>${percentage}</td>
         </tr>
-
-
-
     </table>
 
-
-
-
-
-
 </div>
+
+<a href="index.jsp">I'm Finished</a>
 
 </body>
 </html>

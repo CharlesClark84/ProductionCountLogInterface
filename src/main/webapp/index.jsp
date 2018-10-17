@@ -4,8 +4,21 @@
 
 <html>
 <body>
-<h2><cc:Greeting/></h2>
 
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="index.jsp"><a href="index.jsp">Home</a></li>
+            <li><a href="login.jsp">Login</a></li>
+            <li><a href="newEmployee.jsp">New Employee</a></li>
+            <li><a href="admin.jsp">Administration</a></li>
+        </ul>
+    </div>
+</nav>
 
     <title>User Input Form</title>
 </head>
@@ -13,9 +26,10 @@
 
 
 <div class="container">
-    <div class="row">
+
+        <div class="form-group">
         <h2>Mach Production Form</h2>
-<form name="form"  action="echo" onsubmit="return validateForm()" method="post">
+<div  action="echo" onsubmit="return validateForm()" method="post">
     <div class="col-lg-6">
 
     <fieldset>
@@ -48,9 +62,10 @@
         Downtime: <input type="text" name="downtime" required /><br /><br />
 
     </fieldset>
-    </div>
+    </div></div>
 
     <div class="col-lg-6">
+        <div class="form-group">
     <fieldset>
         <label>Credits</label><br/><br/>
 
@@ -66,8 +81,6 @@
 
     </fieldset>
 
-
-
     <fieldset>
         <label>Shift Comments</label><br/><br/>
         <textarea rows="5" cols="30" name="comment" placeholder="Enter shift comments"></textarea><br/><br/>
@@ -77,7 +90,7 @@
     </div>
 </form>
 
-</div></div>
+    </div></div></div>
 
 </body>
 

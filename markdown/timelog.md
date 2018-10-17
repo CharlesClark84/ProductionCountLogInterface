@@ -36,3 +36,4 @@
 |10/13/18|indieProject work,implemented hibernate and log4j, worked on servlet, database design doc|3|lots to do|
 |10/14/18|indieProject work, POJO, servlet, results.jsp, unit tests|3.5|getting there|
 |10/16/18|Week seven video and activity|2|-|
+|10/16/18|indieproject work, added admin.jsp, login.jsp, newEmployee.jsp, added navigation bar, touched up css on form|1.25|pretty pretty|
