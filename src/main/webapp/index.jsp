@@ -15,7 +15,7 @@
 <div class="container">
     <div class="row">
         <h2>Mach Production Form</h2>
-<form name="form"  action="echo" onsubmit="return validateForm()" method="get">
+<form name="form"  action="echo" onsubmit="return validateForm()" method="post">
     <div class="col-lg-6">
 
     <fieldset>
@@ -32,11 +32,11 @@
         Last Name: <input type="text" name="lastName" required /><br /><br />
 
         Product Name <select name= "productName">
-        <option value="1">213 Air filter</option>
-        <option value="2">410 Air filter</option>
-        <option value="3">413 Air filter</option>
-        <option value="4">501 Air filter</option>
-        <option value="5">513 Air filter</option>
+        <option value="213 Air filter">213 Air filter</option>
+        <option value="410 Air filter">410 Air filter</option>
+        <option value="413 Air filter">413 Air filter</option>
+        <option value="501 Air filter">501 Air filter</option>
+        <option value="513 Air filter">501 Air filter</option>
         </select><br/><br/>
 
         Machine Number: <input type="text" name="machineNumber" required /><br /><br />

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="ProductionCountLogInterface:war exploded">
-    <output-path>$PROJECT_DIR$/target/indieproject</output-path>
+    <output-path>$PROJECT_DIR$/target/ProductionCountLogInterface</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -29,7 +29,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/indieproject/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/ProductionCountLogInterface/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="ProductionCountLogInterface/web/Web" />
     </root>

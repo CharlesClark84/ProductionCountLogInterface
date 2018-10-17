@@ -349,6 +349,23 @@ public class User {
      * @return the product rate
      */
     public double getProductRate() {
+        String prodname = getProductName();
+        if(prodname == "213 Air filter") {
+            productRate = 60;
+        }
+        if(prodname == "410 Air filter") {
+            productRate = 55;
+        }
+        if(prodname == "413 Air filter") {
+            productRate = 50;
+        }
+        if(prodname == "501 Air filter") {
+            productRate = 45;
+        }
+        if(prodname == "513 Air filter") {
+            productRate = 40;
+        }
+
         return productRate;
     }
 

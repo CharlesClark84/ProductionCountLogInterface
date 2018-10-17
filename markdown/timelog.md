@@ -33,5 +33,6 @@
 |10/12/18|Added Front end validation to form on indie project|2|numbers are numbers|
 |10/13/18|Redo AWS|1.25|dont terminate|
 |10/13/18|week six exercise|1.50|-|
-|10/13/18|indieProject work,implemented hibernate and log4j, worked on servlet|3|lots to do|
-|10/14/18|indieProject work, POJO, servlet, results.jsp|2|getting there|
+|10/13/18|indieProject work,implemented hibernate and log4j, worked on servlet, database design doc|3|lots to do|
+|10/14/18|indieProject work, POJO, servlet, results.jsp, unit tests|3.5|getting there|
+|10/16/18|Week seven video and activity|2|-|

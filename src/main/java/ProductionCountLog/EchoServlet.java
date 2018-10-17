@@ -21,7 +21,7 @@ public class EchoServlet extends HttpServlet {
     UserDao userDao = new UserDao();
 
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         // Set the response message's MIME type
         response.setContentType("text/html; charset=UTF-8");
@@ -112,9 +112,11 @@ public class EchoServlet extends HttpServlet {
         request.setAttribute("waste", trash);
         request.setAttribute("comment", comments);
 
-        double percentage = user.getPercentage();
 
+        double percentage = user.getPercentage();
         request.setAttribute("percentage", percentage);
+
+
 
 
 
