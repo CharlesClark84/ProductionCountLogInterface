@@ -393,7 +393,7 @@ public class User {
      * @param percentage the percentage
      */
     public void setPercentage(double percentage) {
-        this.percentage = (getTotalParts() / getBasePay());
+        this.percentage = (getTotalParts() / getBaseRate());
     }
 
     /**

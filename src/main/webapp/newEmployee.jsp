@@ -4,6 +4,21 @@
     <title>New Employee Form</title>
 </head>
 <body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="index.jsp"><a href="index.jsp">Home</a></li>
+            <li><a href="login.jsp">Login</a></li>
+            <li><a href="newEmployee.jsp">New Employee</a></li>
+            <li><a href="admin.jsp">Administration</a></li>
+        </ul>
+    </div>
+</nav>
+
 <h2>Register</h2>
 <FORM ACTION="" METHOD="POST">
         <TR><TD>User name: <INPUT TYPE="TEXT" NAME="newEmployee">

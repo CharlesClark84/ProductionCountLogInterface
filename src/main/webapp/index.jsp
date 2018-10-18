@@ -5,7 +5,6 @@
 <html>
 <body>
 
-
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -20,32 +19,30 @@
     </div>
 </nav>
 
-    <title>User Input Form</title>
-</head>
-
-
-
 <div class="container">
 
-        <div class="form-group">
-        <h2>Mach Production Form</h2>
-<div  action="echo" onsubmit="return validateForm()" method="post">
+
+   <div class="well">
+        <h2 class="center">Mach Production Form</h2>
+<FORM action="echo" onsubmit="return validateForm()" method="post">
+
+    <div class="form-group">
     <div class="col-lg-6">
 
     <fieldset>
         <label>Shift Information</label><br/><br/>
 
-        Date: <input type="date" name="date" id="date" required /><br /><br />
+        <label class="control-label">Date:</label> <input class="form-control" type="date" name="date" id="date" required /><br /><br />
 
-        Shift: <input type="text" name="shift" id="shift" required/><br /><br />
+        <label class="control-label">Shift:</label> <input class="form-control" type="text" name="shift" id="shift" required/><br /><br />
 
-        Employee Id: <input type="text" name="employeeId" required /><br /><br />
+        <label class="control-label">Employee Id</label>: <input class="form-control" type="text" name="employeeId" required /><br /><br />
 
-        First Name: <input type="text" name="firstName" required /><br /><br />
+        <label class="control-label">First Name:</label> <input class="form-control" type="text" name="firstName" required /><br /><br />
 
-        Last Name: <input type="text" name="lastName" required /><br /><br />
+        <label class="control-label">Last Name:</label> <input class="form-control" type="text" name="lastName" required /><br /><br />
 
-        Product Name <select name= "productName">
+        <label class="control-label">Product Name</label> <select class="form-control" name= "productName">
         <option value="213 Air filter">213 Air filter</option>
         <option value="410 Air filter">410 Air filter</option>
         <option value="413 Air filter">413 Air filter</option>
@@ -53,45 +50,43 @@
         <option value="513 Air filter">501 Air filter</option>
         </select><br/><br/>
 
-        Machine Number: <input type="text" name="machineNumber" required /><br /><br />
+        <label class="control-label">Machine Number:</label> <input class="form-control" type="text" name="machineNumber" required /><br /><br />
 
-        Hours Worked: <input type="text" name="hoursWorked" required /><br /><br />
+        <label class="control-label">Hours Worked:</label> <input class="form-control" type="text" name="hoursWorked" required /><br /><br />
 
-        Total Parts: <input type="text" name="totalParts" required /><br /><br />
+        <label class="control-label">Total Parts:</label> <input class="form-control" type="text" name="totalParts" required /><br /><br />
 
-        Downtime: <input type="text" name="downtime" required /><br /><br />
-
-    </fieldset>
-    </div></div>
+    </fieldset></div>
 
     <div class="col-lg-6">
         <div class="form-group">
+
     <fieldset>
         <label>Credits</label><br/><br/>
 
-        Bad Parts: <input type="text" name="badParts" required /> x 0.002<br /><br />
+        <label class="control-label">Downtime:</label> <input class="form-control" type="text" name="downtime" required /><br /><br />
 
-        Ribbon Change: <input type="text" name="ribbonChange" required /> x 0.200<br /><br />
+        <label class="control-label">Bad Parts:</label> <input class="form-control" type="text" name="badParts" required /> x 0.002<br /><br />
 
-        Glue Test: <input type="text" name="glueTest" required /> x 0.100<br /><br />
+        <label class="control-label">Ribbon Change:</label> <input class="form-control" type="text" name="ribbonChange" required /> x 0.200<br /><br />
 
-        Full Skid: <input type="text" name="fullSkid" required /> x 0.150<br /><br />
+        <label class="control-label">Glue Test:</label> <input class="form-control"type="text" name="glueTest" required /> x 0.100<br /><br />
 
-        Trash: <input type="text" name="trash" required /> x 0.005<br /><br />
+        <label class="control-label">Full Skid:</label> <input class="form-control" type="text" name="fullSkid" required /> x 0.150<br /><br />
+
+        <label class="control-label">Trash:</label> <input class="form-control" type="text" name="trash" required /> x 0.005<br /><br />
 
     </fieldset>
 
     <fieldset>
         <label>Shift Comments</label><br/><br/>
-        <textarea rows="5" cols="30" name="comment" placeholder="Enter shift comments"></textarea><br/><br/>
+        <textarea rows="5" cols="30" name="comment" class="form-control" placeholder="Enter shift comments"></textarea><br/><br/>
     </fieldset>
-        <input type="submit" class="btn btn-success btn-send" value="Submit">
+            <input type="submit" class="btn btn-success btn-send" value="Submit">
         <input type="reset" value="Clear" />
-    </div>
-</form>
-
-    </div></div></div>
+        </div></div></div>
+</FORM>
+   </div></div></div>
 
 </body>
-
 </html>

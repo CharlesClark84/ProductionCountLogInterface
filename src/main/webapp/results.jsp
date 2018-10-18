@@ -1,13 +1,13 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
 
-<html><body>
+<html><body text-align="center">
 
 <div class="container-fluid">
     <h2>Receipt</h2><br/><br/>
     
 
-    <table border="1" cellpadding="5" cellspacing="5" width="50%">
+    <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto">
 
         <tr>
             <td>Date</td>
@@ -80,6 +80,11 @@
         </tr>
 
         <tr>
+            <td>Credits</td>
+            <td>${credit}</td>
+        </tr>
+
+        <tr>
             <td>Comments</td>
             <td>${comment}</td>
         </tr>
@@ -88,6 +93,33 @@
             <td>Percentage</td>
             <td>${percentage}</td>
         </tr>
+
+        <tr>
+            <td>Base Rate</td>
+            <td>${baserate}</td>
+        </tr>
+
+        <tr>
+            <td>Hours Earned</td>
+            <td>${hoursE}</td>
+        </tr>
+
+
+        <tr>
+            <td>Total Hours</td>
+            <td>${totalHours}</td>
+        </tr>
+
+        <tr>
+            <td>Daily $ Amount</td>
+            <td>${day$}</td>
+        </tr>
+
+        <tr>
+            <td>Hourly $ Amount</td>
+            <td>${hourly$}</td>
+        </tr>
+
     </table>
 
 </div>

@@ -111,13 +111,26 @@ public class EchoServlet extends HttpServlet {
         request.setAttribute("full", fullSkid);
         request.setAttribute("waste", trash);
         request.setAttribute("comment", comments);
+        request.setAttribute("credit", credits);
 
 
         double percentage = user.getPercentage();
         request.setAttribute("percentage", percentage);
 
+        double baseRate = user.getBaseRate();
+        request.setAttribute("baserate", baseRate);
 
+        double hoursEarned = user.getHoursEarned();
+        request.setAttribute("hoursE", hoursEarned);
 
+        double total = user.getTotalHours();
+        request.setAttribute("totalHours", total);
+
+        double day = user.getDay$();
+        request.setAttribute("day$", day);
+
+        double hourly = user.getHourly$();
+        request.setAttribute("hourly$", hourly);
 
 
         //Forward result to jsp

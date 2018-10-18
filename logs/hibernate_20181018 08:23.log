@@ -1,0 +1,577 @@
+[DEBUG] 2018-10-18 08:23:43.803 [http-nio-8080-exec-3] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2018-10-18 08:23:43.811 [http-nio-8080-exec-3] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2018-10-18 08:23:43.820 [http-nio-8080-exec-3] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2018-10-18 08:23:44.139 [http-nio-8080-exec-3] Version - HHH000412: Hibernate Core {5.2.12.Final}
+[INFO ] 2018-10-18 08:23:44.141 [http-nio-8080-exec-3] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2018-10-18 08:23:44.273 [http-nio-8080-exec-3] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2018-10-18 08:23:44.274 [http-nio-8080-exec-3] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2018-10-18 08:23:44.314 [http-nio-8080-exec-3] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2018-10-18 08:23:44.763 [http-nio-8080-exec-3] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2018-10-18 08:23:44.897 [http-nio-8080-exec-3] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2018-10-18 08:23:44.948 [http-nio-8080-exec-3] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[DEBUG] 2018-10-18 08:23:45.095 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@55e0bea1
+[DEBUG] 2018-10-18 08:23:45.098 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@55e0bea1
+[DEBUG] 2018-10-18 08:23:45.098 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@55e0bea1
+[DEBUG] 2018-10-18 08:23:45.099 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6e87f14
+[DEBUG] 2018-10-18 08:23:45.109 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@4bc9b2a5
+[DEBUG] 2018-10-18 08:23:45.112 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1c33e240
+[DEBUG] 2018-10-18 08:23:45.123 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1696f6e3
+[DEBUG] 2018-10-18 08:23:45.123 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1696f6e3
+[DEBUG] 2018-10-18 08:23:45.123 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1696f6e3
+[DEBUG] 2018-10-18 08:23:45.136 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@5d20295a
+[DEBUG] 2018-10-18 08:23:45.137 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@5d20295a
+[DEBUG] 2018-10-18 08:23:45.137 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@5d20295a
+[DEBUG] 2018-10-18 08:23:45.139 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@75398d13
+[DEBUG] 2018-10-18 08:23:45.139 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@75398d13
+[DEBUG] 2018-10-18 08:23:45.140 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@75398d13
+[DEBUG] 2018-10-18 08:23:45.141 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@689d094f
+[DEBUG] 2018-10-18 08:23:45.141 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@689d094f
+[DEBUG] 2018-10-18 08:23:45.141 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@689d094f
+[DEBUG] 2018-10-18 08:23:45.142 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@47f3a3b9
+[DEBUG] 2018-10-18 08:23:45.142 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@47f3a3b9
+[DEBUG] 2018-10-18 08:23:45.142 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@47f3a3b9
+[DEBUG] 2018-10-18 08:23:45.153 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@3da6558
+[DEBUG] 2018-10-18 08:23:45.153 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@3da6558
+[DEBUG] 2018-10-18 08:23:45.153 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3da6558
+[DEBUG] 2018-10-18 08:23:45.154 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7d2e4f19
+[DEBUG] 2018-10-18 08:23:45.154 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7d2e4f19
+[DEBUG] 2018-10-18 08:23:45.164 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7d2e4f19
+[DEBUG] 2018-10-18 08:23:45.169 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4d335018
+[DEBUG] 2018-10-18 08:23:45.169 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4d335018
+[DEBUG] 2018-10-18 08:23:45.170 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@5a7756d8
+[DEBUG] 2018-10-18 08:23:45.170 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@5a7756d8
+[DEBUG] 2018-10-18 08:23:45.175 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@5d7ea6b4
+[DEBUG] 2018-10-18 08:23:45.176 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@5d7ea6b4
+[DEBUG] 2018-10-18 08:23:45.177 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2fa6f53e
+[DEBUG] 2018-10-18 08:23:45.184 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3e9f7df9
+[DEBUG] 2018-10-18 08:23:45.186 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@6443c3aa
+[DEBUG] 2018-10-18 08:23:45.186 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6443c3aa
+[DEBUG] 2018-10-18 08:23:45.188 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@523523c3
+[DEBUG] 2018-10-18 08:23:45.188 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@523523c3
+[DEBUG] 2018-10-18 08:23:45.237 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@14c2ecd4
+[DEBUG] 2018-10-18 08:23:45.237 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@14c2ecd4
+[DEBUG] 2018-10-18 08:23:45.239 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@74eb296f
+[DEBUG] 2018-10-18 08:23:45.240 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@74eb296f
+[DEBUG] 2018-10-18 08:23:45.242 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@3d0cfd26
+[DEBUG] 2018-10-18 08:23:45.242 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@3d0cfd26
+[DEBUG] 2018-10-18 08:23:45.244 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3ca43d7d
+[DEBUG] 2018-10-18 08:23:45.244 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3ca43d7d
+[DEBUG] 2018-10-18 08:23:45.245 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7b637e04
+[DEBUG] 2018-10-18 08:23:45.245 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7b637e04
+[DEBUG] 2018-10-18 08:23:45.246 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@4a67a47f
+[DEBUG] 2018-10-18 08:23:45.247 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@4a67a47f
+[DEBUG] 2018-10-18 08:23:45.255 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3cfb724f
+[DEBUG] 2018-10-18 08:23:45.255 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3cfb724f
+[DEBUG] 2018-10-18 08:23:45.258 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@781e5736
+[DEBUG] 2018-10-18 08:23:45.258 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@781e5736
+[DEBUG] 2018-10-18 08:23:45.259 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@6ae27d36
+[DEBUG] 2018-10-18 08:23:45.259 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@6ae27d36
+[DEBUG] 2018-10-18 08:23:45.260 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@584eed84
+[DEBUG] 2018-10-18 08:23:45.260 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@584eed84
+[DEBUG] 2018-10-18 08:23:45.260 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@584eed84
+[DEBUG] 2018-10-18 08:23:45.262 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@68a19e29
+[DEBUG] 2018-10-18 08:23:45.264 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@22e3fc4a
+[DEBUG] 2018-10-18 08:23:45.264 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@22e3fc4a
+[DEBUG] 2018-10-18 08:23:45.264 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@22e3fc4a
+[DEBUG] 2018-10-18 08:23:45.265 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1850a89d
+[DEBUG] 2018-10-18 08:23:45.268 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@55f7dc2b
+[DEBUG] 2018-10-18 08:23:45.274 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@55f7dc2b
+[DEBUG] 2018-10-18 08:23:45.276 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@4ac356b7
+[DEBUG] 2018-10-18 08:23:45.277 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4ac356b7
+[DEBUG] 2018-10-18 08:23:45.285 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6af8ba0e
+[DEBUG] 2018-10-18 08:23:45.286 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6af8ba0e
+[DEBUG] 2018-10-18 08:23:45.287 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@5767a20a
+[DEBUG] 2018-10-18 08:23:45.287 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5767a20a
+[DEBUG] 2018-10-18 08:23:45.290 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@62d3cfbc
+[DEBUG] 2018-10-18 08:23:45.290 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@62d3cfbc
+[DEBUG] 2018-10-18 08:23:45.291 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@499ab686
+[DEBUG] 2018-10-18 08:23:45.293 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@47b9a5ca
+[DEBUG] 2018-10-18 08:23:45.294 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@47b9a5ca
+[DEBUG] 2018-10-18 08:23:45.294 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@47b9a5ca
+[DEBUG] 2018-10-18 08:23:45.299 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@e6fdac6
+[DEBUG] 2018-10-18 08:23:45.299 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@e6fdac6
+[DEBUG] 2018-10-18 08:23:45.299 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@e6fdac6
+[DEBUG] 2018-10-18 08:23:45.304 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@473fa42f
+[DEBUG] 2018-10-18 08:23:45.305 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@5872191f
+[DEBUG] 2018-10-18 08:23:45.311 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@12dbe2f1
+[DEBUG] 2018-10-18 08:23:45.312 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@12dbe2f1
+[DEBUG] 2018-10-18 08:23:45.312 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@12dbe2f1
+[DEBUG] 2018-10-18 08:23:45.313 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@35fb1828
+[DEBUG] 2018-10-18 08:23:45.313 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@35fb1828
+[DEBUG] 2018-10-18 08:23:45.313 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@35fb1828
+[DEBUG] 2018-10-18 08:23:45.320 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@1bd01ea
+[DEBUG] 2018-10-18 08:23:45.321 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@27d8ac50
+[DEBUG] 2018-10-18 08:23:45.340 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@64a4f0f4
+[DEBUG] 2018-10-18 08:23:45.341 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@64a4f0f4
+[DEBUG] 2018-10-18 08:23:45.341 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@4a2e8f26
+[DEBUG] 2018-10-18 08:23:45.346 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@7239d38b
+[DEBUG] 2018-10-18 08:23:45.346 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@7239d38b
+[DEBUG] 2018-10-18 08:23:45.350 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@16cb3e20
+[DEBUG] 2018-10-18 08:23:45.350 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@16cb3e20
+[DEBUG] 2018-10-18 08:23:45.350 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3d608372
+[DEBUG] 2018-10-18 08:23:45.351 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3a3a50ae
+[DEBUG] 2018-10-18 08:23:45.363 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@fc864e2
+[DEBUG] 2018-10-18 08:23:45.372 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@dacd31b
+[DEBUG] 2018-10-18 08:23:45.372 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@dacd31b
+[DEBUG] 2018-10-18 08:23:45.374 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@213c7fc4
+[DEBUG] 2018-10-18 08:23:45.374 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4ae344f3
+[DEBUG] 2018-10-18 08:23:45.374 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@58f7d2ef
+[DEBUG] 2018-10-18 08:23:45.375 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7ceaf3f6
+[DEBUG] 2018-10-18 08:23:45.375 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3eea71f0
+[DEBUG] 2018-10-18 08:23:45.375 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6efe6e02
+[DEBUG] 2018-10-18 08:23:45.375 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@878b998
+[DEBUG] 2018-10-18 08:23:45.375 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@23a68e22
+[INFO ] 2018-10-18 08:23:45.397 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/indieProject
+[INFO ] 2018-10-18 08:23:45.398 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH10001001: Connection properties: {user=root, password=****}
+[INFO ] 2018-10-18 08:23:45.398 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2018-10-18 08:23:46.000 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2018-10-18 08:23:47.015 [http-nio-8080-exec-3] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.7.23-0ubuntu0.16.04.1
+      major : 5
+      minor : 7
+[DEBUG] 2018-10-18 08:23:47.020 [http-nio-8080-exec-3] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.39 ( Revision: 3289a357af6d09ecc1a10fd3c26e95183e5790ad )
+      major : 5
+      minor : 1
+[DEBUG] 2018-10-18 08:23:47.020 [http-nio-8080-exec-3] JdbcEnvironmentInitiator - JDBC version : 4.0
+[INFO ] 2018-10-18 08:23:47.061 [http-nio-8080-exec-3] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[DEBUG] 2018-10-18 08:23:47.229 [http-nio-8080-exec-3] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2018-10-18 08:23:47.234 [http-nio-8080-exec-3] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2018-10-18 08:23:47.369 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2018-10-18 08:23:47.369 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2018-10-18 08:23:47.370 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2018-10-18 08:23:47.370 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2018-10-18 08:23:47.375 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2018-10-18 08:23:47.377 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2018-10-18 08:23:47.378 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2018-10-18 08:23:47.379 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2018-10-18 08:23:47.383 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2018-10-18 08:23:47.384 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2018-10-18 08:23:47.386 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2018-10-18 08:23:47.388 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2018-10-18 08:23:47.389 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2018-10-18 08:23:47.390 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[DEBUG] 2018-10-18 08:23:47.513 [http-nio-8080-exec-3] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2018-10-18 08:23:47.601 [http-nio-8080-exec-3] AnnotationBinder - Binding entity from annotated class: ProductionCountLog.User
+[DEBUG] 2018-10-18 08:23:47.687 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2018-10-18 08:23:47.710 [http-nio-8080-exec-3] EntityBinder - Import with entity name User
+[DEBUG] 2018-10-18 08:23:47.721 [http-nio-8080-exec-3] EntityBinder - Bind entity ProductionCountLog.User on table user
+[DEBUG] 2018-10-18 08:23:47.852 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.862 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2018-10-18 08:23:47.873 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:id]
+[DEBUG] 2018-10-18 08:23:47.878 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2018-10-18 08:23:47.883 [http-nio-8080-exec-3] PropertyBinder - Building property id
+[DEBUG] 2018-10-18 08:23:47.904 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=credits, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.904 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property credits with lazy=false
+[DEBUG] 2018-10-18 08:23:47.908 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:credits]
+[DEBUG] 2018-10-18 08:23:47.908 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for credits
+[DEBUG] 2018-10-18 08:23:47.909 [http-nio-8080-exec-3] PropertyBinder - Building property credits
+[DEBUG] 2018-10-18 08:23:47.909 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=date, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.911 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property date with lazy=false
+[DEBUG] 2018-10-18 08:23:47.911 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:date]
+[DEBUG] 2018-10-18 08:23:47.911 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for date
+[DEBUG] 2018-10-18 08:23:47.911 [http-nio-8080-exec-3] PropertyBinder - Building property date
+[DEBUG] 2018-10-18 08:23:47.912 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=downtime, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.912 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property downtime with lazy=false
+[DEBUG] 2018-10-18 08:23:47.912 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:downtime]
+[DEBUG] 2018-10-18 08:23:47.912 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for downtime
+[DEBUG] 2018-10-18 08:23:47.912 [http-nio-8080-exec-3] PropertyBinder - Building property downtime
+[DEBUG] 2018-10-18 08:23:47.913 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=employee_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.913 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property employeeId with lazy=false
+[DEBUG] 2018-10-18 08:23:47.913 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:employeeId]
+[DEBUG] 2018-10-18 08:23:47.913 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for employeeId
+[DEBUG] 2018-10-18 08:23:47.913 [http-nio-8080-exec-3] PropertyBinder - Building property employeeId
+[DEBUG] 2018-10-18 08:23:47.913 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.913 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2018-10-18 08:23:47.915 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:firstName]
+[DEBUG] 2018-10-18 08:23:47.915 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2018-10-18 08:23:47.915 [http-nio-8080-exec-3] PropertyBinder - Building property firstName
+[DEBUG] 2018-10-18 08:23:47.916 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=hours_worked, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.916 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property hoursWorked with lazy=false
+[DEBUG] 2018-10-18 08:23:47.916 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:hoursWorked]
+[DEBUG] 2018-10-18 08:23:47.916 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for hoursWorked
+[DEBUG] 2018-10-18 08:23:47.916 [http-nio-8080-exec-3] PropertyBinder - Building property hoursWorked
+[DEBUG] 2018-10-18 08:23:47.916 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.918 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2018-10-18 08:23:47.918 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:lastName]
+[DEBUG] 2018-10-18 08:23:47.918 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2018-10-18 08:23:47.918 [http-nio-8080-exec-3] PropertyBinder - Building property lastName
+[DEBUG] 2018-10-18 08:23:47.920 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=machine_number, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.920 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property machineNumber with lazy=false
+[DEBUG] 2018-10-18 08:23:47.920 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:machineNumber]
+[DEBUG] 2018-10-18 08:23:47.920 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for machineNumber
+[DEBUG] 2018-10-18 08:23:47.920 [http-nio-8080-exec-3] PropertyBinder - Building property machineNumber
+[DEBUG] 2018-10-18 08:23:47.920 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=product_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.920 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property productName with lazy=false
+[DEBUG] 2018-10-18 08:23:47.921 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:productName]
+[DEBUG] 2018-10-18 08:23:47.921 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for productName
+[DEBUG] 2018-10-18 08:23:47.921 [http-nio-8080-exec-3] PropertyBinder - Building property productName
+[DEBUG] 2018-10-18 08:23:47.921 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=shift, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.926 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property shift with lazy=false
+[DEBUG] 2018-10-18 08:23:47.926 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:shift]
+[DEBUG] 2018-10-18 08:23:47.927 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for shift
+[DEBUG] 2018-10-18 08:23:47.927 [http-nio-8080-exec-3] PropertyBinder - Building property shift
+[DEBUG] 2018-10-18 08:23:47.927 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=total_parts, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-18 08:23:47.927 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property totalParts with lazy=false
+[DEBUG] 2018-10-18 08:23:47.927 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ProductionCountLog.User:totalParts]
+[DEBUG] 2018-10-18 08:23:47.927 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for totalParts
+[DEBUG] 2018-10-18 08:23:47.927 [http-nio-8080-exec-3] PropertyBinder - Building property totalParts
+[DEBUG] 2018-10-18 08:23:47.929 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2018-10-18 08:23:47.930 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for credits
+[DEBUG] 2018-10-18 08:23:47.932 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for date
+[DEBUG] 2018-10-18 08:23:47.932 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for downtime
+[DEBUG] 2018-10-18 08:23:47.932 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for employeeId
+[DEBUG] 2018-10-18 08:23:47.932 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2018-10-18 08:23:47.932 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for hoursWorked
+[DEBUG] 2018-10-18 08:23:47.932 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2018-10-18 08:23:47.932 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for machineNumber
+[DEBUG] 2018-10-18 08:23:47.932 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for productName
+[DEBUG] 2018-10-18 08:23:47.934 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for shift
+[DEBUG] 2018-10-18 08:23:47.934 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for totalParts
+[DEBUG] 2018-10-18 08:23:47.937 [http-nio-8080-exec-3] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2018-10-18 08:23:48.080 [http-nio-8080-exec-3] SessionFactoryImpl - Building session factory
+[DEBUG] 2018-10-18 08:23:48.087 [http-nio-8080-exec-3] Settings - SessionFactory name : null
+[DEBUG] 2018-10-18 08:23:48.087 [http-nio-8080-exec-3] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2018-10-18 08:23:48.087 [http-nio-8080-exec-3] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2018-10-18 08:23:48.087 [http-nio-8080-exec-3] Settings - Statistics: disabled
+[DEBUG] 2018-10-18 08:23:48.087 [http-nio-8080-exec-3] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2018-10-18 08:23:48.087 [http-nio-8080-exec-3] Settings - Default entity-mode: pojo
+[DEBUG] 2018-10-18 08:23:48.087 [http-nio-8080-exec-3] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2018-10-18 08:23:48.087 [http-nio-8080-exec-3] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2018-10-18 08:23:48.088 [http-nio-8080-exec-3] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2018-10-18 08:23:48.088 [http-nio-8080-exec-3] Settings - Default batch fetch size: -1
+[DEBUG] 2018-10-18 08:23:48.088 [http-nio-8080-exec-3] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2018-10-18 08:23:48.088 [http-nio-8080-exec-3] Settings - Default null ordering: NONE
+[DEBUG] 2018-10-18 08:23:48.088 [http-nio-8080-exec-3] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2018-10-18 08:23:48.091 [http-nio-8080-exec-3] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2018-10-18 08:23:48.091 [http-nio-8080-exec-3] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2018-10-18 08:23:48.091 [http-nio-8080-exec-3] Settings - JTA Track by Thread: enabled
+[DEBUG] 2018-10-18 08:23:48.091 [http-nio-8080-exec-3] Settings - Query language substitutions: {}
+[DEBUG] 2018-10-18 08:23:48.091 [http-nio-8080-exec-3] Settings - JPA query language strict compliance: disabled
+[DEBUG] 2018-10-18 08:23:48.093 [http-nio-8080-exec-3] Settings - Named query checking : enabled
+[DEBUG] 2018-10-18 08:23:48.093 [http-nio-8080-exec-3] Settings - Second-level cache: enabled
+[DEBUG] 2018-10-18 08:23:48.093 [http-nio-8080-exec-3] Settings - Second-level query cache: disabled
+[DEBUG] 2018-10-18 08:23:48.093 [http-nio-8080-exec-3] Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@73882d7a
+[DEBUG] 2018-10-18 08:23:48.094 [http-nio-8080-exec-3] Settings - Second-level cache region prefix: null
+[DEBUG] 2018-10-18 08:23:48.094 [http-nio-8080-exec-3] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2018-10-18 08:23:48.094 [http-nio-8080-exec-3] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2018-10-18 08:23:48.094 [http-nio-8080-exec-3] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2018-10-18 08:23:48.095 [http-nio-8080-exec-3] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2018-10-18 08:23:48.095 [http-nio-8080-exec-3] Settings - JDBC batch size: 15
+[DEBUG] 2018-10-18 08:23:48.096 [http-nio-8080-exec-3] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2018-10-18 08:23:48.096 [http-nio-8080-exec-3] Settings - Scrollable result sets: enabled
+[DEBUG] 2018-10-18 08:23:48.096 [http-nio-8080-exec-3] Settings - Wrap result sets: disabled
+[DEBUG] 2018-10-18 08:23:48.096 [http-nio-8080-exec-3] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2018-10-18 08:23:48.096 [http-nio-8080-exec-3] Settings - JDBC result set fetch size: null
+[DEBUG] 2018-10-18 08:23:48.096 [http-nio-8080-exec-3] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2018-10-18 08:23:48.096 [http-nio-8080-exec-3] Settings - Generate SQL with comments: disabled
+[DEBUG] 2018-10-18 08:23:48.315 [http-nio-8080-exec-3] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2018-10-18 08:23:48.316 [http-nio-8080-exec-3] SessionFactoryImpl - Instantiating session factory with properties: {awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=1.8, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, sun.arch.data.model=64, catalina.useNaming=true, java.vendor.url=http://java.oracle.com/, openejb.provider.default=org.apache.tomee, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, com.sun.management.jmxremote.ssl=false, sun.java.command=org.apache.catalina.startup.Bootstrap start, java.specification.vendor=Oracle Corporation, openejb.embedder.source=ServerListener, java.naming.factory.url.pkgs=org.apache.naming:org.apache.openejb.core.ivm.naming, java.home=/usr/lib/jvm/java-8-oracle/jre, file.separator=/, line.separator=
+, hibernate.c3p0.timeout=300, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., openejb.deployments.classpath.filter.systemapps=false, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, jdk.tls.ephemeralDHKeySize=2048, java.util.logging.config.file=/home/student/.IntelliJIdea2017.3/system/tomcat/Unnamed_ProductionCountLogInterface_2/conf/logging.properties, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_144-b01, user.name=student, org.apache.johnzon.max-string-length=8192, file.encoding=UTF-8, derby.system.home=/home/student/tomcat/bin, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.io.tmpdir=/home/student/tomcat/temp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-core*.jar,log4j-taglib*.jar,log4javascript*.jar,slf4j-taglib*.jar, com.sun.management.jmxremote.port=1099, java.version=1.8.0_144, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=bootstrap.jar,commons-daemon.jar,tomcat-juli.jar,annotations-api.jar,el-api.jar,jsp-api.jar,servlet-api.jar,websocket-api.jar,jaspic-api.jar,catalina.jar,catalina-ant.jar,catalina-ha.jar,catalina-storeconfig.jar,catalina-tribes.jar,jasper.jar,jasper-el.jar,ecj-*.jar,tomcat-api.jar,tomcat-util.jar,tomcat-util-scan.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-jni.jar,tomcat-websocket.jar,tomcat-i18n-en.jar,tomcat-i18n-es.jar,tomcat-i18n-fr.jar,tomcat-i18n-ja.jar,tomcat-juli-adapters.jar,catalina-jmx-remote.jar,catalina-ws.jar,tomcat-jdbc.jar,tools.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,jstl.jar,taglibs-standard-spec-*.jar,geronimo-spec-jaxrpc*.jar,wsdl4j*.jar,ant.jar,ant-junit*.jar,aspectj*.jar,jmx.jar,h2*.jar,hibernate*.jar,httpclient*.jar,jmx-tools.jar,jta*.jar,log4j*.jar,mail*.jar,slf4j*.jar,xercesImpl.jar,xmlParserAPIs.jar,xml-apis.jar,junit.jar,junit-*.jar,ant-launcher.jar,cobertura-*.jar,asm-*.jar,dom4j-*.jar,icu4j-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,oro-*.jar,servlet-api-*.jar,tagsoup-*.jar,xmlParserAPIs-*.jar,xom-*.jar, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, sun.os.patch.level=unknown, connection.driver_class=com.mysql.jdbc.Driver, tomcat.built=Jun 9 2016 11:16:29 UTC, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor=Oracle Corporation, tomee.version=7.0.1, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.buf.StringCache.byte.enabled=true, sun.desktop=gnome, file.encoding.pkg=sun.io, com.sun.management.jmxremote.authenticate=false, java.class.path=/home/student/tomcat/bin/bootstrap.jar:/home/student/tomcat/bin/tomcat-juli.jar:/home/student/tomcat/lib/openejb-javaagent.jar, tomcat.version=8.5.3.0, java.vm.vendor=Oracle Corporation, openejb.home=/home/student/tomcat, openejb.system.apps=true, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=1.8, sun.java.launcher=SUN_STANDARD, user.country=US, openejb.base=/home/student/.IntelliJIdea2017.3/system/tomcat/Unnamed_ProductionCountLogInterface_2, com.sun.management.jmxremote=, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, openejb.deployments.classpath=false, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., openejb.loader=tomcat-system, server.loader=, hibernate.c3p0.max_size=20, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, org.apache.openejb.core.security.JaccProvider=org.apache.openejb.core.security.jacc.BasicJaccProvider, path.separator=:, hibernate.connection.username=root, common.loader="/home/student/tomcat/lib","/home/student/tomcat/lib/*.jar","/home/student/tomcat/lib","/home/student/tomcat/lib/*.jar", openejb.java9.hack=false, os.version=4.4.0-57-generic, openejb.version=7.0.1, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, org.apache.security.jacc.EJBMethodPermission.methodInterfaces=BusinessLocalHome,BusinessRemoteHome,BusinessRemote,BusinessLocal, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/indieProject, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, tomee.remote.support=true, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, catalina.home=/home/student/tomcat, bval.in-container=true, user.dir=/home/student/tomcat/bin, os.arch=amd64, openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory, hibernate.connection.password=****, tomee.serialization.class.blacklist=-, tomee.serialization.class.whitelist=, catalina.base=/home/student/.IntelliJIdea2017.3/system/tomcat/Unnamed_ProductionCountLogInterface_2, shared.loader=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@481bceb6, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, noBanner=true, org.apache.webbeans.logger.WebBeansLoggerFacade=org.apache.openejb.cdi.logging.ContainerJULLoggerFactory, java.vm.info=mixed mode, java.vm.version=25.144-b01, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.hostname=127.0.0.1, javax.security.jacc.PolicyConfigurationFactory.provider=org.apache.openejb.core.security.JaccProvider$Factory, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, connection.url=jdbc:mysql://localhost:3306/indieProject, java.class.version=52.0, authconfigprovider.factory=false}
+[DEBUG] 2018-10-18 08:23:48.386 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [ProductionCountLog.User] is safe
+[DEBUG] 2018-10-18 08:23:48.386 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ProductionCountLog.User
+[DEBUG] 2018-10-18 08:23:48.456 [http-nio-8080-exec-3] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2018-10-18 08:23:48.478 [http-nio-8080-exec-3] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2018-10-18 08:23:48.621 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [ProductionCountLog.User] is safe
+[DEBUG] 2018-10-18 08:23:48.624 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ProductionCountLog.User
+[DEBUG] 2018-10-18 08:23:48.676 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [ProductionCountLog.User] is safe
+[DEBUG] 2018-10-18 08:23:48.676 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ProductionCountLog.User
+[DEBUG] 2018-10-18 08:23:48.962 [http-nio-8080-exec-3] AbstractEntityPersister - Static SQL for entity: ProductionCountLog.User
+[DEBUG] 2018-10-18 08:23:48.962 [http-nio-8080-exec-3] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2018-10-18 08:23:48.962 [http-nio-8080-exec-3] AbstractEntityPersister -  Snapshot select: select user_.id, user_.credits as credits2_0_, user_.date as date3_0_, user_.downtime as downtime4_0_, user_.employee_id as employee5_0_, user_.first_name as first_na6_0_, user_.hours_worked as hours_wo7_0_, user_.last_name as last_nam8_0_, user_.machine_number as machine_9_0_, user_.product_name as product10_0_, user_.shift as shift11_0_, user_.total_parts as total_p12_0_ from user user_ where user_.id=?
+[DEBUG] 2018-10-18 08:23:48.962 [http-nio-8080-exec-3] AbstractEntityPersister -  Insert 0: insert into user (credits, date, downtime, employee_id, first_name, hours_worked, last_name, machine_number, product_name, shift, total_parts, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-10-18 08:23:48.962 [http-nio-8080-exec-3] AbstractEntityPersister -  Update 0: update user set credits=?, date=?, downtime=?, employee_id=?, first_name=?, hours_worked=?, last_name=?, machine_number=?, product_name=?, shift=?, total_parts=? where id=?
+[DEBUG] 2018-10-18 08:23:48.962 [http-nio-8080-exec-3] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2018-10-18 08:23:48.962 [http-nio-8080-exec-3] AbstractEntityPersister -  Identity insert: insert into user (credits, date, downtime, employee_id, first_name, hours_worked, last_name, machine_number, product_name, shift, total_parts) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-10-18 08:23:49.155 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3967178c]
+[DEBUG] 2018-10-18 08:23:49.160 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.160 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.160 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.160 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.160 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.161 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.161 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.161 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.161 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.161 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.161 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.161 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.196 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.213 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.219 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [NONE]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-10-18 08:23:49.224 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@26ef5695]
+[DEBUG] 2018-10-18 08:23:49.224 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.224 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.224 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.224 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.224 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.224 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.224 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.227 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.227 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.227 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.227 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.227 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.228 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.229 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.229 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [READ]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-10-18 08:23:49.229 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4c0cb0ed]
+[DEBUG] 2018-10-18 08:23:49.229 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.230 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.231 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.231 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.231 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.231 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.231 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.231 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.231 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.231 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.231 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.233 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.233 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.233 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [UPGRADE]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e839cdf]
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.236 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.237 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.237 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.237 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.237 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [UPGRADE_NOWAIT]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6c6d2cfc]
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.240 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.244 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.244 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.244 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.244 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.244 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.245 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.245 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.245 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [UPGRADE_SKIPLOCKED]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-10-18 08:23:49.245 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@d025bd3]
+[DEBUG] 2018-10-18 08:23:49.245 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.245 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.245 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.245 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.245 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.246 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.246 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.246 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.246 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.246 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.246 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.246 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.248 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.248 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.248 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [FORCE]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-10-18 08:23:49.249 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@36c799bd]
+[DEBUG] 2018-10-18 08:23:49.249 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.249 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.249 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.249 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.249 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.252 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.253 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.253 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.254 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.254 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.254 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.254 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.254 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.254 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.254 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [PESSIMISTIC_READ]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=? lock in share mode
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6c78a09d]
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.255 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.265 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.265 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [PESSIMISTIC_WRITE]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-10-18 08:23:49.265 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@170e2bf2]
+[DEBUG] 2018-10-18 08:23:49.265 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.265 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.265 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.265 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.265 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.265 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-10-18 08:23:49.266 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@10415fef]
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.267 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.272 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [OPTIMISTIC]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-10-18 08:23:49.272 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@190b01fd]
+[DEBUG] 2018-10-18 08:23:49.272 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : credits
+[DEBUG] 2018-10-18 08:23:49.272 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2018-10-18 08:23:49.274 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : downtime
+[DEBUG] 2018-10-18 08:23:49.274 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : employeeId
+[DEBUG] 2018-10-18 08:23:49.274 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-18 08:23:49.274 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : hoursWorked
+[DEBUG] 2018-10-18 08:23:49.274 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-18 08:23:49.274 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : machineNumber
+[DEBUG] 2018-10-18 08:23:49.274 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : productName
+[DEBUG] 2018-10-18 08:23:49.274 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : shift
+[DEBUG] 2018-10-18 08:23:49.275 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : totalParts
+[DEBUG] 2018-10-18 08:23:49.275 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-18 08:23:49.278 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-18 08:23:49.278 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=ProductionCountLog.User)
+    - Returns
+       - EntityReturnImpl(entity=ProductionCountLog.User, querySpaceUid=<gen:0>, path=ProductionCountLog.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ProductionCountLog.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-18 08:23:49.278 [http-nio-8080-exec-3] EntityLoader - Static select for entity ProductionCountLog.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-10-18 08:23:49.328 [http-nio-8080-exec-3] Loader - Static select for action ACTION_MERGE on entity ProductionCountLog.User: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-10-18 08:23:49.329 [http-nio-8080-exec-3] Loader - Static select for action ACTION_REFRESH on entity ProductionCountLog.User: select user0_.id as id1_0_0_, user0_.credits as credits2_0_0_, user0_.date as date3_0_0_, user0_.downtime as downtime4_0_0_, user0_.employee_id as employee5_0_0_, user0_.first_name as first_na6_0_0_, user0_.hours_worked as hours_wo7_0_0_, user0_.last_name as last_nam8_0_0_, user0_.machine_number as machine_9_0_0_, user0_.product_name as product10_0_0_, user0_.shift as shift11_0_0_, user0_.total_parts as total_p12_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-10-18 08:23:49.402 [http-nio-8080-exec-3] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2018-10-18 08:23:49.402 [http-nio-8080-exec-3] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2018-10-18 08:23:49.403 [http-nio-8080-exec-3] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2018-10-18 08:23:49.415 [http-nio-8080-exec-3] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2018-10-18 08:23:49.418 [http-nio-8080-exec-3] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2018-10-18 08:23:49.421 [http-nio-8080-exec-3] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2018-10-18 08:23:49.425 [http-nio-8080-exec-3] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@79be68f3
+[DEBUG] 2018-10-18 08:23:49.427 [http-nio-8080-exec-3] SessionFactoryRegistry - Registering SessionFactory: ad09c0af-3d18-478b-b1e4-31dd1b87f68e (<unnamed>)
+[DEBUG] 2018-10-18 08:23:49.427 [http-nio-8080-exec-3] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2018-10-18 08:23:49.563 [http-nio-8080-exec-3] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2018-10-18 08:23:49.574 [http-nio-8080-exec-3] TransactionImpl - begin
+[DEBUG] 2018-10-18 08:23:49.592 [http-nio-8080-exec-3] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2018-10-18 08:23:49.617 [http-nio-8080-exec-3] SQL - insert into user (credits, date, downtime, employee_id, first_name, hours_worked, last_name, machine_number, product_name, shift, total_parts) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-10-18 08:23:49.694 [http-nio-8080-exec-3] IdentifierGeneratorHelper - Natively generated identity: 6
+[DEBUG] 2018-10-18 08:23:49.696 [http-nio-8080-exec-3] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-10-18 08:23:49.705 [http-nio-8080-exec-3] TransactionImpl - committing
+[DEBUG] 2018-10-18 08:23:49.708 [http-nio-8080-exec-3] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2018-10-18 08:23:49.709 [http-nio-8080-exec-3] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2018-10-18 08:23:49.711 [http-nio-8080-exec-3] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2018-10-18 08:23:49.711 [http-nio-8080-exec-3] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2018-10-18 08:23:49.717 [http-nio-8080-exec-3] EntityPrinter - Listing entities:
+[DEBUG] 2018-10-18 08:23:49.718 [http-nio-8080-exec-3] EntityPrinter - ProductionCountLog.User{date=2018-10-11, downtime=0.234, firstName=Charles, lastName=Clark, totalParts=221.0, credits=1.18, machineNumber=2, shift=1, employeeId=213, id=6, hoursWorked=6.5, productName=213 Air filter}
+[DEBUG] 2018-10-18 08:23:49.723 [http-nio-8080-exec-3] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-10-18 08:23:49.724 [http-nio-8080-exec-3] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
