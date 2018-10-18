@@ -1,54 +1,54 @@
 # Project Plan
 
 ### Week 3
-- [ ] Create project repository on GitHub
-- [ ] Create project structure in intellij and push
-- [ ] Add link to list of indie projects in student repo.
-- [ ] Complete Problem Statement
-- [ ] Determine possible Web Services or APIs to use
-- [ ] List technologies, versions and how they will be used
-- [ ] Weekly journal entry
-- [ ] Write project plan
-- [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq? 
-- [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
-- [ ] Implement custom tag from personal tag library.
-- [ ] Create base form on index.jsp and echo servlet for response.
+- [x] Create project repository on GitHub
+- [x] Create project structure in intellij and push
+- [x] Add link to list of indie projects in student repo.
+- [x] Complete Problem Statement
+- [x] Determine possible Web Services or APIs to use
+- [x] List technologies, versions and how they will be used
+- [x] Weekly journal entry
+- [x] Write project plan
+- [x] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq? 
+- [x] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
+- [x] Implement custom tag from personal tag library.
+- [x] Create base form on index.jsp and echo servlet for response.
 
 ### Week 4
-- [ ] Complete database design
-- [ ] Create the User database
-- [ ] Create the User entity class and annotate for hibernate
-- [ ] Create User dao
-- [ ] Create the test database
-- [ ] Create User dao unit tests
-- [ ] Weekly journal entry
-- [ ] Set up logging
-- [ ] Prepare for Week 5 peer design/code review
-- [ ] Work on form page layout
-- [ ] Create javaBean class for all info
+- [x] Complete database design
+- [x] Create the User database
+- [x] Create the User entity class and annotate for hibernate
+- [x] Create User dao
+- [x] Create the test database
+- [x] Create User dao unit tests
+- [x] Weekly journal entry
+- [x] Set up logging
+- [x] Prepare for Week 5 peer design/code review
+- [x] Work on form page layout
+- [x] Create javaBean class for all info
 
 
 ### Week 5
 
-- [ ] Create the template for all jsps using bootstrap or materialize
-- [ ] Weekly journal entry
-- [ ] Add the User database
-- [ ] Add the User entity
-- [ ] Create the User dao
-- [ ] Create the User dao unit tests
-- [ ] Work on javaBean class for all User variable data
-- [ ] create database connection class
-- [ ] Work on Receipt page layout
+- [x] Create the template for all jsps using bootstrap or materialize
+- [x] Weekly journal entry
+- [x] Add the User database
+- [x] Add the User entity
+- [x] Create the User dao
+- [x] Create the User dao unit tests
+- [x] Work on javaBean class for all User variable data
+- [x] create database connection class
+- [x] Work on Receipt page layout
 
 
 ### Week 6
 
-- [ ] Create db on AWS
-- [ ] Deploy to AWS for first time
-- [ ] Weekly journal entry
-- [ ] Realize that these daos are repetitive. Refactor into a generic dao!
-- [ ] Implement all functions in database connection class(connect, write to database).
-- [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
+- [x] Create db on AWS
+- [x] Deploy to AWS for first time
+- [x] Weekly journal entry
+- [x] Realize that these daos are repetitive. Refactor into a generic dao!
+- [x] Implement all functions in database connection class(connect, write to database).
+- [x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
 ### Week 7
@@ -59,6 +59,9 @@
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
 - [ ] Review and incorporate any feedback from Checkpoint 2.
+- [ ] Fix checkpoint two issues
+- [ ] front end css
+- [ ] Fix database issues
 
 
 ### Week 8
