@@ -1,4 +1,4 @@
-package ProductionCountLog;
+package ProductionCountLog.persistence;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;

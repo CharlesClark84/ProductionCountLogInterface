@@ -120,11 +120,20 @@
             <td>${hourly$}</td>
         </tr>
 
+
     </table>
+
+
 
 </div>
 
-<a href="index.jsp">I'm Finished</a>
+<a href="index.jsp">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
+
+<script>
+    function printFunction() {
+        window.print();
+    }
+</script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-package ProductionCountLog;
+package ProductionCountLog.controller;
 
 import java.io.*;
 import javax.servlet.*;
@@ -8,7 +8,11 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import ProductionCountLog.User;
+
+import ProductionCountLog.entity.User;
+import ProductionCountLog.persistence.UserDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @WebServlet(
         urlPatterns = {"/echo"}
@@ -16,7 +20,7 @@ import ProductionCountLog.User;
 
 public class EchoServlet extends HttpServlet {
 
-
+    private final Logger logger = LogManager.getLogger(this.getClass());
     User user = new User();
     UserDao userDao = new UserDao();
 
@@ -34,7 +38,7 @@ public class EchoServlet extends HttpServlet {
             try {
                 Date startDate = df.parse(date);
             } catch (ParseException e) {
-                e.printStackTrace();
+               logger.debug("parse exception");
             }
         }
 
@@ -93,6 +97,7 @@ public class EchoServlet extends HttpServlet {
 
         //Insert user values into database
         userDao.insert(user);
+        logger.debug("inserted user " + user);
 
         //Set Attributes to forward to jsp
         request.setAttribute("Date", date);
@@ -131,6 +136,8 @@ public class EchoServlet extends HttpServlet {
 
         double hourly = user.getHourly$();
         request.setAttribute("hourly$", hourly);
+
+        request.setAttribute("users", userDao.getUserByLastName(lastName));
 
 
         //Forward result to jsp

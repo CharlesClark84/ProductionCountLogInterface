@@ -1,4 +1,4 @@
-package ProductionCountLog;
+package ProductionCountLog.entity;
 
 import java.util.Date;
 import org.hibernate.annotations.GenericGenerator;

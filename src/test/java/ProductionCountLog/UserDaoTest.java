@@ -1,9 +1,10 @@
 package ProductionCountLog;
 
+import ProductionCountLog.entity.User;
+import ProductionCountLog.persistence.UserDao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
