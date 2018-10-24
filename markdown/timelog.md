@@ -39,3 +39,6 @@
 |10/16/18|indieproject work, added admin.jsp, login.jsp, newEmployee.jsp, added navigation bar, touched up css on form|1.75|pretty pretty|
 |10/18/18|indieproject work fixing issues on checkpoint two|1.5|-|
 |10/18/18|week 7 videos and activity|2|-|
+|10/18/18|week 7 readings|1|not finished|
+|10/19/18|finished week 7 readings|2|-|
+|10/22/18|Worked on ERD for indieProject|1|-|

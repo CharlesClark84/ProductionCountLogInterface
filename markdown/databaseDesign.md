@@ -1,2 +1,2 @@
 
-* [Database](../indieProjectDatabase2.png)
+* [Database](../database.png)

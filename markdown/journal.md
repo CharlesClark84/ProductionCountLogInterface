@@ -105,3 +105,12 @@ Tasks Completed:
    Signed up for an AWS(Amazon Web Services) account! Its official I'm live! There was lots of configuration to do
    but it was great to learn and will be played with lots in the upcoming weeks. Still trying to get week five exercise 
    figured out.
+   
+   ### Week 7 - end of week date
+   
+   10/20/18
+   
+   Tasks Completed:
+   * Week seven videos, activities and exercise
+   * Set up authentication for indieProject
+   * Fixed database issues in indieProject
