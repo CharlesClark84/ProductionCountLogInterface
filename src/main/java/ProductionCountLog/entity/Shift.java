@@ -45,10 +45,10 @@ public class Shift {
      * @param fullSkid      the full skid
      * @param trash         the trash
      */
-    public Shift(String date, int shift, int employeeId, String productName, int machineNumber, double hoursWorked, double totalParts, double credits, double downtime, double productRate, double percentage, double baseRate, double hoursEarned, double totalHours, double day$, double hourly$, double badParts, double ribbonChange, double glueTest, double fullSkid, double trash) {
+    public Shift(int employeeId, String date, int shift, String productName, int machineNumber, double hoursWorked, double totalParts, double credits, double downtime, double productRate, double percentage, double baseRate, double hoursEarned, double totalHours, double day$, double hourly$, double badParts, double ribbonChange, double glueTest, double fullSkid, double trash) {
+        this.employeeId = employeeId;
         this.date = date;
         this.shift = shift;
-        this.employeeId = employeeId;
         this.productName = productName;
         this.machineNumber = machineNumber;
         this.hoursWorked = hoursWorked;
