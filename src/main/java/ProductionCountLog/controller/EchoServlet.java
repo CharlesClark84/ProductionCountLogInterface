@@ -9,7 +9,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import ProductionCountLog.entity.User;
+import ProductionCountLog.entity.Shift;
+import ProductionCountLog.persistence.ShiftDao;
 import ProductionCountLog.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,8 +22,8 @@ import org.apache.logging.log4j.Logger;
 public class EchoServlet extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    User user = new User();
-    UserDao userDao = new UserDao();
+    Shift shift = new Shift();
+    ShiftDao shiftDao = new ShiftDao();
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -43,68 +44,60 @@ public class EchoServlet extends HttpServlet {
         }
 
 
-        user.setDate(date);
+        shift.setDate(date);
 
 
-        int shift = Integer.parseInt(request.getParameter("shift"));
-        user.setShift(shift);
+        int shiftI = Integer.parseInt(request.getParameter("shift"));
+        shift.setShift(shiftI);
 
         int employeeId = Integer.parseInt(request.getParameter("employeeId"));
-        user.setEmployeeId(employeeId);
-
-        String firstName = request.getParameter("firstName");
-        user.setFirstName(firstName);
-
-        String lastName = request.getParameter("lastName");
-        user.setLastName(lastName);
+        shift.setEmployeeId(employeeId);
 
         String productName = request.getParameter("productName");
-        user.setProductName(productName);
+        shift.setProductName(productName);
 
         int machineNumber = Integer.parseInt(request.getParameter("machineNumber"));
-        user.setMachineNumber(machineNumber);
+        shift.setMachineNumber(machineNumber);
 
         double hoursWorked = Double.parseDouble(request.getParameter("hoursWorked"));
-        user.setHoursWorked(hoursWorked);
+        shift.setHoursWorked(hoursWorked);
 
         double totalParts = Double.parseDouble(request.getParameter("totalParts"));
-        user.setTotalParts(totalParts);
+        shift.setTotalParts(totalParts);
 
         double downtime = Double.parseDouble(request.getParameter("downtime"));
-        user.setDowntime(downtime);
+        shift.setDowntime(downtime);
 
         double badParts = Double.parseDouble(request.getParameter("badParts"));
-        user.setBadParts(badParts);
+        shift.setBadParts(badParts);
 
         double ribbonChange = Double.parseDouble(request.getParameter("ribbonChange"));
-        user.setRibbonChange(ribbonChange);
+        shift.setRibbonChange(ribbonChange);
 
         double glueTest = Double.parseDouble(request.getParameter("glueTest"));
-        user.setGlueTest(glueTest);
+        shift.setGlueTest(glueTest);
 
         double fullSkid = Double.parseDouble(request.getParameter("fullSkid"));
-        user.setFullSkid(fullSkid);
+        shift.setFullSkid(fullSkid);
 
         double trash = Double.parseDouble(request.getParameter("trash"));
-        user.setTrash(trash);
+        shift.setTrash(trash);
 
         double credits = ((badParts * 0.002) + (ribbonChange * 0.2) + (glueTest * 0.1) + (fullSkid * 0.15) + (trash * 0.01));
-        user.setCredits(credits);
+        shift.setCredits(credits);
 
         String comments = request.getParameter("comment");
-        user.setComment(comments);
+        shift.setComment(comments);
 
 
         //Insert user values into database
-        userDao.insert(user);
-        logger.debug("inserted user " + user);
+        shiftDao.insert(shift);
+        logger.debug("inserted user " + shift);
 
         //Set Attributes to forward to jsp
         request.setAttribute("Date", date);
         request.setAttribute("Shift", shift);
         request.setAttribute("id", employeeId);
-        request.setAttribute("first", firstName);
-        request.setAttribute("last", lastName);
         request.setAttribute("product", productName);
         request.setAttribute("machine", machineNumber);
         request.setAttribute("hours", hoursWorked);
@@ -119,25 +112,23 @@ public class EchoServlet extends HttpServlet {
         request.setAttribute("credit", credits);
 
 
-        double percentage = user.getPercentage();
+        double percentage = shift.getPercentage();
         request.setAttribute("percentage", percentage);
 
-        double baseRate = user.getBaseRate();
+        double baseRate = shift.getBaseRate();
         request.setAttribute("baserate", baseRate);
 
-        double hoursEarned = user.getHoursEarned();
+        double hoursEarned = shift.getHoursEarned();
         request.setAttribute("hoursE", hoursEarned);
 
-        double total = user.getTotalHours();
+        double total = shift.getTotalHours();
         request.setAttribute("totalHours", total);
 
-        double day = user.getDay$();
+        double day = shift.getDay$();
         request.setAttribute("day$", day);
 
-        double hourly = user.getHourly$();
+        double hourly = shift.getHourly$();
         request.setAttribute("hourly$", hourly);
-
-        request.setAttribute("users", userDao.getUserByLastName(lastName));
 
 
         //Forward result to jsp

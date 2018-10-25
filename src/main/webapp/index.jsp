@@ -38,10 +38,6 @@
 
         <label class="control-label">Employee Id</label>: <input class="form-control" type="text" name="employeeId" required /><br /><br />
 
-        <label class="control-label">First Name:</label> <input class="form-control" type="text" name="firstName" required /><br /><br />
-
-        <label class="control-label">Last Name:</label> <input class="form-control" type="text" name="lastName" required /><br /><br />
-
         <label class="control-label">Product Name</label> <select class="form-control" name= "productName">
         <option value="213 Air filter">213 Air filter</option>
         <option value="410 Air filter">410 Air filter</option>
