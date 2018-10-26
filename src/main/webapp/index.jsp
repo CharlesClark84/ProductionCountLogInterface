@@ -12,7 +12,7 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="index.jsp"><a href="index.jsp">Home</a></li>
-            <li><a href="login.jsp">Login</a></li>
+            <li><a href="weather.jsp">Weather</a></li>
             <li><a href="newEmployee.jsp">New Employee</a></li>
             <li><a href="admin.jsp">Administration</a></li>
         </ul>
@@ -27,7 +27,7 @@
 <FORM action="echo" onsubmit="return validateForm()" method="post">
 
     <div class="form-group">
-    <div class="col-lg-6">
+    <div class="col-xl-6">
 
     <fieldset>
         <label>Shift Information</label><br/><br/>
@@ -54,7 +54,7 @@
 
     </fieldset></div>
 
-    <div class="col-lg-6">
+    <div class="col-xl-6">
         <div class="form-group">
 
     <fieldset>

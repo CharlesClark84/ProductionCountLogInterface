@@ -18,7 +18,7 @@
         </ul>
     </div>
 </nav>
-
+<div class="well">
 <h2>Log In</h2>
 <FORM ACTION="j_security_check" METHOD="POST">
     <TABLE>
@@ -27,5 +27,6 @@
         <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
     </TABLE>
 </FORM>
+</div>
 </body>
 </html>

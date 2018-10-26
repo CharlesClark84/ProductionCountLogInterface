@@ -2,11 +2,10 @@ form {
     max-width: 75%;
     border-radius: 5px;
     border: 2px solid grey;
-    background-color: tan;
-    max-height: 75%;
+    background-color: silver;
     margin: auto;
     padding: 10px;
-
+    box-shadow: grey 2px 3px 4px;
 }
 
 
@@ -40,4 +39,13 @@ h2#center {
 
 .navbar .navbar-inverse {
     text-align: center;
+}
+
+#employeeForm {
+    margin: auto;
+    max-width: 35%;
+}
+
+#weatherForm {
+    max-width: 35%;
 }

@@ -4,6 +4,7 @@
 <html><body text-align="center">
 
 <div class="container-fluid">
+    <div class="well">
     <h2>Receipt</h2><br/><br/>
     
 
@@ -134,6 +135,7 @@
         window.print();
     }
 </script>
+</div>
 
 </body>
 </html>
