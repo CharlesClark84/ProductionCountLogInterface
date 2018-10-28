@@ -41,15 +41,15 @@ Tasks Completed:
  09/22/2018
  
  Tasks Completed:
- * Week three videos, activities and exercise.
- * Created markdown files for project used for application design and time spent on project.
- * Wrote the problem statement.
- * Finished technologies listed in project plan.
- * Filled in time log.
- * Wrote in journal to track application progress.
- * Constructed screen layout design.
- * Constructed application flow.
- * Looked at APIs to use for project.
+ * Week three videos, activities and exercise
+ * Created markdown files for project used for application design and time spent on project
+ * Wrote the problem statement
+ * Finished technologies listed in project plan
+ * Filled in time log
+ * Wrote in journal to track application progress
+ * Constructed screen layout design
+ * Constructed application flow
+ * Looked at APIs to use for project
  
  Create README.md, timelog.md, journal.md, screen.md, applicationFlow.md, plan.md, and databaseDesign.md for application design 
  and to track application production progress. Got timelog.md and journal.md up to date with current progress. Designed 
@@ -66,7 +66,7 @@ Tasks Completed:
  09/29/2018
  
  Tasks Completed:
- * Week four videos, activities and exercise.
+ * Week four videos, activities and exercise
  * Built database for indieProject
  * Created javabean for indieProject
  * Added hibernate to indieProject
@@ -79,38 +79,62 @@ Tasks Completed:
  
  10/06/18
    
-   Tasks Completed:
-   * Week five videos, activities and exercise
-   * Work on indie project
-   * Hibernate
-   * DAO
-   * test methods
+ Tasks Completed:
+ * Week five videos, activities and exercise
+ * Work on indie project
+ * Hibernate
+ * DAO
+ * test methods
    
-   Week five was rough. Hibernate continues to challenge me, but with patience I will get it down. Unit tests seem like a good
-   thing to know as it will let you know if your application is functioning correctly. Slack and the teacher have been
-   very helpful!
+ Week five was rough. Hibernate continues to challenge me, but with patience I will get it down. Unit tests seem like a good
+ thing to know as it will let you know if your application is functioning correctly. Slack and the teacher have been
+ very helpful!
  
  
-  ### Week 6 - end of week date
+ ### Week 6 - end of week date
   
-  10/13/18
+ 10/13/18
   
-   Tasks Completed:
-   * Week six videos, activities and exercise
-   * Code Reviews
-   * Worked on indie project
-   * Prepare for indie project checkpoint two
-   * Deploy to AWS
+ Tasks Completed:
+ * Week six videos, activities and exercise
+ * Code Reviews
+ * Worked on indie project
+ * Prepare for indie project checkpoint two
+ * Deploy to AWS
    
-   Signed up for an AWS(Amazon Web Services) account! Its official I'm live! There was lots of configuration to do
-   but it was great to learn and will be played with lots in the upcoming weeks. Still trying to get week five exercise 
-   figured out.
+ Signed up for an AWS(Amazon Web Services) account! Its official I'm live! There was lots of configuration to do
+ but it was great to learn and will be played with lots in the upcoming weeks. Still trying to get week five exercise 
+ figured out. Cant wait to see all the sites I have go live in the future.
    
-   ### Week 7 - end of week date
+ ### Week 7 - end of week date
    
-   10/20/18
+ 10/20/18
    
-   Tasks Completed:
-   * Week seven videos, activities and exercise
-   * Set up authentication for indieProject
-   * Fixed database issues in indieProject
+ Tasks Completed:
+ * Week seven videos, activities and exercise
+ * Set up authentication for indieProject
+ * Fixed database issues in indieProject
+   
+ Worked on password authentication for java applications. It was cool learning how to do it for java and I set up
+ two different roles that have access to different pages in my indieProject. It a lot of work having to set up your application 
+ in your work environment and then have to set it up again in your live production area as well but it serves as a good
+ learning experience to make that transition from a student to a professional developer.
+   
+   
+ ### Week 8 - end of week date
+      
+ 10/27/18
+   
+ Tasks Completed: 
+ * Week eight, videos, activities and exercise
+ * SOAP UI API service
+ * Prepare for checkpoint three for indieProject
+ * Redesigned databases for indieProject
+ * Created javaBeans, DAOs, form interfaces, servlets, and results.jsp for new/overhauled database classes
+ 
+ I finally redesigned my databases for my indieProject and got them in working order being able to submit data with the
+ DAOs for each object created. A huge success over an even larger hurdle that has been blocking my path for the last few
+ weeks! Also learned about APIs from SOAP and looking forward to applying its potential to my indieProject and projects 
+ created in the future.
+      
+    

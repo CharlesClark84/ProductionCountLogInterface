@@ -43,4 +43,5 @@
 |10/19/18|finished week 7 readings|2|-|
 |10/22/18|Worked on ERD for indieProject|1|-|
 |10/25/18|Created all new javaBeans and databases for indie project|2.5|got it done|
-|10/25/18|Working on DAOs, interface.jsp and interfaceResults.jsp pages|3.25|lots to do now|
+|10/25/18|Working on DAOs, interface.jsp and interfaceResults.jsp pages, servlets, css|3.25|lots to do now|
+|10/27/18|Week eight videos and activity|2|-|
