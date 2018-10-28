@@ -12,7 +12,7 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="index.jsp"><a href="index.jsp">Home</a></li>
-            <li><a href="login.jsp">Login</a></li>
+            <li><a href="weather.jsp">Weather</a></li>
             <li><a href="newEmployee.jsp">New Employee</a></li>
             <li><a href="admin.jsp">Administration</a></li>
         </ul>

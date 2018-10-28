@@ -36,8 +36,8 @@
 |10/13/18|indieProject work,implemented hibernate and log4j, worked on servlet, database design doc|3|lots to do|
 |10/14/18|indieProject work, POJO, servlet, results.jsp, unit tests|3.5|getting there|
 |10/16/18|Week seven video and activity|2|-|
-|10/16/18|indieproject work, added admin.jsp, login.jsp, newEmployee.jsp, added navigation bar, touched up css on form|1.75|pretty pretty|
-|10/18/18|indieproject work fixing issues on checkpoint two|1.5|-|
+|10/16/18|indieProject work, added admin.jsp, login.jsp, newEmployee.jsp, added navigation bar, touched up css on form|1.75|pretty pretty|
+|10/18/18|indieProject work fixing issues on checkpoint two|1.5|-|
 |10/18/18|week 7 videos and activity|2|-|
 |10/18/18|week 7 readings|1|not finished|
 |10/19/18|finished week 7 readings|2|-|
@@ -45,3 +45,4 @@
 |10/25/18|Created all new javaBeans and databases for indie project|2.5|got it done|
 |10/25/18|Working on DAOs, interface.jsp and interfaceResults.jsp pages, servlets, css|3.25|lots to do now|
 |10/27/18|Week eight videos and activity|2|-|
+|10/28/18|IndieProject three checkpoint prepare|2|-|
