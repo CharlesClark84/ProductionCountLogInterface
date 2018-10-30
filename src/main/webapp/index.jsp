@@ -22,7 +22,7 @@
 <div class="container">
 
 
-   <div class="well">
+
         <h2 class="center">Mach Production Form</h2>
 <FORM action="echo" onsubmit="return validateForm()" method="post">
 
@@ -82,7 +82,7 @@
         <input type="reset" value="Clear" />
         </div></div></div>
 </FORM>
-   </div></div></div>
+   </div></div>
 
 </body>
 </html>
