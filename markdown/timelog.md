@@ -46,4 +46,7 @@
 |10/25/18|Working on DAOs, interface.jsp and interfaceResults.jsp pages, servlets, css|3.25|lots to do now|
 |10/27/18|Week eight videos and activity|2|-|
 |10/28/18|IndieProject three checkpoint prepare|2|-|
-|10/2918|Added weather API to indieProject|1.5|what!|
+|10/29/18|Added weather API to indieProject|1.5|what!|
+|10/30/18|lisa pro dev feedback|.5|-|
+|10/30/18|Week eight readings|1.25|good stuff|
+|------|------|-------|------|
