@@ -42,19 +42,18 @@ public class ShiftDao {
         return shifts;
     }
 
-    /**
-     * public List<User> getUserByLastName(String lastName) {
-     * Session session = sessionFactory.openSession();
-     * CriteriaBuilder builder = session.getCriteriaBuilder();
-     * CriteriaQuery<User> query = builder.createQuery(User.class);
-     * Root<User> root = query.from(User.class);
-     * Expression<String> propertyPath = root.get("lastName");
-     * query.where(builder.like(propertyPath, "%" + lastName + "%"));
-     * List<User> users = session.createQuery(query).getResultList();
-     * session.close();
-     * return users;
-     * } 
-     * /
+    public List<Shift> getUserByEmployeeId(String employeeId) {
+     Session session = sessionFactory.openSession();
+     CriteriaBuilder builder = session.getCriteriaBuilder();
+     CriteriaQuery<Shift> query = builder.createQuery(Shift.class);
+     Root<Shift> root = query.from(Shift.class);
+     Expression<String> propertyPath = root.get("employeeId");
+     query.where(builder.like(propertyPath, "%" + employeeId + "%"));
+     List<Shift> shift = session.createQuery(query).getResultList();
+     session.close();
+     return shift;
+      }
+
 
      /** @param id the id
      *

@@ -20,15 +20,11 @@
         <url-pattern>/admin.jsp</url-pattern>
       </web-resource-collection>
 
-        <web-resource-collection>
-            <web-resource-name>newEmployee</web-resource-name>
-            <url-pattern>/newEmployee.jsp</url-pattern>
-        </web-resource-collection>
 
       <auth-constraint>
 
         <role-name>admin</role-name>
-          <role-name>hr</role-name>
+
       </auth-constraint>
     </security-constraint>
 
@@ -36,6 +32,18 @@
     <security-role>
       <role-name>admin</role-name>
     </security-role>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>newEmployee</web-resource-name>
+            <url-pattern>/newEmployee.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+
+            <role-name>hr</role-name>
+        </auth-constraint>
+    </security-constraint>
+
 
     <security-role>
         <role-name>hr</role-name>

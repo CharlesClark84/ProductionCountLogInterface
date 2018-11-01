@@ -27,10 +27,15 @@
     <label class="control-label">City</label> <INPUT class="form-control" TYPE="TEXT" NAME="city"><br/><br/>
     <label class="control-label">State</label> <INPUT class="form-control" TYPE="TEXT" NAME="state"><br/><br/>
     <label class="control-label">Zip</label> <INPUT class="form-control" TYPE="TEXT" NAME="zip"><br/><br/>
-    <label class="control-label">password:</label> <INPUT class="form-control" TYPE="TEXT" NAME="password"><br/><br/>
+    <label class="control-label">Password:</label> <INPUT class="form-control" TYPE="TEXT" NAME="password"><br/><br/>
 
             <input type="submit" class="btn btn-success btn-send" value="Submit">
-            <input type="reset" value="Clear" />
+            <input type="reset" class="btn btn-primary" value="Clear" />
 </FORM>
+<br/>
+<div class="logoutButton">
+<a href="logout.jsp">Logout</a>
+</div>
+
 </body>
 </html>

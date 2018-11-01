@@ -79,7 +79,7 @@
         <textarea rows="5" cols="30" name="comment" class="form-control" placeholder="Enter shift comments"></textarea><br/><br/>
     </fieldset>
             <input type="submit" class="btn btn-success btn-send" value="Submit">
-        <input type="reset" value="Clear" />
+        <input type="reset" class="btn btn-primary" value="Clear" />
         </div></div></div>
 </FORM>
    </div></div>

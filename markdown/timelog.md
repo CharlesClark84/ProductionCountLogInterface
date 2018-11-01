@@ -49,4 +49,6 @@
 |10/29/18|Added weather API to indieProject|1.5|what!|
 |10/30/18|lisa pro dev feedback|.5|-|
 |10/30/18|Week eight readings|1.25|good stuff|
-|------|------|-------|------|
+|10/31/18|indieProject css, admin page, authentication issues|1|-|
+|10/31/18|Week eight exercise|1|-|
+|10/31/18|added logout capabilities to indieProject, touched up css with with login/logout|1.5|its working!|

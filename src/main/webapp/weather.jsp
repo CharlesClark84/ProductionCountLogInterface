@@ -21,30 +21,23 @@
 </nav>
 
 
-<br/><h2>Weather Desk</h2><br/>
-<form>
+<br/><h2 class="center">Weather Desk</h2><br/>
+<form class="center">
     <label>Enter Zip Code:</label>
     <input type="text" name="zip" id="zip">
-    <button type="button" id="getMessage">Get Weather</button>
+    <button type="button" id="getMessage" class="btn btn-primary">Get Weather</button>
 </form>
+<br/>
 
-<form>
-    <button type="button" id="getWeather" style="display: none;"></button>
-</form>
-
-<div id="well">
+<div class="well" id="weatherResults">
     <br/><br/>
     <div id="content"></div>
     <div id="content2"></div>
     <div id="content3"></div>
-    <div id="tempImage"></div>
     <div id="content4"></div>
     <div id="content5"></div>
-    <div id="windImage"></div>
     <div id="content6"></div>
-    <div id="weatherConditionImage"></div>
     <div id="content7"></div>
-    <div id="cloudImage"></div>
     <div id="content8"></div>
     <div id="content9"></div>
     <div id="content10"></div>
@@ -66,7 +59,7 @@
 
 
     <input type="submit" class="btn btn-success btn-send" value="Submit">
-    <input type="reset" value="Clear" />
+    <input type="reset" class="btn btn-primary" value="Clear" />
 </FORM>
 
 </body>

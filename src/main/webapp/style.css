@@ -11,11 +11,11 @@ form {
 
 body {
     background-image: url("gradient-background.jpg");
-    height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 
@@ -48,4 +48,25 @@ h2#center {
 
 #weatherForm {
     max-width: 35%;
+}
+
+#weatherResults {
+    max-width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+#loginForm {
+    max-width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+.logoutButton {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: lightgray;
+    max-width: 15%;
+    margin: auto;
+    text-align: center;
 }
