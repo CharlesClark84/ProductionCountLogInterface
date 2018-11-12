@@ -312,19 +312,19 @@ public class Shift {
      */
     public double getProductRate() {
         String productName = getProductName();
-        if(productName == "213") {
+        if(productName.equals("213")) {
             productRate = 60;
         }
-        if(productName == "410") {
+        if(productName.equals("410")) {
             productRate = 55;
         }
-        if(productName == "413") {
+        if(productName.equals("413")) {
             productRate = 50;
         }
-        if(productName == "501") {
+        if(productName.equals("501")) {
             productRate = 45;
         }
-        if(productName == "513") {
+        if(productName.equals("513")) {
             productRate = 40;
         }
 
