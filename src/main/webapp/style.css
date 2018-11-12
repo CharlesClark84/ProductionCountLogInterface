@@ -2,7 +2,7 @@ form {
     max-width: 75%;
     border-radius: 5px;
     border: 2px solid grey;
-    background-color: silver;
+    background-color: #cfd2c3;
     margin: auto;
     padding: 10px;
     box-shadow: grey 2px 3px 4px;
@@ -35,9 +35,6 @@ h2#center {
     display: inline-block;
     float: none;
     vertical-align: top;
-}
-
-.navbar .navbar-inverse {
     text-align: center;
 }
 
@@ -69,4 +66,19 @@ h2#center {
     max-width: 15%;
     margin: auto;
     text-align: center;
+}
+
+
+
+.head {
+    border: solid black 1px;
+    padding: 5px;
+    background-color: tan;
+    border-radius: 10px;
+}
+
+.body {
+    border: solid black 1px;
+
+    padding: 5px;
 }

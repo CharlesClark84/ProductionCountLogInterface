@@ -18,11 +18,9 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!--<style>
-        table, th, td {
-            border: 1px solid grey;
-            padding: 5px;
-        }
-    </style> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <script src="jquery.js" charset="utf-8"></script>
+
 
 </head>

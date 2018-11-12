@@ -52,4 +52,13 @@
 |10/31/18|indieProject css, admin page, authentication issues|1|-|
 |10/31/18|Week eight exercise|1|-|
 |10/31/18|added logout capabilities to indieProject, touched up css with with login/logout|1.5|its working!|
-|1/1/18|fixed authentication issue on AWS|1.75|yay|
+|11/1/18|fixed authentication issue on AWS|1.75|yay|
+|11/1/18|Week nine videos and activity|1|I should go back over week 8 I think|
+|11/2/18|rewatch week 8 videos|1|-|
+|11/2/18|Week nine readings|1|-|
+|11/2/18|Work on admin page indieProject, didplay all results from database|1|-|
+|11/5/18|Work on team project|2|-|
+|11/7/18|Work on team project|2|-|
+|11/8/18|Week nine videos and activities|.5|-|
+|11/9/18|Week nine videos and activities|1|-|
+|11/10/18|trying to get all values back on indie project|1|not working?|

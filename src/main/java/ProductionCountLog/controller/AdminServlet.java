@@ -2,6 +2,8 @@ package ProductionCountLog.controller;
 
 import ProductionCountLog.entity.Shift;
 import ProductionCountLog.persistence.ShiftDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -18,22 +20,23 @@ import java.io.IOException;
  */
 
 @WebServlet(
-        urlPatterns = {"/searchUser"}
+        urlPatterns = {"/search"}
 )
 
 public class AdminServlet extends HttpServlet {
-@Override
-protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        private final Logger logger = LogManager.getLogger(this.getClass());
 
-        Shift shift = new Shift();
-        ShiftDao dao = new ShiftDao();
-        if (req.getParameter("submit").equals("search")) {
-                req.setAttribute("users", dao.getUserByEmployeeId(req.getParameter("searchTerm")));
+        @Override
+        protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+                Shift shift = new Shift();
+                ShiftDao dao = new ShiftDao();
+
+                req.setAttribute("shifts", dao.getAllUsers());
+                logger.debug("all shift " + dao.getAllUsers());
+
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/adminResults.jsp");
+                dispatcher.forward(req, resp);
+
         }
-        else{
-        req.setAttribute("users", dao.getAllUsers());
-        }
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/AdminResults.jsp");
-        dispatcher.forward(req, resp);
-        }
-        }
+}

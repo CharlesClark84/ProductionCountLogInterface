@@ -1,0 +1,37 @@
+[DEBUG] 2018-11-12 16:29:49.142 [http-nio-8080-exec-1] EchoServlet - parse exception
+[DEBUG] 2018-11-12 16:29:49.144 [http-nio-8080-exec-1] EchoServlet - product name 213 Air filter
+[DEBUG] 2018-11-12 16:29:50.053 [http-nio-8080-exec-1] ShiftDao - Shift value to insert  User{id=21, date='2018-11-01', shift=1, employeeId=1, productName='213 Air filter', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=0.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=1.0, fullSkid=1.0, trash=1.0}
+[DEBUG] 2018-11-12 16:29:50.056 [http-nio-8080-exec-1] EchoServlet - inserted user User{id=21, date='2018-11-01', shift=1, employeeId=1, productName='213 Air filter', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=0.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=1.0, fullSkid=1.0, trash=1.0}
+[DEBUG] 2018-11-12 16:32:56.950 [http-nio-8080-exec-1] EchoServlet - parse exception
+[DEBUG] 2018-11-12 16:32:56.951 [http-nio-8080-exec-1] EchoServlet - product name 213 Air filter
+[DEBUG] 2018-11-12 16:32:56.951 [http-nio-8080-exec-1] EchoServlet - base rate = 0.0
+[DEBUG] 2018-11-12 16:32:56.951 [http-nio-8080-exec-1] EchoServlet - percentage = Infinity
+[DEBUG] 2018-11-12 16:32:57.833 [http-nio-8080-exec-1] ShiftDao - Shift value to insert  User{id=22, date='2018-11-01', shift=1, employeeId=1, productName='213 Air filter', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=0.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=1.0, fullSkid=1.0, trash=1.0}
+[DEBUG] 2018-11-12 16:32:57.833 [http-nio-8080-exec-1] EchoServlet - inserted user User{id=22, date='2018-11-01', shift=1, employeeId=1, productName='213 Air filter', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=0.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=1.0, fullSkid=1.0, trash=1.0}
+[DEBUG] 2018-11-12 16:38:31.411 [http-nio-8080-exec-2] EchoServlet - parse exception
+[DEBUG] 2018-11-12 16:38:31.414 [http-nio-8080-exec-2] EchoServlet - product name 213 Air filter
+[DEBUG] 2018-11-12 16:38:31.415 [http-nio-8080-exec-2] EchoServlet - hours worked = 1.0
+[DEBUG] 2018-11-12 16:42:12.456 [http-nio-8080-exec-1] EchoServlet - parse exception
+[DEBUG] 2018-11-12 16:42:12.457 [http-nio-8080-exec-1] EchoServlet - product name 213 Air filter
+[DEBUG] 2018-11-12 16:42:12.457 [http-nio-8080-exec-1] EchoServlet - hours worked = 1.0
+[DEBUG] 2018-11-12 16:42:12.457 [http-nio-8080-exec-1] EchoServlet - product rate = 0.0
+[DEBUG] 2018-11-12 16:42:12.457 [http-nio-8080-exec-1] EchoServlet - base rate = 0.0
+[DEBUG] 2018-11-12 16:42:12.457 [http-nio-8080-exec-1] EchoServlet - percentage = Infinity
+[DEBUG] 2018-11-12 16:42:13.333 [http-nio-8080-exec-1] ShiftDao - Shift value to insert  User{id=23, date='2018-11-14', shift=1, employeeId=1, productName='213 Air filter', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=0.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=1.0, fullSkid=1.0, trash=1.0}
+[DEBUG] 2018-11-12 16:42:13.333 [http-nio-8080-exec-1] EchoServlet - inserted user User{id=23, date='2018-11-14', shift=1, employeeId=1, productName='213 Air filter', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=0.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=1.0, fullSkid=1.0, trash=1.0}
+[DEBUG] 2018-11-12 16:46:40.465 [http-nio-8080-exec-1] EchoServlet - parse exception
+[DEBUG] 2018-11-12 16:46:40.468 [http-nio-8080-exec-1] EchoServlet - product name 213
+[DEBUG] 2018-11-12 16:46:40.468 [http-nio-8080-exec-1] EchoServlet - hours worked = 1.0
+[DEBUG] 2018-11-12 16:46:40.468 [http-nio-8080-exec-1] EchoServlet - product rate = 0.0
+[DEBUG] 2018-11-12 16:46:40.469 [http-nio-8080-exec-1] EchoServlet - base rate = 0.0
+[DEBUG] 2018-11-12 16:46:40.469 [http-nio-8080-exec-1] EchoServlet - percentage = Infinity
+[DEBUG] 2018-11-12 16:46:41.403 [http-nio-8080-exec-1] ShiftDao - Shift value to insert  User{id=24, date='2018-11-29', shift=1, employeeId=1, productName='213', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=1.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=11.0, fullSkid=1.0, trash=1.0}
+[DEBUG] 2018-11-12 16:46:41.403 [http-nio-8080-exec-1] EchoServlet - inserted user User{id=24, date='2018-11-29', shift=1, employeeId=1, productName='213', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=1.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=11.0, fullSkid=1.0, trash=1.0}
+[DEBUG] 2018-11-12 16:51:14.988 [http-nio-8080-exec-2] EchoServlet - parse exception
+[DEBUG] 2018-11-12 16:51:14.989 [http-nio-8080-exec-2] EchoServlet - product name 213
+[DEBUG] 2018-11-12 16:51:14.989 [http-nio-8080-exec-2] EchoServlet - hours worked = 1.0
+[DEBUG] 2018-11-12 16:51:14.989 [http-nio-8080-exec-2] EchoServlet - product rate = 0.0
+[DEBUG] 2018-11-12 16:51:14.990 [http-nio-8080-exec-2] EchoServlet - base rate = 0.0
+[DEBUG] 2018-11-12 16:51:14.990 [http-nio-8080-exec-2] EchoServlet - percentage = Infinity
+[DEBUG] 2018-11-12 16:51:15.781 [http-nio-8080-exec-2] ShiftDao - Shift value to insert  User{id=25, date='2018-11-22', shift=1, employeeId=1, productName='213', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=0.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=1.0, fullSkid=1.0, trash=1.0}
+[DEBUG] 2018-11-12 16:51:15.782 [http-nio-8080-exec-2] EchoServlet - inserted user User{id=25, date='2018-11-22', shift=1, employeeId=1, productName='213', machineNumber=1, hoursWorked=1.0, totalParts=1.0, credits=0.0, downtime=1.0, productRate=0.0, percentage=Infinity, baseRate=0.0, hoursEarned=Infinity, totalHours=Infinity, day$=Infinity, hourly$=Infinity, badParts=1.0, ribbonChange=1.0, glueTest=1.0, fullSkid=1.0, trash=1.0}

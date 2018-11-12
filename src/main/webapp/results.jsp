@@ -2,13 +2,13 @@
 <%@include file="head.jsp"%>
 
 <html><body text-align="center">
-
+<br/>
 <div class="container-fluid">
     <div class="well">
-    <h2>Receipt</h2><br/><br/>
+    <h2 class="center">Receipt</h2><br/><br/>
     
 
-    <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto">
+    <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto" class="center">
 
         <tr>
             <td>Date</td>
@@ -125,16 +125,18 @@
     </table>
 
 
+        <a href="index.jsp">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
 
 </div>
 
-<a href="index.jsp">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
 
 <script>
     function printFunction() {
         window.print();
     }
 </script>
+
+
 </div>
 
 </body>

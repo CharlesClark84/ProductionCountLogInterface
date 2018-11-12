@@ -55,12 +55,18 @@ public class EchoServlet extends HttpServlet {
 
         String productName = request.getParameter("productName");
         shift.setProductName(productName);
+        logger.debug("product name " + productName);
 
         int machineNumber = Integer.parseInt(request.getParameter("machineNumber"));
         shift.setMachineNumber(machineNumber);
 
         double hoursWorked = Double.parseDouble(request.getParameter("hoursWorked"));
         shift.setHoursWorked(hoursWorked);
+        logger.debug("hours worked = " + hoursWorked);
+
+        double productRate = shift.getProductRate();
+        shift.setProductRate(productRate);
+        logger.debug("product rate = " + productRate);
 
         double totalParts = Double.parseDouble(request.getParameter("totalParts"));
         shift.setTotalParts(totalParts);
@@ -84,19 +90,16 @@ public class EchoServlet extends HttpServlet {
         shift.setTrash(trash);
 
         double credits = ((badParts * 0.002) + (ribbonChange * 0.2) + (glueTest * 0.1) + (fullSkid * 0.15) + (trash * 0.01));
-        shift.setCredits(credits);
+        shift.setCredits(Math.round(credits));
 
         String comments = request.getParameter("comment");
         shift.setComment(comments);
 
 
-        //Insert user values into database
-        shiftDao.insert(shift);
-        logger.debug("inserted user " + shift);
 
         //Set Attributes to forward to jsp
         request.setAttribute("Date", date);
-        request.setAttribute("Shift", shift);
+        request.setAttribute("Shift", shiftI);
         request.setAttribute("id", employeeId);
         request.setAttribute("product", productName);
         request.setAttribute("machine", machineNumber);
@@ -112,11 +115,13 @@ public class EchoServlet extends HttpServlet {
         request.setAttribute("credit", credits);
 
 
-        double percentage = shift.getPercentage();
-        request.setAttribute("percentage", percentage);
-
         double baseRate = shift.getBaseRate();
         request.setAttribute("baserate", baseRate);
+        logger.debug("base rate = " + baseRate);
+
+        double percentage = shift.getPercentage();
+        request.setAttribute("percentage", percentage);
+        logger.debug("percentage = " + percentage);
 
         double hoursEarned = shift.getHoursEarned();
         request.setAttribute("hoursE", hoursEarned);
@@ -130,6 +135,11 @@ public class EchoServlet extends HttpServlet {
         double hourly = shift.getHourly$();
         request.setAttribute("hourly$", hourly);
 
+        request.setAttribute("users", shiftDao.getAllUsers());
+
+        //Insert user values into database
+        shiftDao.insert(shift);
+        logger.debug("inserted user " + shift);
 
         //Forward result to jsp
         RequestDispatcher dispatcher = request.getRequestDispatcher("/results.jsp");

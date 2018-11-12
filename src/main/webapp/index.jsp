@@ -2,6 +2,7 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
 
+
 <html>
 <body>
 
@@ -39,11 +40,11 @@
         <label class="control-label">Employee Id</label>: <input class="form-control" type="text" name="employeeId" required /><br /><br />
 
         <label class="control-label">Product Name</label> <select class="form-control" name= "productName">
-        <option value="213 Air filter">213 Air filter</option>
-        <option value="410 Air filter">410 Air filter</option>
-        <option value="413 Air filter">413 Air filter</option>
-        <option value="501 Air filter">501 Air filter</option>
-        <option value="513 Air filter">501 Air filter</option>
+        <option value="213">213 Air filter</option>
+        <option value="410">410 Air filter</option>
+        <option value="413">413 Air filter</option>
+        <option value="501">501 Air filter</option>
+        <option value="513">501 Air filter</option>
         </select><br/><br/>
 
         <label class="control-label">Machine Number:</label> <input class="form-control" type="text" name="machineNumber" required /><br /><br />

@@ -1,6 +1,5 @@
 package ProductionCountLog.entity;
 
-import java.util.Date;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -76,6 +75,7 @@ public class Shift {
     public static final double basePay = 12.75;
 
     @Id
+    @Column(name = "shift_id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
@@ -106,6 +106,12 @@ public class Shift {
 
     @Column(name = "downtime")
     private double downtime;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id",
+            foreignKey = @ForeignKey(name = "shift_user_user_id_fk")
+    )
+    private User user;
 
     @Transient
     private double productRate;
@@ -195,6 +201,7 @@ public class Shift {
      * @return the product name
      */
     public String getProductName() {
+
         return productName;
     }
 
@@ -204,6 +211,7 @@ public class Shift {
      * @param productName the product name
      */
     public void setProductName(String productName) {
+
         this.productName = productName;
     }
 
@@ -303,20 +311,20 @@ public class Shift {
      * @return the product rate
      */
     public double getProductRate() {
-        String prodname = getProductName();
-        if(prodname == "213 Air filter") {
+        String productName = getProductName();
+        if(productName == "213") {
             productRate = 60;
         }
-        if(prodname == "410 Air filter") {
+        if(productName == "410") {
             productRate = 55;
         }
-        if(prodname == "413 Air filter") {
+        if(productName == "413") {
             productRate = 50;
         }
-        if(prodname == "501 Air filter") {
+        if(productName == "501") {
             productRate = 45;
         }
-        if(prodname == "513 Air filter") {
+        if(productName == "513") {
             productRate = 40;
         }
 
@@ -338,16 +346,17 @@ public class Shift {
      * @return the percentage
      */
     public double getPercentage() {
+        this.percentage = getTotalParts() / getBaseRate();
         return percentage;
     }
 
     /**
      * Sets percentage.
      *
-     * @param percentage the percentage
      */
     public void setPercentage(double percentage) {
-        this.percentage = (getTotalParts() / getBaseRate());
+
+        this.percentage = percentage;
     }
 
     /**
@@ -356,6 +365,7 @@ public class Shift {
      * @return the base rate
      */
     public double getBaseRate() {
+        this.baseRate = (getHoursWorked() * getProductRate());
         return baseRate;
     }
 
@@ -365,7 +375,8 @@ public class Shift {
      * @param baseRate the base rate
      */
     public void setBaseRate(double baseRate) {
-        this.baseRate = (getHoursWorked() * getProductRate());
+
+        this.baseRate = baseRate;
     }
 
     /**
@@ -374,6 +385,7 @@ public class Shift {
      * @return the hours earned
      */
     public double getHoursEarned() {
+        this.hoursEarned = (getPercentage() * getHoursWorked());
         return hoursEarned;
     }
 
@@ -383,7 +395,7 @@ public class Shift {
      * @param hoursEarned the hours earned
      */
     public void setHoursEarned(double hoursEarned) {
-        this.hoursEarned = (getPercentage() * getHoursWorked());
+        this.hoursEarned = hoursEarned;
     }
 
     /**
@@ -392,6 +404,7 @@ public class Shift {
      * @return the total hours
      */
     public double getTotalHours() {
+        this.totalHours = (getHoursEarned() + getCredits());
         return totalHours;
     }
 
@@ -401,7 +414,8 @@ public class Shift {
      * @param totalHours the total hours
      */
     public void setTotalHours(double totalHours) {
-        this.totalHours = (getHoursEarned() + getCredits());
+
+        this.totalHours = totalHours;
     }
 
     /**
@@ -419,6 +433,7 @@ public class Shift {
      * @return the double
      */
     public double getDay$() {
+        this.day$ = (getTotalHours() * getBasePay());
         return day$;
     }
 
@@ -428,7 +443,8 @@ public class Shift {
      * @param day$ the day
      */
     public void setDay$(double day$) {
-        this.day$ = (getTotalHours() * getBasePay());
+
+        this.day$ = day$;
     }
 
     /**
@@ -437,6 +453,7 @@ public class Shift {
      * @return the double
      */
     public double getHourly$() {
+        this.hourly$ = (getPercentage() * getBasePay());
         return hourly$;
     }
 
@@ -445,7 +462,9 @@ public class Shift {
      *
      * @param hourly$ the hourly
      */
-    public void setHourly$(double hourly$) { this.hourly$ = (getPercentage() * getBasePay()); }
+    public void setHourly$(double hourly$) {
+        this.hourly$ = hourly$;
+    }
 
     /**
      * Gets bad parts.
