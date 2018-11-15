@@ -8,7 +8,7 @@
         <h2>Name Info</h2><br/><br/>
 
 
-        <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto">
+        <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto" class="table table-striped table-hover">
 
             <tr>
                 <td>First Name</td>

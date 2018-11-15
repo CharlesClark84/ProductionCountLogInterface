@@ -7,5 +7,6 @@
 </head>
 <body>
 Login Failed. Please try again.
+<a href="login.jsp"></a>
 </body>
 </html>

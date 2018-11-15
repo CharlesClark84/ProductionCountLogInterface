@@ -2,6 +2,7 @@ package ProductionCountLog.controller;
 
 import ProductionCountLog.entity.Shift;
 import ProductionCountLog.entity.User;
+import ProductionCountLog.persistence.GenericDao;
 import ProductionCountLog.persistence.ShiftDao;
 import ProductionCountLog.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
@@ -27,7 +28,7 @@ public class NewEmployeeServlet extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     User user = new User();
-    UserDao userDao = new UserDao();
+    GenericDao userDao = new GenericDao(User.class);
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)

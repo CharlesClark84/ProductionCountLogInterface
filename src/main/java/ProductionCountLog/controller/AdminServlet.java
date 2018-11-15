@@ -1,6 +1,7 @@
 package ProductionCountLog.controller;
 
 import ProductionCountLog.entity.Shift;
+import ProductionCountLog.persistence.GenericDao;
 import ProductionCountLog.persistence.ShiftDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -30,10 +31,10 @@ public class AdminServlet extends HttpServlet {
         protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
                 Shift shift = new Shift();
-                ShiftDao dao = new ShiftDao();
+                GenericDao dao = new GenericDao(Shift.class);
 
-                req.setAttribute("shifts", dao.getAllUsers());
-                logger.debug("all shift " + dao.getAllUsers());
+                req.setAttribute("shifts", dao.getAll());
+                logger.debug("all shift " + dao.getAll());
 
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/adminResults.jsp");
                 dispatcher.forward(req, resp);

@@ -1,10 +1,7 @@
 package ProductionCountLog.controller;
 
 import ProductionCountLog.entity.WeatherConfirm;
-import ProductionCountLog.entity.User;
-import ProductionCountLog.persistence.ShiftDao;
-import ProductionCountLog.persistence.UserDao;
-import ProductionCountLog.persistence.WeatherDao;
+import ProductionCountLog.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -28,7 +25,7 @@ public class WeatherServlet extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     WeatherConfirm weather = new WeatherConfirm();
-    WeatherDao weatherDao = new WeatherDao();
+    GenericDao weatherDao = new GenericDao(WeatherConfirm.class);
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)

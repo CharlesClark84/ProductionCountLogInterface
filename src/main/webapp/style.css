@@ -62,8 +62,9 @@ h2#center {
 .logoutButton {
     border: 1px solid grey;
     border-radius: 5px;
-    background-color: lightgray;
-    max-width: 15%;
+    background-color: green;
+    color:white;
+    max-width: 10%;
     margin: auto;
     text-align: center;
 }
@@ -73,12 +74,19 @@ h2#center {
 .head {
     border: solid black 1px;
     padding: 5px;
-    background-color: tan;
+    background-color: lightblue;
     border-radius: 10px;
 }
 
+
 .body {
     border: solid black 1px;
+    padding: 5px;
+    border-radius: 10px;
+}
 
+#dataTable {
+    border: 1px solid black;
+    border-radius: 5px;
     padding: 5px;
 }

@@ -62,3 +62,7 @@
 |11/8/18|Week nine videos and activities|.5|-|
 |11/9/18|Week nine videos and activities|1|-|
 |11/10/18|trying to get all values back on indie project|1|not working?|
+|11/12/18|work on team project|1|-|
+|11/12/18|Work on indie project, got calculations working!|1|Finally|
+|11/13/18|Professional development feedback for John and Eric|.5|-|
+|11/14/18|Team project|2|-|

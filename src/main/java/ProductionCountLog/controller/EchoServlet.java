@@ -10,6 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 import ProductionCountLog.entity.Shift;
+import ProductionCountLog.persistence.GenericDao;
 import ProductionCountLog.persistence.ShiftDao;
 import ProductionCountLog.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
@@ -23,7 +24,7 @@ public class EchoServlet extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     Shift shift = new Shift();
-    ShiftDao shiftDao = new ShiftDao();
+    GenericDao shiftDao = new GenericDao(Shift.class);
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -49,9 +50,11 @@ public class EchoServlet extends HttpServlet {
 
         int shiftI = Integer.parseInt(request.getParameter("shift"));
         shift.setShift(shiftI);
+        logger.debug("shift = " + shift);
 
         int employeeId = Integer.parseInt(request.getParameter("employeeId"));
         shift.setEmployeeId(employeeId);
+        logger.debug("Employee id = " + employeeId);
 
         String productName = request.getParameter("productName");
         shift.setProductName(productName);
@@ -59,6 +62,7 @@ public class EchoServlet extends HttpServlet {
 
         int machineNumber = Integer.parseInt(request.getParameter("machineNumber"));
         shift.setMachineNumber(machineNumber);
+        logger.debug("Machine number = " + machineNumber);
 
         double hoursWorked = Double.parseDouble(request.getParameter("hoursWorked"));
         shift.setHoursWorked(hoursWorked);
@@ -70,30 +74,39 @@ public class EchoServlet extends HttpServlet {
 
         double totalParts = Double.parseDouble(request.getParameter("totalParts"));
         shift.setTotalParts(totalParts);
+        logger.debug("Total parts = " + totalParts);
 
         double downtime = Double.parseDouble(request.getParameter("downtime"));
         shift.setDowntime(downtime);
+        logger.debug("downtime = " + downtime);
 
         double badParts = Double.parseDouble(request.getParameter("badParts"));
         shift.setBadParts(badParts);
+        logger.debug("Bad Parts = " + badParts);
 
         double ribbonChange = Double.parseDouble(request.getParameter("ribbonChange"));
         shift.setRibbonChange(ribbonChange);
+        logger.debug("Ribbon Change = " + ribbonChange);
 
         double glueTest = Double.parseDouble(request.getParameter("glueTest"));
         shift.setGlueTest(glueTest);
+        logger.debug("Glue Test = " + glueTest);
 
         double fullSkid = Double.parseDouble(request.getParameter("fullSkid"));
         shift.setFullSkid(fullSkid);
+        logger.debug("Full Skid = " + fullSkid);
 
         double trash = Double.parseDouble(request.getParameter("trash"));
         shift.setTrash(trash);
+        logger.debug("Trash = " + trash);
 
         double credits = ((badParts * 0.002) + (ribbonChange * 0.2) + (glueTest * 0.1) + (fullSkid * 0.15) + (trash * 0.01));
         shift.setCredits(Math.round(credits));
+        logger.debug("Credits = " + credits);
 
         String comments = request.getParameter("comment");
         shift.setComment(comments);
+        logger.debug("Comment = " + comments);
 
 
 
@@ -125,17 +138,21 @@ public class EchoServlet extends HttpServlet {
 
         double hoursEarned = shift.getHoursEarned();
         request.setAttribute("hoursE", hoursEarned);
+        logger.debug("Hours Earned = " + hoursEarned);
 
         double total = shift.getTotalHours();
         request.setAttribute("totalHours", total);
+        logger.debug("Total Hours = " + total);
 
         double day = shift.getDay$();
         request.setAttribute("day$", day);
+        logger.debug("Day $ = " + day);
 
         double hourly = shift.getHourly$();
         request.setAttribute("hourly$", hourly);
+        logger.debug("Hourly $ = " + hourly);
 
-        request.setAttribute("users", shiftDao.getAllUsers());
+        request.setAttribute("users", shiftDao.getAll());
 
         //Insert user values into database
         shiftDao.insert(shift);

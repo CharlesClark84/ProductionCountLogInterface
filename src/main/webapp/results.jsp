@@ -8,10 +8,10 @@
     <h2 class="center">Receipt</h2><br/><br/>
     
 
-    <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto" class="center">
+    <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto" class="table table-striped table-hover center">
 
         <tr>
-            <td>Date</td>
+            <td class="info">Date</td>
             <td>${Date}</td>
         </tr>
 

@@ -7,8 +7,8 @@
 
     <div class="well">
         <h2>Search Results: </h2>
-    <table id="dataTable">
-        <thead>
+    <table  class="table table-striped table-hover" id="dataTable">
+        <thead class="rounded-top">
         <th class="head">Employee ID</th>
         <th class="head">Date</th>
         <th class="head">Shift</th>
@@ -54,6 +54,8 @@
         </c:forEach>
         </tbody>
     </table>
+
+        <a href="admin.jsp">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
 </div>
 </div>
 </body>
