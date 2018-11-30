@@ -18,7 +18,7 @@
         </ul>
     </div>
 </nav>
-
+<div class="well">
 <h2 class="center">Register Personal Info</h2>
 <FORM  ACTION="newEmployee" METHOD="POST" id="employeeForm" class="center">
     <label class="control-label">First name:</label> <INPUT class="form-control" TYPE="TEXT" NAME="firstName"><br/><br/>
@@ -36,6 +36,6 @@
 <div class="logoutButton">
 <a href="logout.jsp">Logout</a>
 </div>
-
+</div>
 </body>
 </html>

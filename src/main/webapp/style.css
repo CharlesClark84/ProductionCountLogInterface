@@ -22,10 +22,6 @@ body {
     text-align: center;
 }
 
-h2#center {
-    text-align: center;
-}
-
 #margin {
     margin: auto;
 }
@@ -61,7 +57,7 @@ h2#center {
 .logoutButton {
     border: 1px solid grey;
     border-radius: 5px;
-    background-color: grey;
+    background-color: greenyellow;
     color:white;
     max-width: 15%;
     max-height: 10%;
@@ -88,6 +84,7 @@ h2#center {
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    max-width: 75%;
 }
 
 .background {

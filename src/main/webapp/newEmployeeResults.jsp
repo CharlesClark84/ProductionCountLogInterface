@@ -2,7 +2,7 @@
 <%@include file="head.jsp"%>
 
 <html><body text-align="center">
-
+<br/>
 <div class="container-fluid">
     <div class="well">
         <h2>Name Info</h2><br/><br/>
@@ -48,13 +48,15 @@
 
         </table>
 
-
+        <a href="newEmployee.jsp">I'm Finished</a><button onclick="printFunction()">Print this page</button>
     </div>
-
-    <a href="newEmployee.jsp">I'm Finished</a>
-
-
 </div>
+
+<script>
+    function printFunction() {
+        window.print();
+    }
+</script>
 
 </body>
 </html>
