@@ -25,6 +25,7 @@
 
         <h2 class="center background">Mach Production Form</h2>
         <div class="center red">All machines must have weather check done before each shift</div>
+
 <FORM action="echo" onsubmit="return validateForm()" method="post">
 
     <div class="form-group">
@@ -63,11 +64,7 @@
     <fieldset>
         <label>Credits</label><br/><br/>
 
-        <label class="control-label">Downtime:</label> <input class="form-control" type="text" id="downtime" name="downtime" required />
-
-        <input type="button" name="increase" value="+" onclick="monthModify(this.form.elements['downtime'], this);" ><input type="button" name="decrease" value="-" onclick="monthModify(this.form.elements['downtime'], this);" >
-
-        <br /><br />
+        <label class="control-label">Downtime:</label> <input class="form-control" type="text" id="downtime" name="downtime" required /><br /><br />
 
         <label class="control-label">Bad Parts:</label> <input class="form-control" type="text" name="badParts" required /> x 0.002<br /><br />
 
@@ -81,15 +78,36 @@
 
     </fieldset>
 
-    <fieldset>
-        <label>Shift Comments</label><br/><br/>
-        <textarea rows="5" cols="30" name="comment" class="form-control" placeholder="Enter shift comments"></textarea><br/><br/>
-    </fieldset>
+            <fieldset>
+                <label>Shift Comments</label><br/><br/>
+                <textarea rows="5" cols="30" name="comment" class="form-control" placeholder="Enter shift comments"></textarea><br/><br/>
+            </fieldset>
+
+
             <input type="submit" class="btn btn-success btn-send" value="Submit">
         <input type="reset" class="btn btn-primary" value="Clear" />
         </div>
     </div>
+
     </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+        <br/><br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['downtime'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['downtime'], this);" ><br/><br/>
+
+        <br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['badParts'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['badParts'], this);" >
+
+        <br/><br/><br/><br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['ribbonChange'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['ribbonChange'], this);" >
+
+        <br/><br/><br/><input type="button" name="increase" value="+" onclick="creditModify(this.form.elements['glueTest'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['glueTest'], this);" >
+
+        <br/><br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['fullSkid'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['fullSkid'], this);" >
+
+        <br/><br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['trash'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['trash'], this);" >
+
+        </div></div>
+
+
 </FORM>
 
 
@@ -98,7 +116,7 @@
 
 <script>
 
-        function monthModify(txtElement, btnElement) {
+        function creditModify(txtElement, btnElement) {
 
             switch(btnElement.name) {
                 case 'increase':

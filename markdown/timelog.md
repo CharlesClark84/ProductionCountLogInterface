@@ -78,3 +78,4 @@
 |11/29/18|Professional development presentation|1.2|excited to present now|
 |11/29/18|Week 13 videos|.6|-cool topic|
 |11/29/18|indieProject working on conditionals for weather results to output suggested maintenance|1.5|added some css as well|
+|11/30/18|-indieProject javascript + and - buttons to increase and decrease credit fields|2|-yes!|
