@@ -31,7 +31,7 @@
         <label for="searchTerm">Search by user id</label>
         <input type="text" class="form-control" id="searchTerm" name="searchTerm" >
     </div>
-    <button type="submit" name="submit" value="search" class="btn btn-success btn-send">Search</button>
+    <button type="submit" name="submit" value="Get all" class="btn btn-success btn-send">Search</button>
 
 </form>
 <br/>

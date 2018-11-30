@@ -23,11 +23,13 @@
 <div class="container">
     <div class="row well">
 
-        <h2 class="center">Mach Production Form</h2>
+        <h2 class="center background">Mach Production Form</h2>
+        <div class="center red">All machines must have weather check done before each shift</div>
 <FORM action="echo" onsubmit="return validateForm()" method="post">
 
     <div class="form-group">
     <div class="col-md-5">
+
 
     <fieldset>
         <label>Shift Information</label><br/><br/>
@@ -85,6 +87,8 @@
     </div></div>
 </FORM>
     </div></div></div>
+
+
 
 </body>
 </html>

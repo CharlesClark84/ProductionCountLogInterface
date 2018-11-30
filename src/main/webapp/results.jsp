@@ -26,11 +26,6 @@
         </tr>
 
         <tr>
-            <td>Name</td>
-            <td>${first} ${last}</td>
-        </tr>
-
-        <tr>
             <td>Product Name</td>
             <td>${product}</td>
         </tr>
@@ -125,9 +120,9 @@
     </table>
 
 
-        <a href="index.jsp">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
+       <div class="center"><a href="index.jsp">I'm Finished</a> <button onclick="printFunction()">Print this page</button></div>
 
-</div>
+    </div>
 
 
 <script>
@@ -140,7 +135,6 @@
 
     $( function() {
     $( "td" ).sortable();
-    $( "td" ).disableSelection();
     } );
     </script>
 

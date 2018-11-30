@@ -5,7 +5,6 @@ form {
     background-color: #cfd2c3;
     margin: auto;
     padding: 10px;
-    box-shadow: grey 2px 3px 4px;
 }
 
 
@@ -48,7 +47,7 @@ h2#center {
 }
 
 #weatherResults {
-    max-width: 35%;
+    max-width: 50%;
     margin: auto;
     text-align: center;
 }
@@ -62,9 +61,10 @@ h2#center {
 .logoutButton {
     border: 1px solid grey;
     border-radius: 5px;
-    background-color: green;
+    background-color: grey;
     color:white;
-    max-width: 10%;
+    max-width: 15%;
+    max-height: 10%;
     margin: auto;
     text-align: center;
 }
@@ -74,7 +74,6 @@ h2#center {
 .head {
     border: solid black 1px;
     padding: 5px;
-    background-color: lightblue;
     border-radius: 10px;
 }
 
@@ -89,4 +88,18 @@ h2#center {
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+}
+
+.background {
+    border: solid grey 2px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.red {
+    color:red;
+}
+
+.bold {
+    font-weight: bold;
 }

@@ -18,13 +18,13 @@
         <th class="head">Total Parts</th>
         <th class="head">Credits</th>
         <th class="head">Downtime</th>
-        <th class="head">productRate</th>
-        <th class="head">percentage</th>
-        <th class="head">baseRate</th>
-        <th class="head">hoursEarned</th>
-        <th class="head">totalHours</th>
-        <th class="head">day$</th>
-        <th class="head">hourly$</th>
+        <th class="head">Product Rate</th>
+        <th class="head">Percentage</th>
+        <th class="head">Base Rate</th>
+        <th class="head">Hours Earned</th>
+        <th class="head">Total Hours</th>
+        <th class="head">Day$</th>
+        <th class="head">Hourly$</th>
 
 
         </thead>

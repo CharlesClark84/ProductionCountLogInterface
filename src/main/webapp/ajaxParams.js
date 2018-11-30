@@ -57,15 +57,36 @@ var getPersonalizedMessage = function() {
             console.log("Wind Speed: " + wind);
             document.getElementById("content5").innerHTML = "Wind Speed: " + wind;
 
+            if (wind > 2) {
+                document.getElementById("wind").innerHTML = "-Turn on backup generator";
+
+            }
+
 
             var Farenheit = obj.weatherObservation.temperature * (9/5) + 32;
             console.log("Temperature: " + Farenheit);
             document.getElementById("content3").innerHTML = "Temperature: " + Math.round(Farenheit);
 
 
+            if (Farenheit < 34) {
+                document.getElementById("temp").innerHTML = "-Warm up machine for ten minutes before running";
+
+            }
+
+            if (Farenheit > 80) {
+                document.getElementById("temp").innerHTML = "-Check all fluid levels and fill if necessary -Fill all grease points";
+
+            }
+
+
             var humidity = obj.weatherObservation.humidity;
             console.log("Humidity: " + humidity);
             document.getElementById("content4").innerHTML = "Humidity: " + humidity;
+
+            if (humidity > 50) {
+                document.getElementById("glue").innerHTML = "-Recalibrate glue machine";
+
+            }
 
             var condition = obj.weatherObservation.weatherCondition;
             console.log("Weather Condition: " + condition);

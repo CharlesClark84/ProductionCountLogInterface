@@ -73,5 +73,8 @@
 |11/20/18|indieProject|1|-|
 |11/24/18|team project feedback|.15|-|
 |11/26/18|week 11 exercise|1|-|
+|11/28/18|indie project form css|.50|-|
 |11/29/18|Feedback for Kortney|.15|-|
-|11/29/18|Professional development presentation|1.5|excited to present now|
+|11/29/18|Professional development presentation|1.2|excited to present now|
+|11/29/18|Week 13 videos|.6|-cool topic|
+|11/29/18|indieProject working on conditionals for weather results to output suggested maintenance|1.5|added some css as well|
