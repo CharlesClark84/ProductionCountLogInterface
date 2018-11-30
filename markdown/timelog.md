@@ -23,10 +23,10 @@
 |10/4/18|Fixing error in week four exercise test cases|5|that was a tough one!|
 |10/5/18|Week five videos|1.5|-|
 |10/6/18|Week five videos cont|2|almost there now|
-|10/6/18|Professional Dev Project, Launching on consoles|3|great atmosphere, learned a lot, great networking|
+|10/6/18|Professional Dev Project, Launching on consoles meeting|3|great atmosphere, learned a lot, great networking|
 |10/7/18|Finish week five videos|1|-|
 |10/7/18|Week five reading|1.5|-|
-|10/8/18|Added bootstrap and columns to indie project|1|-|
+|10/8/18|Added bootstrap and columns to indie project|1|pretty|
 |10/9/18|Week five exercise|1.5|test need work still|
 |10/11/18|Week six videos, deploy indie project to AWS|2.75|its alive|
 |10/11/18|Week six peer code reviews|1.25|good work everyone|
@@ -45,7 +45,7 @@
 |10/25/18|Created all new javaBeans and databases for indie project|2.5|got it done|
 |10/25/18|Working on DAOs, interface.jsp and interfaceResults.jsp pages, servlets, css|3.25|lots to do now|
 |10/27/18|Week eight videos and activity|2|-|
-|10/28/18|IndieProject three checkpoint prepare|2|-|
+|10/28/18|IndieProject three checkpoint prepare|2|yay|
 |10/29/18|Added weather API to indieProject|1.25|what!, sort of|
 |10/30/18|lisa pro dev feedback|.5|-|
 |10/30/18|Week eight readings|1.25|good stuff|
@@ -66,3 +66,12 @@
 |11/12/18|Work on indie project, got calculations working!|1|Finally|
 |11/13/18|Professional development feedback for John and Eric|.5|-|
 |11/14/18|Team project|2|-|
+|11/15/18|Work on indieProject. Refactored into genericDao and worked on table styles|1|-|
+|11/15/18|Week 11 videos|1|-|
+|11/19/18|Team Project|2|-|
+|11/20/18|Team Project|1|-|
+|11/20/18|indieProject|1|-|
+|11/24/18|team project feedback|.15|-|
+|11/26/18|week 11 exercise|1|-|
+|11/29/18|Feedback for Kortney|.15|-|
+|11/29/18|Professional development presentation|1.5|excited to present now|

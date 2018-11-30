@@ -4,7 +4,7 @@
 
 
 <html>
-<body>
+<div>
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -21,14 +21,13 @@
 </nav>
 
 <div class="container">
-
-
+    <div class="row well">
 
         <h2 class="center">Mach Production Form</h2>
 <FORM action="echo" onsubmit="return validateForm()" method="post">
 
     <div class="form-group">
-    <div class="col-xl-6">
+    <div class="col-md-5">
 
     <fieldset>
         <label>Shift Information</label><br/><br/>
@@ -53,9 +52,10 @@
 
         <label class="control-label">Total Parts:</label> <input class="form-control" type="text" name="totalParts" required /><br /><br />
 
-    </fieldset></div>
+    </fieldset>
+    </div>
 
-    <div class="col-xl-6">
+    <div class="col-md-5">
         <div class="form-group">
 
     <fieldset>
@@ -81,9 +81,10 @@
     </fieldset>
             <input type="submit" class="btn btn-success btn-send" value="Submit">
         <input type="reset" class="btn btn-primary" value="Clear" />
-        </div></div></div>
+        </div>
+    </div></div>
 </FORM>
-   </div></div>
+    </div></div></div>
 
 </body>
 </html>
