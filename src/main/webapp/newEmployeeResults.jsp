@@ -1,5 +1,6 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
+<%@include file="navbar.jsp"%>
 
 <html><body text-align="center">
 <br/>
@@ -48,7 +49,7 @@
 
         </table>
 
-        <a href="newEmployee.jsp">I'm Finished</a><button onclick="printFunction()">Print this page</button>
+        <a class="btn btn-success btn-send" href="newEmployee.jsp">I'm Finished</a><button onclick="printFunction()">Print this page</button>
     </div>
 </div>
 

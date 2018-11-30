@@ -7,31 +7,25 @@
 <head>
     <title>Admin page</title>
 </head>
-<body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
 
-        </div>
-        <ul class="nav navbar-nav">
-            <li class="index.jsp"><a href="index.jsp">Home</a></li>
-            <li><a href="weather.jsp">Weather</a></li>
-            <li><a href="newEmployee.jsp">New Employee</a></li>
-            <li><a href="admin.jsp">Administration</a></li>
-        </ul>
-    </div>
-</nav>
+<%@include file="navbar.jsp"%>
 
 <h2 class="center">Administration Page</h2>
 
 
 <form action="search" class=form-inLine" method="get">
     <div class="form-group">
-        <label for="searchTerm">Search by user id</label>
-        <input type="text" class="form-control" id="searchTerm" name="searchTerm" >
+
+        <label>Return all data</label>
+    <button type="submit" name="submit" value="getAll"  class="btn btn-success btn-send">Get All</button><br/>
+
+    <label for="id">Search by user id</label>
+    <input type="text" class="form-control" id="id" name="id">
+
+        <button type="submit" name="submit" value="getById"  class="btn btn-success btn-send">Get by ID</button>
+
     </div>
-    <button type="submit" name="submit" value="Get all" class="btn btn-success btn-send">Search</button>
 
 </form>
 <br/>

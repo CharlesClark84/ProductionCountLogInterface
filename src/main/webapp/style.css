@@ -100,3 +100,7 @@ body {
 .bold {
     font-weight: bold;
 }
+
+a:hover {
+    background-color: yellow;
+}

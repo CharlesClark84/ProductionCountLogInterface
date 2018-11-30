@@ -1,5 +1,6 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
+<%@include file="navbar.jsp"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page session="true"%>
 

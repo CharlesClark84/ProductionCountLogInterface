@@ -1,24 +1,11 @@
 <%@taglib prefix="cc" uri="http://charlesclark.com/tags"%>
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
-
+<%@include file="navbar.jsp"%>
 
 <html>
 <div>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-
-        </div>
-        <ul class="nav navbar-nav">
-            <li class="index.jsp"><a href="index.jsp">Home</a></li>
-            <li><a href="weather.jsp">Weather</a></li>
-            <li><a href="newEmployee.jsp">New Employee</a></li>
-            <li><a href="admin.jsp">Administration</a></li>
-        </ul>
-    </div>
-</nav>
 
 <div class="container">
     <div class="row well">
@@ -35,7 +22,15 @@
     <fieldset>
         <label>Shift Information</label><br/><br/>
 
-        <label class="control-label">Date:</label> <input class="form-control" type="date" name="date" id="date" required /><br /><br />
+        <label class="control-label">Date:</label> <input class="form-control" type="text" name="date" id="date" required /><br /><br />
+        <script>
+        $('#date').datepicker({
+        changeMonth: true,
+        changeYear: true,
+        maxDate: new Date(),
+        yearRange: '-100:+0'
+        });
+        </script>
 
         <label class="control-label">Shift:</label> <input class="form-control" type="text" name="shift" id="shift" required/><br /><br />
 
@@ -64,17 +59,17 @@
     <fieldset>
         <label>Credits</label><br/><br/>
 
-        <label class="control-label">Downtime:</label> <input class="form-control" type="text" id="downtime" name="downtime" required /><br /><br />
+        <label class="control-label">Downtime:</label> <input class="form-control" type="text" id="downtime" name="downtime" value="0" required disabled  /><br /><br />
 
-        <label class="control-label">Bad Parts:</label> <input class="form-control" type="text" name="badParts" required /> x 0.002<br /><br />
+        <label class="control-label">Bad Parts:</label> <input class="form-control" type="text" name="badParts" value="0" required disabled /> x 0.002<br /><br />
 
-        <label class="control-label">Ribbon Change:</label> <input class="form-control" type="text" name="ribbonChange" required /> x 0.200<br /><br />
+        <label class="control-label">Ribbon Change:</label> <input class="form-control" type="text" name="ribbonChange" value="0" required disabled /> x 0.200<br /><br />
 
-        <label class="control-label">Glue Test:</label> <input class="form-control"type="text" name="glueTest" required /> x 0.100<br /><br />
+        <label class="control-label">Glue Test:</label> <input class="form-control"type="text" name="glueTest" value="0" required disabled /> x 0.100<br /><br />
 
-        <label class="control-label">Full Skid:</label> <input class="form-control" type="text" name="fullSkid" required /> x 0.150<br /><br />
+        <label class="control-label">Full Skid:</label> <input class="form-control" type="text" name="fullSkid" value="0" required disabled /> x 0.150<br /><br />
 
-        <label class="control-label">Trash:</label> <input class="form-control" type="text" name="trash" required /> x 0.005<br /><br />
+        <label class="control-label">Trash:</label> <input class="form-control" type="text" name="trash" value="0" required disabled /> x 0.005<br /><br />
 
     </fieldset>
 
@@ -99,11 +94,11 @@
 
         <br/><br/><br/><br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['ribbonChange'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['ribbonChange'], this);" >
 
-        <br/><br/><br/><input type="button" name="increase" value="+" onclick="creditModify(this.form.elements['glueTest'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['glueTest'], this);" >
+        <br/><br/><br/><br/><input type="button" name="increase" value="+" onclick="creditModify(this.form.elements['glueTest'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['glueTest'], this);" >
 
-        <br/><br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['fullSkid'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['fullSkid'], this);" >
+        <br/><br/><br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['fullSkid'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['fullSkid'], this);" >
 
-        <br/><br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['trash'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['trash'], this);" >
+        <br/><br/><br/><br/><br/><input type="button" name="increase"  value="+" onclick="creditModify(this.form.elements['trash'], this);" ><input type="button" name="decrease"  value="-" onclick="creditModify(this.form.elements['trash'], this);" >
 
         </div></div>
 

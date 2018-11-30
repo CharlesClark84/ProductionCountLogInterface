@@ -5,19 +5,8 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
+<%@include file="navbar.jsp"%>
 
-        </div>
-        <ul class="nav navbar-nav">
-            <li class="index.jsp"><a href="index.jsp">Home</a></li>
-            <li><a href="weather.jsp">Weather</a></li>
-            <li><a href="newEmployee.jsp">New Employee</a></li>
-            <li><a href="admin.jsp">Administration</a></li>
-        </ul>
-    </div>
-</nav>
 <div class="well" id="loginForm">
 <h2>Log In</h2>
 <FORM ACTION="j_security_check" METHOD="POST">

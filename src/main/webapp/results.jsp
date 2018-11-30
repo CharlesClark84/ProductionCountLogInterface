@@ -1,5 +1,6 @@
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
+<%@include file="navbar.jsp"%>
 
 <html><body text-align="center">
 <br/>

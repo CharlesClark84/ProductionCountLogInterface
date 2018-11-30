@@ -1,4 +1,5 @@
 <%@include file="head.jsp"%>
+<%@include file="navbar.jsp"%>
 <html>
 <head>
     <title>Weather</title>
@@ -6,19 +7,6 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-
-        </div>
-        <ul class="nav navbar-nav center-justify">
-            <li class="index.jsp"><a href="index.jsp">Home</a></li>
-            <li><a href="weather.jsp">Weather</a></li>
-            <li><a href="newEmployee.jsp">New Employee</a></li>
-            <li><a href="admin.jsp">Administration</a></li>
-        </ul>
-    </div>
-</nav>
 
 <div class="container">
     <div class="row well">

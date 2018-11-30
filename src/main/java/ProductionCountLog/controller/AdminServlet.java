@@ -33,8 +33,14 @@ public class AdminServlet extends HttpServlet {
                 Shift shift = new Shift();
                 GenericDao dao = new GenericDao(Shift.class);
 
-                req.setAttribute("shifts", dao.getAll());
-                logger.debug("all shift " + dao.getAll());
+                if (req.getParameter("submit").equals("getAll")) {
+                        req.setAttribute("shifts", dao.getAll());
+                        logger.debug("all shift " + dao.getAll());
+                }
+                if (req.getParameter("submit").equals("getByID")) {
+                    dao.getByPropertyEqual("employee_id", req.getParameter("id"));
+
+                }
 
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/adminResults.jsp");
                 dispatcher.forward(req, resp);
