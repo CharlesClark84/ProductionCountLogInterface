@@ -48,8 +48,15 @@
     <option value="yes">Yes</option>
     <option value="no">No</option>
 </select><br/><br/>
-    <label class="control-label">Date:</label> <input class="form-control" type="date" name="date" id="date" required /><br /><br />
-
+    <label class="control-label">Date:</label> <input class="form-control" type="text" name="date" id="date" required /><br /><br />
+    <script>
+        $('#date').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            maxDate: new Date(),
+            yearRange: '-100:+0'
+        });
+    </script>
 
 
     <input type="submit" class="btn btn-success btn-send" value="Submit">

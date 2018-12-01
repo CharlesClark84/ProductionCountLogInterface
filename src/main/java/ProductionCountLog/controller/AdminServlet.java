@@ -15,11 +15,6 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 
-/**
- * A simple servlet to welcome the user.
- * @author pwaite
- */
-
 @WebServlet(
         urlPatterns = {"/search"}
 )
@@ -37,8 +32,9 @@ public class AdminServlet extends HttpServlet {
                         req.setAttribute("shifts", dao.getAll());
                         logger.debug("all shift " + dao.getAll());
                 }
-                if (req.getParameter("submit").equals("getByID")) {
-                    dao.getByPropertyEqual("employee_id", req.getParameter("id"));
+                if (req.getParameter("submit").equals("id")) {
+                    dao.getByPropertyEqual("employeeId", req.getParameter("Id"));
+                    logger.debug(req.getParameter("Id"));
 
                 }
 

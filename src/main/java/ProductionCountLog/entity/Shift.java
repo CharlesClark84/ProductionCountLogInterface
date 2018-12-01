@@ -4,6 +4,9 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
+import java.text.DecimalFormat;
+
+
 /**
  * User javaBean class that will hold all variable data to be used in form, calculations, and database.
  *
@@ -139,6 +142,9 @@ public class Shift {
     private double trash;
     @Transient
     private String comment;
+    @Transient
+    DecimalFormat df = new DecimalFormat("#.##");
+
 
 
     /**
@@ -275,6 +281,7 @@ public class Shift {
      * @return the credits
      */
     public double getCredits() {
+        this.credits =  Double.valueOf(df.format(credits));
         return credits;
     }
 

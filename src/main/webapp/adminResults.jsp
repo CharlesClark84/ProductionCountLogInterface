@@ -26,6 +26,7 @@
         <th class="head">Total Hours</th>
         <th class="head">Day$</th>
         <th class="head">Hourly$</th>
+        <th class="head">Delete</th>
 
 
         </thead>
@@ -48,6 +49,12 @@
                 <td class="body">${shift.totalHours}</td>
                 <td class="body">${shift.day$}</td>
                 <td class="body">${shift.hourly$}</td>
+                <td><form action="Remove" method="post" id="removeForm">
+                    <input type="id" name="id" value="${shift.employeeId}" hidden/>
+                    <button type="submit" name="remove"><span class="glyphicon glyphicon-trash"></span></button>
+                </form></td>
+
+
 
 
                 </td>
