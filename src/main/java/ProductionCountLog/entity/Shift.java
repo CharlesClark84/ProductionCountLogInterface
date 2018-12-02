@@ -25,9 +25,9 @@ public class Shift {
     /**
      * Instantiates a new User.
      *
+     * @param employeeId    the employee id
      * @param date          the date
      * @param shift         the shift
-     * @param employeeId    the employee id
      * @param productName   the product name
      * @param machineNumber the machine number
      * @param hoursWorked   the hours worked
@@ -142,10 +142,30 @@ public class Shift {
     private double trash;
     @Transient
     private String comment;
+    /**
+     * The Df.
+     */
     @Transient
     DecimalFormat df = new DecimalFormat("#.##");
 
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
 
     /**
      * Gets date.
@@ -360,6 +380,7 @@ public class Shift {
     /**
      * Sets percentage.
      *
+     * @param percentage the percentage
      */
     public void setPercentage(double percentage) {
 

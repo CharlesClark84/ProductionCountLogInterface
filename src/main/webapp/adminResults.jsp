@@ -10,6 +10,7 @@
         <h2>Search Results: </h2>
     <table  class="table table-striped table-hover" id="dataTable">
         <thead class="rounded-top">
+        <th class="head">ID</th>
         <th class="head">Employee ID</th>
         <th class="head">Date</th>
         <th class="head">Shift</th>
@@ -33,6 +34,7 @@
         <tbody>
         <c:forEach var="shift" items="${shifts}">
             <tr>
+                <td class="body">${shift.id} </td>
                 <td class="body">${shift.employeeId} </td>
                 <td class="body">${shift.date} </td>
                 <td class="body">${shift.shift} </td>
@@ -50,7 +52,7 @@
                 <td class="body">${shift.day$}</td>
                 <td class="body">${shift.hourly$}</td>
                 <td><form action="Remove" method="post" id="removeForm">
-                    <input type="id" name="id" value="${shift.employeeId}" hidden/>
+                    <input type="id" name="id" value="${shift.id}" hidden/>
                     <button type="submit" name="remove"><span class="glyphicon glyphicon-trash"></span></button>
                 </form></td>
 

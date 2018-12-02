@@ -57,7 +57,7 @@ body {
 .logoutButton {
     border: 1px solid grey;
     border-radius: 5px;
-    background-color: #03ba1a;
+    background-color: #3ba02c;
     color:white;
     max-width: 15%;
     max-height: 10%;
@@ -94,7 +94,7 @@ body {
 }
 
 .red {
-    color:red;
+    color: #ee3d14;
 }
 
 .bold {
@@ -102,7 +102,7 @@ body {
 }
 
 a:hover {
-    background-color: yellow;
+    background-color: #eaee48;
 }
 
 #removeForm {

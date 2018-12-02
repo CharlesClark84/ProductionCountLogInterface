@@ -71,6 +71,8 @@
 
         <label class="control-label">Trash:</label> <input class="form-control" type="text" name="trash" value="0" required disabled /> x 0.005<br /><br />
 
+        <input type="text" name="id" name="id" hidden />
+
     </fieldset>
 
             <fieldset>

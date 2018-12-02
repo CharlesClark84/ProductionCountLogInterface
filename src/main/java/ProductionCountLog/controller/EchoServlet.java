@@ -108,6 +108,9 @@ public class EchoServlet extends HttpServlet {
         shift.setComment(comments);
         logger.debug("Comment = " + comments);
 
+        String id = request.getParameter("id");
+        request.setAttribute("Id", id);
+
 
 
         //Set Attributes to forward to jsp
@@ -151,6 +154,8 @@ public class EchoServlet extends HttpServlet {
         double hourly = shift.getHourly$();
         request.setAttribute("hourly$", hourly);
         logger.debug("Hourly $ = " + hourly);
+
+
 
         request.setAttribute("users", shiftDao.getAll());
 

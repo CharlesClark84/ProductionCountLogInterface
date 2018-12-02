@@ -80,4 +80,4 @@
 |11/29/18|indieProject working on conditionals for weather results to output suggested maintenance|1.5|added some css as well|
 |11/30/18|indieProject javascript + and - buttons to increase and decrease credit fields|2|-yes!|
 |11/30/18|indieProject adding multiple searches on admin page, refactoring code|1.65|-|
-|12/1/18|indieProject adding delete function, still working on multiple search parameters on admin, trying to round double values|2|-|
+|12/1/18|indieProject adding delete function, still working on multiple search parameters on admin, trying to round double values|2.6|harder than you think|

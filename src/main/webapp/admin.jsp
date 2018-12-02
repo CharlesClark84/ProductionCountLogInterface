@@ -21,7 +21,7 @@
     <button type="submit" name="submit" value="getAll"  class="btn btn-success btn-send">Get All</button><br/>
 
     <label for="id">Search by user id</label>
-    <input type="text" class="form-control" id="Id" name="Id">
+    <input type="text" class="form-control" id="ID" name="ID">
 
         <button type="submit" name="submit" value="id"  class="btn btn-success btn-send">Get by ID</button>
 
