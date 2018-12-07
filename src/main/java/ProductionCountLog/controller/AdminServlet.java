@@ -34,7 +34,8 @@ public class AdminServlet extends HttpServlet {
                 }
                 if (req.getParameter("submit").equals("id")) {
                     dao.getByPropertyEqual("employeeId", req.getParameter("ID"));
-                    logger.debug(req.getParameter("ID"));
+                    logger.debug("request id " + req.getParameter("ID"));
+                        req.setAttribute("shifts", dao.getById(Integer.parseInt(req.getParameter("ID"))));
 
                 }
 

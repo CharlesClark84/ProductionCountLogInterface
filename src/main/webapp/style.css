@@ -57,10 +57,10 @@ body {
 .logoutButton {
     border: 1px solid grey;
     border-radius: 5px;
-    background-color: #3ba02c;
+    background-color: #40b631;
     color:white;
-    max-width: 15%;
-    max-height: 10%;
+    max-width: 10%;
+    max-height: 30%;
     margin: auto;
     text-align: center;
 }

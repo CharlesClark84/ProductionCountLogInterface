@@ -5,6 +5,7 @@ import ProductionCountLog.persistence.UserDao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -39,22 +40,8 @@ public class UserDaoTest {
         assertEquals("Clark", retrievedUser.getLastName());
     }
 
-    /**
-     * Verify successful insert of a user
 
-    @Test
-    void insertSuccess() {
 
-        User newUser = new User(1, LocalDate.parse("2018-10-14"), 2, 123, "Charles", "Clark", "213 Filters", 2, 6.5, 220, .5, .25, 50));
-        int id = dao.insert(newUser);
-        assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
-        assertEquals("Fred", insertedUser.getFirstName());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-    }
-
-     */
 
     /**
      * Verify successful delete of user

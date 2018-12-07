@@ -10,6 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 import ProductionCountLog.entity.Shift;
+import ProductionCountLog.entity.User;
 import ProductionCountLog.persistence.GenericDao;
 import ProductionCountLog.persistence.ShiftDao;
 import ProductionCountLog.persistence.UserDao;
@@ -76,6 +77,7 @@ public class EchoServlet extends HttpServlet {
         shift.setTotalParts(totalParts);
         logger.debug("Total parts = " + totalParts);
 
+        logger.debug("request" + request.getParameter("downtime"));
         double downtime = Double.parseDouble(request.getParameter("downtime"));
         shift.setDowntime(downtime);
         logger.debug("downtime = " + downtime);
@@ -155,6 +157,11 @@ public class EchoServlet extends HttpServlet {
         request.setAttribute("hourly$", hourly);
         logger.debug("Hourly $ = " + hourly);
 
+
+//        GenericDao userDao = new GenericDao(User.class);
+//        List<User> users = shiftDao.getByPropertyEqual("employee_id", Integer.toString(employeeId));
+//        User user = users.get(0);
+//        shift.setUser(user);
 
 
         request.setAttribute("users", shiftDao.getAll());

@@ -1,9 +1,11 @@
 <%@taglib prefix="cc" uri="http://charlesclark.com/tags"%>
 <%@include file="taglib.jsp"%>
 <%@include file="head.jsp"%>
+<html>
 <%@include file="navbar.jsp"%>
 
-<html>
+
+
 <div>
 
 
@@ -59,19 +61,19 @@
     <fieldset>
         <label>Credits</label><br/><br/>
 
-        <label class="control-label">Downtime:</label> <input class="form-control" type="text" id="downtime" name="downtime" value="0" required disabled  /><br /><br />
+        <label class="control-label">Downtime:</label> <input class="form-control" type="text" id="downtime" name="downtime" value="0" required   /><br /><br />
 
-        <label class="control-label">Bad Parts:</label> <input class="form-control" type="text" name="badParts" value="0" required disabled /> x 0.002<br /><br />
+        <label class="control-label">Bad Parts:</label> <input class="form-control" type="text" name="badParts" value="0" required  /> x 0.002<br /><br />
 
-        <label class="control-label">Ribbon Change:</label> <input class="form-control" type="text" name="ribbonChange" value="0" required disabled /> x 0.200<br /><br />
+        <label class="control-label">Ribbon Change:</label> <input class="form-control" type="text" name="ribbonChange" value="0" required  /> x 0.200<br /><br />
 
-        <label class="control-label">Glue Test:</label> <input class="form-control"type="text" name="glueTest" value="0" required disabled /> x 0.100<br /><br />
+        <label class="control-label">Glue Test:</label> <input class="form-control" type="text" name="glueTest" value="0" required  /> x 0.100<br /><br />
 
-        <label class="control-label">Full Skid:</label> <input class="form-control" type="text" name="fullSkid" value="0" required disabled /> x 0.150<br /><br />
+        <label class="control-label">Full Skid:</label> <input class="form-control" type="text" name="fullSkid" value="0" required  /> x 0.150<br /><br />
 
-        <label class="control-label">Trash:</label> <input class="form-control" type="text" name="trash" value="0" required disabled /> x 0.005<br /><br />
+        <label class="control-label">Trash:</label> <input class="form-control" type="text" name="trash" value="0" required  /> x 0.005<br /><br />
 
-        <input type="text" name="id" name="id" hidden />
+        <input type="text" name="id" id="id" hidden />
 
     </fieldset>
 

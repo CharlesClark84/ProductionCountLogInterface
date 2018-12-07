@@ -81,3 +81,12 @@
 |11/30/18|indieProject javascript + and - buttons to increase and decrease credit fields|2|-yes!|
 |11/30/18|indieProject adding multiple searches on admin page, refactoring code|1.65|-|
 |12/1/18|indieProject adding delete function, still working on multiple search parameters on admin, trying to round double values|2.6|harder than you think|
+|12/3/18|debugging indiePoject with Paula|1.25|thanks for the help|
+|12/6/18|trying to fix issues with indieProject|1|-|
+|12/7/18|getting errors fixed!|1|yay|
+|12/7/18|feedback for Robert|-------|-|
+|------|------|-------|------|
+|------|------|-------|------|
+|------|------|-------|------|
+|------|------|-------|------|
+

@@ -1,6 +1,9 @@
 package ProductionCountLog.entity;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -44,6 +47,7 @@ public class User {
 
 
     @Id
+    @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
@@ -69,6 +73,16 @@ public class User {
     @Column(name = "user_password")
     private String userPassword;
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Shift> shift = new HashSet<>();
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     /**
      * Gets first name.

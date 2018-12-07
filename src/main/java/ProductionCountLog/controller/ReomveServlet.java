@@ -30,13 +30,14 @@ public class ReomveServlet extends HttpServlet {
 
         String id = req.getParameter("id");
 
-            Shift shitToDelete = (Shift)dao.getById(Integer.parseInt(id));
+            Shift shiftToDelete = (Shift)dao.getById(Integer.parseInt(id));
 
-           dao.delete(shitToDelete);
-           logger.debug("Remove by id = " + shitToDelete);
+           dao.delete(shiftToDelete);
+           logger.debug("Remove by id = " + shiftToDelete);
+           req.setAttribute("message", "Successful delete of entry");
 
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/adminResults.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/removeSuccess.jsp");
         dispatcher.forward(req, resp);
 
     }

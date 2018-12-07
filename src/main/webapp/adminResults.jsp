@@ -56,16 +56,15 @@
                     <button type="submit" name="remove"><span class="glyphicon glyphicon-trash"></span></button>
                 </form></td>
 
-
-
-
                 </td>
             </tr>
         </c:forEach>
         </tbody>
+
+
     </table>
 
-        <a href="admin.jsp">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
+        <a href="admin.jsp" class="logoutButton">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
 </div>
 </div>
 </body>

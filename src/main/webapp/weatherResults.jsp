@@ -29,10 +29,11 @@
 
         </table>
 
+        <a href="index.jsp" class="logoutButton">I'm Finished</a>
 
     </div>
 
-    <a href="index.jsp">I'm Finished</a>
+
 
 
 </div>

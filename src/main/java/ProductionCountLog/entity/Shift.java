@@ -112,7 +112,7 @@ public class Shift {
 
     @ManyToOne
     @JoinColumn(name = "user_id",
-            foreignKey = @ForeignKey(name = "shift_user_user_id_fk")
+        foreignKey = @ForeignKey(name = "shift_user")
     )
     private User user;
 
@@ -142,7 +142,17 @@ public class Shift {
     private double trash;
     @Transient
     private String comment;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     /**
+
      * The Df.
      */
     @Transient
