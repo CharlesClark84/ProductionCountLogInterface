@@ -53,54 +53,54 @@
 
 ### Week 7
 
-- [ ] Weekly journal entry
-- [ ] Work on calculations for algorithms and functions they will be inside of.  
-- [ ] Connect to database and be able to store User variables.
-- [ ] Set up authentication locally
-- [ ] Set up authentication on AWS
-- [ ] Review and incorporate any feedback from Checkpoint 2.
-- [ ] Fix checkpoint two issues
-- [ ] front end css
-- [ ] Fix database issues
+- [x] Weekly journal entry
+- [x] Work on calculations for algorithms and functions they will be inside of.  
+- [x] Connect to database and be able to store User variables.
+- [x] Set up authentication locally
+- [x] Set up authentication on AWS
+- [x] Review and incorporate any feedback from Checkpoint 2.
+- [x] Fix checkpoint two issues
+- [x] front end css
+- [x] Fix database issues
 
 
 ### Week 8
 
-- [ ] Weekly journal entry
-- [ ] Integration with google maps api
-- [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
+- [x] Weekly journal entry
+- [x] Integration with google maps api
+- [x] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
 
 ### Week 9
-- [ ] Weekly journal entry
-- [ ] Integration with weather service and/or snow depth data
-- [ ] Review and incorporate feedback from Checkpoint 3.
-- [ ] Carefully review code for standards and best practices - use a code quality tool? 
+- [x] Weekly journal entry
+- [x] Integration with weather service and/or snow depth data
+- [x] Review and incorporate feedback from Checkpoint 3.
+- [x] Carefully review code for standards and best practices - use a code quality tool? 
 
 ### Week 8
-- [ ] Weekly journal entry
-- [ ] Code review
+- [x] Weekly journal entry
+- [x] Code review
 
 ### Week 9
-- [ ] Weekly journal entry
-- [ ] Add password reset/reminder functionality
+- [x] Weekly journal entry
+- [x] Add password reset/reminder functionality
 
 ### Week 10
-- [ ] Weekly journal entry
-- [ ] Unit test all api integrations
+- [x] Weekly journal entry
+- [x] Unit test all api integrations
 
 ### Week 11 - Team project work week
-- [ ] Weekly journal entry
+- [x] Weekly journal entry
 
 ### Week 12 - Team project due
-- [ ] Weekly journal entry
-- [ ] Review indie project and create list of todos
+- [x] Weekly journal entry
+- [x] Review indie project and create list of todos
 
 ### Week 13
-- [ ] Weekly journal entry
-- [ ] Complete todos identified in week 12
-- [ ] Prepare for week 13 peer code reviews
-- [ ] Code quality check
-- [ ] Review rubric to make sure I'm on target
+- [x] Weekly journal entry
+- [x] Complete todos identified in week 12
+- [x] Prepare for week 13 peer code reviews
+- [x] Code quality check
+- [x] Review rubric to make sure I'm on target
 
 ### Week 14
 - [ ] Weekly journal entry
