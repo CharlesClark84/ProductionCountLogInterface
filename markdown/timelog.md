@@ -84,9 +84,9 @@
 |12/3/18|debugging indiePoject with Paula|1.25|thanks for the help|
 |12/6/18|trying to fix issues with indieProject|1|-|
 |12/7/18|getting errors fixed!|1|yay|
-|12/7/18|feedback for Robert|-------|-|
-|------|------|-------|------|
-|------|------|-------|------|
+|12/7/18|feedback for Robert|.15|-|
+|12/8/18|code review for Kevin|1|-|
+|12/9/18|finsihed code review for Kevin|.6|got it done|
 |------|------|-------|------|
 |------|------|-------|------|
 

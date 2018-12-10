@@ -5,11 +5,12 @@
 <html><body text-align="center">
 
 <div class="container-fluid">
-    <div class="well">
+    <div class="well center">
+
         <h2>Weather Confirm</h2><br/><br/>
 
 
-        <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto">
+        <table border="1" cellpadding="5" cellspacing="5" width="60%" margin="auto" padding="10" class="center">
 
             <tr>
                 <td>Employee Number</td>
@@ -28,15 +29,11 @@
 
 
         </table>
+        <div>
+            <a href="index.jsp" class="btn btn-success btn-send">I'm Finished</a>
+        </div>
 
-        <a href="index.jsp" class="logoutButton">I'm Finished</a>
-
-    </div>
-
-
-
-
-</div>
+    </div></div>
 
 </body>
 </html>

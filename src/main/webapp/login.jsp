@@ -13,7 +13,7 @@
     <TABLE>
         <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username"><br/><br/>
         <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">
-        <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In"class="btn btn-primary" >
+        <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In" class="btn btn-success btn-send" >
     </TABLE>
 </FORM>
 </div>

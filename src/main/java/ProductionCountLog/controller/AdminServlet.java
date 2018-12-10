@@ -25,7 +25,6 @@ public class AdminServlet extends HttpServlet {
         @Override
         protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-                Shift shift = new Shift();
                 GenericDao dao = new GenericDao(Shift.class);
 
                 if (req.getParameter("submit").equals("getAll")) {
@@ -34,8 +33,20 @@ public class AdminServlet extends HttpServlet {
                 }
                 if (req.getParameter("submit").equals("id")) {
                     dao.getByPropertyEqual("employeeId", req.getParameter("ID"));
-                    logger.debug("request id " + req.getParameter("ID"));
-                        req.setAttribute("shifts", dao.getById(Integer.parseInt(req.getParameter("ID"))));
+                    logger.debug("request by employee id " + req.getParameter("ID"));
+                        req.setAttribute("shifts", dao.getByPropertyEqual("employeeId", req.getParameter("ID")));
+
+                }
+                if (req.getParameter("submit").equals("machineNumber")) {
+                        dao.getByPropertyEqual("machineNumber", req.getParameter("machine"));
+                        logger.debug("request by machine id " + req.getParameter("machine"));
+                        req.setAttribute("shifts", dao.getByPropertyEqual("machineNumber", req.getParameter("machine")));
+
+                }
+                if (req.getParameter("submit").equals("dateId")) {
+                        dao.getByPropertyEqual("date", req.getParameter("dates"));
+                        logger.debug("request by date " + req.getParameter("dates"));
+                        req.setAttribute("shifts", dao.getByPropertyEqual("date", req.getParameter("dates")));
 
                 }
 

@@ -121,7 +121,7 @@
     </table>
 
 
-       <div class="center"><a href="index.jsp" class="logoutButton">I'm Finished</a> <button onclick="printFunction()">Print this page</button></div>
+       <div class="center"><a href="index.jsp" class="btn btn-success btn-send">I'm Finished</a> <button onclick="printFunction()">Print this page</button></div>
 
     </div>
 

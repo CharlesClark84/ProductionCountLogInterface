@@ -63,8 +63,9 @@
 
 
     </table>
-
-        <a href="admin.jsp" class="logoutButton">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
+        <div class="center">
+          <a href="admin.jsp" class="btn btn-success btn-send">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
+        </div>
 </div>
 </div>
 </body>

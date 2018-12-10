@@ -15,7 +15,7 @@
 <form class="center">
     <label>Enter Zip Code:</label>
     <input type="text" name="zip" id="zip">
-    <button type="button" id="getMessage" class="btn btn-primary">Get Weather</button>
+    <button type="button" id="getMessage" class="btn btn-success btn-send">Get Weather</button>
 </form>
 <br/>
 

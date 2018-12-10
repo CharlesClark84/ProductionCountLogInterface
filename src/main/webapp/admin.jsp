@@ -8,30 +8,49 @@
     <title>Admin page</title>
 </head>
 
-
 <%@include file="navbar.jsp"%>
 
-<h2 class="center">Administration Page</h2>
+    <div class="container-fluid">
+    <div class="well center">
+
+        <h2 class="center">Administration Page</h2>
 
 
-<form action="search" class=form-inLine" method="get">
-    <div class="form-group">
+        <form action="search" class=form-inLine" method="get">
+            <div class="form-group">
 
-        <label>Return all data</label>
-    <button type="submit" name="submit" value="getAll"  class="btn btn-success btn-send">Get All</button><br/>
+            <label>Return all data</label>
+            <button type="submit" name="submit" value="getAll"  class="btn btn-success btn-send">Get All</button><br/>
 
-    <label for="id">Search by user id</label>
-    <input type="text" id="ID" name="ID">
+                <label for="id">Search by Employee Id</label>
+             <input type="text" id="ID" name="ID">
+            <button type="submit" name="submit" value="id"  class="btn btn-success btn-send">Get by ID</button><br/>
 
-        <button type="submit" name="submit" value="id"  class="btn btn-success btn-send">Get by ID</button>
+                <label for="id">Search by Machine Number</label>
+                <input type="text" id="machine" name="machine">
+                <button type="submit" name="submit" value="machineNumber"  class="btn btn-success btn-send">Get by Machine</button><br/>
 
-    </div>
+                <label for="id">Search by Date</label>
+                <input type="text" id="dates" name="dates">
+                <script>
+                    $('#dates').datepicker({
+                        changeMonth: true,
+                        changeYear: true,
+                        maxDate: new Date(),
+                        yearRange: '-100:+0'
+                    });
+                </script>
+                <button type="submit" name="submit" value="dateId"  class="btn btn-success btn-send">Get by Date</button><br/>
 
-</form>
+            </div>
+
+        </form>
 <br/>
-<div class="logoutButton">
-<a href="logout.jsp">Log out</a>
-</div>
+      <div class="center">
+        <a href="logout.jsp" class="btn btn-success btn-send">Log out</a>
+      </div>
+
+    </div></div>
 
 </body>
 </html>
