@@ -113,6 +113,9 @@ var getPersonalizedMessage = function() {
             document.getElementById("content11").innerHTML = "Location: " + location;
 
         }
+        if (xhr.status == 404) {
+            document.getElementById("content").innerHtml = "Error retrieving data. Please try again"
+        }
 
     }
     xhr.send(null);
