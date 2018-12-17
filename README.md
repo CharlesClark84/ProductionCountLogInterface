@@ -5,6 +5,9 @@ http://18.225.3.127:8080/ProductionCountLogInterface/
 
 ### Videos of Website Walk Through
 * [Weather](weather.mp4)
+* [Form](form.mp4)
+* [newEmployee](newEmployee.mp4)
+* [Admin](admin.mp4)
  
 ### Problem Statement
 
