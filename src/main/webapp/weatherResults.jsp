@@ -10,25 +10,26 @@
         <h2>Weather Confirm</h2><br/><br/>
 
 
-        <table border="1" cellpadding="5" cellspacing="5" width="60%" margin="auto" padding="10" class="center">
+        <table border="1" cellpadding="5" cellspacing="5" width="60%" margin="auto" padding="10" class="table table-striped table-hover">
 
             <tr>
-                <td>Employee Number</td>
+                <th>Employee Number</th>
                 <td>${number}</td>
             </tr>
 
             <tr>
-                <td>Confim Weather Checked</td>
+                <th>Confim Weather Checked</th>
                 <td>${con}</td>
             </tr>
 
             <tr>
-                <td>Date</td>
+                <th>Date</th>
                 <td>${Date}</td>
             </tr>
 
 
         </table>
+        <br/>
         <div>
             <a href="index.jsp" class="btn btn-success btn-send">I'm Finished</a>
         </div>

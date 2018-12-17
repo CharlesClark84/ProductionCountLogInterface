@@ -383,7 +383,7 @@ public class Shift {
      * @return the percentage
      */
     public double getPercentage() {
-        this.percentage = getTotalParts() / getBaseRate();
+        this.percentage = Double.valueOf(df.format(getTotalParts() / getBaseRate()));
         return percentage;
     }
 
@@ -423,7 +423,7 @@ public class Shift {
      * @return the hours earned
      */
     public double getHoursEarned() {
-        this.hoursEarned = (getPercentage() * getHoursWorked());
+        this.hoursEarned = Double.valueOf(df.format(getPercentage() * getHoursWorked()));
         return hoursEarned;
     }
 
@@ -471,7 +471,7 @@ public class Shift {
      * @return the double
      */
     public double getDay$() {
-        this.day$ = (getTotalHours() * getBasePay());
+        this.day$ = Double.valueOf(df.format(getTotalHours() * getBasePay()));
         return day$;
     }
 
@@ -491,7 +491,7 @@ public class Shift {
      * @return the double
      */
     public double getHourly$() {
-        this.hourly$ = (getPercentage() * getBasePay());
+        this.hourly$ = Double.valueOf(df.format(getPercentage() * getBasePay()));
         return hourly$;
     }
 

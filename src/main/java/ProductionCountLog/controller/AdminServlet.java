@@ -2,7 +2,6 @@ package ProductionCountLog.controller;
 
 import ProductionCountLog.entity.Shift;
 import ProductionCountLog.persistence.GenericDao;
-import ProductionCountLog.persistence.ShiftDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

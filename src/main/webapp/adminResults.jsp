@@ -6,9 +6,9 @@
 
 <div class="container-fluid">
 
-    <div class="well">
+    <div class="well center">
         <h2>Search Results: </h2>
-    <table  class="table table-striped table-hover" id="dataTable">
+    <table class="table table-striped table-hover center" id="dataTable">
         <thead class="rounded-top">
         <th class="head">ID</th>
         <th class="head">Employee ID</th>
@@ -61,13 +61,21 @@
         </c:forEach>
         </tbody>
 
+    </table><br/>
 
-    </table>
         <div class="center">
-          <a href="admin.jsp" class="btn btn-success btn-send">I'm Finished</a> <button onclick="printFunction()">Print this page</button>
+          <a href="admin.jsp" class="btn btn-success btn-send">I'm Finished</a> <button class="btn btn-success btn-send" onclick="printFunction()">Print this page</button><form action="Excel" method="post" id="exc"><button class="btn btn-success btn-send" type="submit">Export</button</form>
         </div>
 </div>
 </div>
+
+<script>
+    function printFunction() {
+        window.print();
+    }
+
+</script>
+
 </body>
 </html>
 

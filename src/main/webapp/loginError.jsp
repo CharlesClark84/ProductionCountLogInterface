@@ -8,6 +8,6 @@
 </head>
 <body>
 Login Failed. Please try again.
-<a href="login.jsp" class="btn btn-success btn-send"></a>
+<a href="login.jsp" class="btn btn-success btn-send">Login</a>
 </body>
 </html>

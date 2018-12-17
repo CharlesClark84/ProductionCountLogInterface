@@ -5,51 +5,56 @@
 <html><body text-align="center">
 <br/>
 <div class="container-fluid">
-    <div class="well">
+    <div class="well center">
         <h2>Name Info</h2><br/><br/>
 
 
-        <table border="1" cellpadding="5" cellspacing="5" width="60%" margin="auto" class="table table-striped table-hover">
+        <table border="1" cellpadding="5" cellspacing="5" width="40%" margin="auto" class="table table-striped table-hover">
 
             <tr>
-                <td>First Name</td>
+                <th>First Name</th>
                 <td>${first}</td>
             </tr>
 
             <tr>
-                <td>Last Name</td>
+                <th>Last Name</th>
                 <td>${last}</td>
             </tr>
 
             <tr>
-                <td>Address</td>
+                <th>Address</th>
                 <td>${Address}</td>
             </tr>
 
             <tr>
-                <td>City</td>
+                <th>City</th>
                 <td>${City}</td>
             </tr>
 
             <tr>
-                <td>State</td>
+                <th>State</th>
                 <td>${State}</td>
             </tr>
 
             <tr>
-                <td>Zip</td>
+                <th>Zip</th>
                 <td>${Zip}</td>
             </tr>
 
             <tr>
-                <td>Password</td>
+                <th>Password</th>
                 <td>${pass}</td>
+            </tr>
+
+            <tr>
+                <th>Your employee id is</th>
+                <td>${user.id}</td>
             </tr>
 
 
         </table>
 
-        <a class="btn btn-success btn-send" href="newEmployee.jsp">I'm Finished</a><button onclick="printFunction()">Print this page</button>
+        <a class="btn btn-success btn-send" href="newEmployee.jsp">I'm Finished</a> <button class="btn btn-success btn-send" onclick="printFunction()">Print this page</button>
     </div>
 </div>
 

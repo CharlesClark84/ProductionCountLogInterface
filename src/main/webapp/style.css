@@ -22,9 +22,6 @@ body {
     text-align: center;
 }
 
-#margin {
-    margin: auto;
-}
 
 .navbar .navbar-nav {
     display: inline-block;
@@ -54,19 +51,6 @@ body {
     text-align: center;
 }
 
-.logoutButton {
-    border: 1px solid grey;
-    border-radius: 5px;
-    background-color: #40b631;
-    color:white;
-    max-width: 10%;
-    max-height: 30%;
-    margin: auto;
-    text-align: center;
-}
-
-
-
 .head {
     border: solid black 1px;
     padding: 5px;
@@ -85,6 +69,8 @@ body {
     border-radius: 5px;
     padding: 5px;
     max-width: 50%;
+    text-align: center;
+    margin: auto;
 }
 
 .background {
@@ -106,6 +92,17 @@ a:hover {
 }
 
 #removeForm {
+    border: none;
+    margin: auto;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#searchData {
+    max-width: 60%;
+}
+
+#exc {
     border: none;
     margin: auto;
     background-color: transparent;

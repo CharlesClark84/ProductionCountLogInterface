@@ -9,119 +9,119 @@
     <h2 class="center">Receipt</h2><br/><br/>
     
 
-    <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto"  class="table table-striped table-hover center">
+    <table border="1" cellpadding="5" cellspacing="5" width="50%" margin="auto"  id="dataTable" class="table table-striped table-hover center">
 
         <tr>
-            <td>Date</td>
+            <th>Date</th>
             <td>${Date}</td>
         </tr>
 
         <tr>
-            <td>Shift</td>
+            <th>Shift</th>
             <td>${Shift}</td>
         </tr>
 
         <tr>
-            <td>Employee Id</td>
+            <th>Employee Id</th>
             <td>${id}</td>
         </tr>
 
         <tr>
-            <td>Product Name</td>
+            <th>Product Name</th>
             <td>${product}</td>
         </tr>
 
         <tr>
-            <td>Machine Number</td>
+            <th>Machine Number</th>
             <td>${machine}</td>
         </tr>
 
         <tr>
-            <td>Hours Worked</td>
+            <th>Hours Worked</th>
             <td>${hours}</td>
         </tr>
 
         <tr>
-            <td>Total Parts</td>
+            <th>Total Parts</th>
             <td>${parts}</td>
         </tr>
 
         <tr>
-            <td>Downtime </td>
+            <th>Downtime </th>
             <td>${down}</td>
         </tr>
 
         <tr>
-            <td>Bad Parts</td>
+            <th>Bad Parts</th>
             <td>${bad}</td>
         </tr>
 
         <tr>
-            <td>Ribbon Change</td>
+            <th>Ribbon Change</th>
             <td>${ribbon}</td>
         </tr>
 
         <tr>
-            <td>Glue Test</td>
+            <th>Glue Test</th>
             <td>${glue}</td>
         </tr>
 
         <tr>
-            <td>Full Skid</td>
+            <th>Full Skid</th>
             <td>${full}</td>
         </tr>
 
         <tr>
-            <td>Trash</td>
+            <th>Trash</th>
             <td>${waste}</td>
         </tr>
 
         <tr>
-            <td>Credits</td>
+            <th>Credits</th>
             <td>${credit}</td>
         </tr>
 
         <tr>
-            <td>Comments</td>
+            <th>Comments</th>
             <td>${comment}</td>
         </tr>
 
         <tr>
-            <td>Percentage</td>
+            <th>Percentage</th>
             <td>${percentage}</td>
         </tr>
 
         <tr>
-            <td>Base Rate</td>
+            <th>Base Rate</th>
             <td>${baserate}</td>
         </tr>
 
         <tr>
-            <td>Hours Earned</td>
+            <th>Hours Earned</th>
             <td>${hoursE}</td>
         </tr>
 
 
         <tr>
-            <td>Total Hours</td>
+            <th>Total Hours</th>
             <td>${totalHours}</td>
         </tr>
 
         <tr>
-            <td>Daily $ Amount</td>
+            <th>Daily $ Amount</th>
             <td>${day$}</td>
         </tr>
 
         <tr>
-            <td>Hourly $ Amount</td>
+            <th>Hourly $ Amount</th>
             <td>${hourly$}</td>
         </tr>
 
 
-    </table>
+    </table><br/>
 
 
-       <div class="center"><a href="index.jsp" class="btn btn-success btn-send">I'm Finished</a> <button onclick="printFunction()">Print this page</button></div>
+       <div class="center"><a href="index.jsp" class="btn btn-success btn-send">I'm Finished</a> <button class="btn btn-success btn-send" onclick="printFunction()">Print this page</button></div>
 
     </div>
 
@@ -131,14 +131,6 @@
         window.print();
     }
 </script>
-
-    <script>
-
-    $( function() {
-    $( "td" ).sortable();
-    } );
-    </script>
-
 
 </div>
 

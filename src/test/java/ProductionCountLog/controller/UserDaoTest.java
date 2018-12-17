@@ -1,11 +1,10 @@
-package ProductionCountLog;
+package ProductionCountLog.controller;
 
 import ProductionCountLog.entity.User;
-import ProductionCountLog.persistence.UserDao;
+import ProductionCountLog.persistence.GenericDao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -14,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class UserDaoTest {
 
-    UserDao dao;
+    GenericDao dao;
 
 
     /**
@@ -27,7 +26,7 @@ public class UserDaoTest {
         ProductionCountLog.Database database = ProductionCountLog.Database.getInstance();
         database.runSQL("cleandb.sql");
 
-        dao = new UserDao();
+        dao = new GenericDao(User.class);
     }
 
     /**
@@ -35,7 +34,7 @@ public class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(1);
+        User retrievedUser = (User)dao.getById(1);
         assertEquals("Charles", retrievedUser.getFirstName());
         assertEquals("Clark", retrievedUser.getLastName());
     }
@@ -60,21 +59,6 @@ public class UserDaoTest {
         List<User> users = dao.getAll();
         assertEquals(1, users.size());
     }
-
-    /**
-     * Verify successful update of user
-
-    @Test
-    void updateSuccess() {
-        String newLastName = "Clark"; //needs to be fixed
-        User user = dao.getById(1);
-        user.setLastName(newLastName);
-        dao.saveOrUpdate(user);
-        User retrievedUser = dao.getById(1);
-        assertEquals(user, retrievedUser);
-    }
-
-     */
 
     /**
      * Verify successful get by property (equal match)

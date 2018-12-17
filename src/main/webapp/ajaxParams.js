@@ -62,7 +62,6 @@ var getPersonalizedMessage = function() {
 
             }
 
-
             var Farenheit = obj.weatherObservation.temperature * (9/5) + 32;
             console.log("Temperature: " + Farenheit);
             document.getElementById("content3").innerHTML = "Temperature: " + Math.round(Farenheit);
@@ -114,7 +113,7 @@ var getPersonalizedMessage = function() {
             document.getElementById("content11").innerHTML = "Location: " + location;
 
         }
-    }
 
+    }
     xhr.send(null);
 }

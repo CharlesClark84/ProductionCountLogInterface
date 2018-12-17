@@ -10,10 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 import ProductionCountLog.entity.Shift;
-import ProductionCountLog.entity.User;
 import ProductionCountLog.persistence.GenericDao;
-import ProductionCountLog.persistence.ShiftDao;
-import ProductionCountLog.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -47,11 +44,12 @@ public class EchoServlet extends HttpServlet {
 
 
         shift.setDate(date);
+        logger.debug("Date = " + date);
 
 
         int shiftI = Integer.parseInt(request.getParameter("shift"));
         shift.setShift(shiftI);
-        logger.debug("shift = " + shift);
+        logger.debug("shift = " + shiftI);
 
         int employeeId = Integer.parseInt(request.getParameter("employeeId"));
         shift.setEmployeeId(employeeId);

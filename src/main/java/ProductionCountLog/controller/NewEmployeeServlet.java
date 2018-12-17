@@ -1,10 +1,7 @@
 package ProductionCountLog.controller;
 
-import ProductionCountLog.entity.Shift;
 import ProductionCountLog.entity.User;
 import ProductionCountLog.persistence.GenericDao;
-import ProductionCountLog.persistence.ShiftDao;
-import ProductionCountLog.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,10 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @WebServlet(
         urlPatterns = {"/newEmployee"}
@@ -68,7 +61,7 @@ public class NewEmployeeServlet extends HttpServlet {
         request.setAttribute("State", state);
         request.setAttribute("Zip", lastName);
         request.setAttribute("pass", password);
-
+        request.setAttribute("users", userDao.getAll());
 
 
 
