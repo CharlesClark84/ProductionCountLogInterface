@@ -1,4 +1,13 @@
 # Charles Clark Individual Project
+
+### Link to Deployed Website
+http://18.225.3.127:8080/ProductionCountLogInterface/
+
+### Videos of Website Walk Through
+* [Weather](weather.mp4)
+* [Form](form.mp4)
+* [newEmployee](newEmployee.mp4)
+* [Admin](admin.mp4)
  
 ### Problem Statement
 
@@ -41,6 +50,8 @@ know if any PM/TPM (preventative maintenance) should be done before the start of
    * Google Maps API
    * Weather API
    * Javascript action buttons
+   * Apache POI
+    https://www.tutorialspoint.com/apache_poi/apache_poi_overview.htm
  * Unit Testing
    * JUnit tests to achieve 80%+ code coverage 
  * IDE: IntelliJ IDEA
