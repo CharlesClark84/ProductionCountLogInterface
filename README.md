@@ -4,7 +4,7 @@
 http://18.225.3.127:8080/ProductionCountLogInterface/
 
 ### Videos of Website Walk Through
-* [Weather](../weather.mp4)
+* [Weather](weather.mp4)
  
 ### Problem Statement
 
