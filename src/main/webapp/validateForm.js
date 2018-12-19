@@ -11,20 +11,7 @@ function validateForm() {
         window.alert("Employee Id must be a numeric value. You entered: " + employeeId);
         return false;
     }
-
-    //First name form validation
-    var firstName = document.form.firstName.value;
-    if (!isNaN(firstName)) {
-        window.alert("First Name must not contain numbers or characters. You entered: " + firstName);
-        return false;
-    }
-
-    //Last name form validation
-    var lastName = document.form.lastName.value;
-    if (!isNaN(lastName)) {
-        window.alert("Last Name must not contain numbers or characters. You entered: "  + lastName);
-        return false;
-    }
+    
 
     //Machine number form validation
     var machineNumber = document.form.machineNumber.value;
